@@ -383,7 +383,7 @@ F 1 "10k" V 3800 1600 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3730 1600 50  0001 C CNN
 F 3 "" H 3800 1600 50  0000 C CNN
 	1    3800 1600
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L R R10
