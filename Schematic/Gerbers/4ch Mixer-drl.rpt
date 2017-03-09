@@ -1,5 +1,5 @@
 Drill report for C:\Users\Nathan\Desktop\4ch Mixer\Schematic\4ch Mixer.kicad_pcb
-Created on 3/8/2017 9:40:58 PM
+Created on 3/9/2017 7:23:19 AM
 
 Copper Layer Stackup:
     =============================================================
@@ -10,13 +10,14 @@ Copper Layer Stackup:
 Drill file '4ch Mixer.drl' contains
     plated through holes:
     =============================================================
-    T1  0.80mm  0.031"  (82 holes)
+    T1  0.80mm  0.031"  (86 holes)
     T2  0.90mm  0.035"  (2 holes)
     T3  1.00mm  0.039"  (28 holes)
     T4  1.10mm  0.043"  (18 holes)
-    T5  3.00mm  0.118"  (6 holes)
+    T5  2.60mm  0.102"  (1 hole)
+    T6  3.00mm  0.118"  (6 holes)
 
-    Total plated holes count 136
+    Total plated holes count 141
 
 
 Drill file '4ch Mixer-NPTH.drl' contains

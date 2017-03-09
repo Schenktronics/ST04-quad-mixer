@@ -383,7 +383,7 @@ F 1 "10k" V 3800 1600 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3730 1600 50  0001 C CNN
 F 3 "" H 3800 1600 50  0000 C CNN
 	1    3800 1600
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 $Comp
 L R R10
@@ -902,13 +902,13 @@ Connection ~ 4200 3100
 Wire Wire Line
 	5250 4600 6050 4600
 Wire Wire Line
-	6050 4600 6050 4000
+	6050 4000 6050 4850
 Wire Wire Line
 	5850 4000 6300 4000
 Wire Wire Line
 	5250 4100 4850 4100
 Wire Wire Line
-	4850 4100 4850 4600
+	4850 4100 4850 4850
 Wire Wire Line
 	5250 3900 4600 3900
 Connection ~ 6050 4000
@@ -988,9 +988,9 @@ Wire Wire Line
 Wire Wire Line
 	7900 4600 7500 4600
 Wire Wire Line
-	7900 4600 7900 3900
+	7900 3900 7900 4850
 Wire Wire Line
-	7100 4000 7100 4600
+	7100 4000 7100 4850
 Connection ~ 7100 4000
 Wire Wire Line
 	6600 4000 7250 4000
@@ -1198,4 +1198,37 @@ F 3 "" H 9900 1550 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3000 6400 3000 6800
+$Comp
+L C C?
+U 1 1 58C17397
+P 7350 4850
+F 0 "C?" H 7375 4950 50  0000 L CNN
+F 1 "10pf" H 7375 4750 50  0000 L CNN
+F 2 "" H 7388 4700 50  0000 C CNN
+F 3 "" H 7350 4850 50  0000 C CNN
+	1    7350 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 4850 7500 4850
+Connection ~ 7900 4600
+Wire Wire Line
+	7100 4850 7200 4850
+Connection ~ 7100 4600
+$Comp
+L C C?
+U 1 1 58C17D77
+P 5100 4850
+F 0 "C?" H 5125 4950 50  0000 L CNN
+F 1 "10pf" H 5125 4750 50  0000 L CNN
+F 2 "" H 5138 4700 50  0000 C CNN
+F 3 "" H 5100 4850 50  0000 C CNN
+	1    5100 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 4850 5250 4850
+Connection ~ 6050 4600
+Wire Wire Line
+	4850 4850 4950 4850
 $EndSCHEMATC
