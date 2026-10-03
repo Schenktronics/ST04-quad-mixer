@@ -137,8 +137,9 @@ def build(board, template, out_path):
                  ["fill", "yes", ["thermal_gap", 0.5], ["thermal_bridge_width", 0.5]],
                  ["polygon", ["pts", ["xy", x0, y0], ["xy", x1, y0], ["xy", x1, y1], ["xy", x0, y1]]]])
 
-    # mounting holes: Eurorack spacing, 3 mm from the top and bottom edges
-    mx_left, mx_right = x0 + 7.25, x1 - 7.25
+    # mounting holes: match the Attenuverter faceplate
+    # Attenuverter: holes 7.5 mm and 22.75 mm from the left edge, 3 mm from top and bottom
+    mx_left, mx_right = x0 + 7.5, x0 + 22.75
     my_top, my_bot = y0 + 3.0, y1 - 3.0
     for i, (mx, my) in enumerate([(mx_left, my_top), (mx_right, my_top),
                                   (mx_left, my_bot), (mx_right, my_bot)], start=1):
