@@ -97,25 +97,58 @@ def courtyard_points(fp_tree):
     return pts
 
 
-def bbox_of(fp_tree, x, y, rot, margin=0.5):
-    """Axis-aligned bounding box after rotation/translation, plus margin.
+def bbox_of(fp_tree, x, y, rot, margin=0.5, side="F", pads_only=False):
+    """Axis-aligned bounding box after flip/rotation/translation, plus margin.
 
+    side="B" mirrors the footprint across its y axis first (SMD on the back).
     Uses the courtyard when the footprint has one, otherwise the pads.
     """
+    flip = -1.0 if side == "B" else 1.0
     xs, ys = [], []
-    for px, py in courtyard_points(fp_tree):
-        rx, ry = rotate(px, py, rot)
-        xs.append(rx)
-        ys.append(ry)
+    if not pads_only:
+        for px, py in courtyard_points(fp_tree):
+            rx, ry = rotate(flip * px, py, rot)
+            xs.append(rx)
+            ys.append(ry)
     if not xs:
         for name, px, py, w, h in pads_of(fp_tree):
-            rx, ry = rotate(px, py, rot)
+            rx, ry = rotate(flip * px, py, rot)
             xs += [rx - w / 2, rx + w / 2]
             ys += [ry - h / 2, ry + h / 2]
     if not xs:
         return (x - 1, y - 1, x + 1, y + 1)
     return (x + min(xs) - margin, y + min(ys) - margin,
             x + max(xs) + margin, y + max(ys) + margin)
+
+
+def is_smd(fp_tree):
+    return any(str(pad[2]) == "smd" for pad in sexpr.find_all(fp_tree, "pad") if len(pad) > 2)
+
+
+SWAP = {"F.Cu": "B.Cu", "B.Cu": "F.Cu", "F.Mask": "B.Mask", "B.Mask": "F.Mask",
+        "F.Paste": "B.Paste", "B.Paste": "F.Paste", "F.SilkS": "B.SilkS", "B.SilkS": "F.SilkS",
+        "F.CrtYd": "B.CrtYd", "B.CrtYd": "F.CrtYd", "F.Fab": "B.Fab", "B.Fab": "F.Fab",
+        "F.Adhes": "B.Adhes", "B.Adhes": "F.Adhes"}
+
+
+def mirror_tree(node):
+    """Mirror a footprint subtree across its y axis (for a back-side part)."""
+    if not isinstance(node, list):
+        if isinstance(node, Str) and node in SWAP:
+            return Str(SWAP[node])
+        return node
+    if not node:
+        return node
+    head = node[0]
+    if head == "at" and len(node) >= 3:
+        rot = -float(node[3]) if len(node) > 3 else None
+        out = ["at", -float(node[1]), float(node[2])] + ([rot] if rot is not None else [])
+        return out
+    if head in ("start", "end", "center", "mid") and len(node) >= 3:
+        return [head, -float(node[1]), float(node[2])]
+    if head == "pts":
+        return ["pts"] + [["xy", -float(p[1]), float(p[2])] for p in node[1:]]
+    return [mirror_tree(x) for x in node]
 
 
 def rotate(x, y, deg):
@@ -126,7 +159,12 @@ def rotate(x, y, deg):
 
 
 def wrap_footprint(fp_tree, ref, value, x, y, rot, net_index, layer="F.Cu"):
-    """Turn a library footprint into a board footprint at (x, y, rot)."""
+    """Turn a library footprint into a board footprint at (x, y, rot).
+
+    layer="B.Cu" mirrors the footprint onto the back of the board.
+    """
+    if layer == "B.Cu":
+        fp_tree = mirror_tree(fp_tree)
     fpid = fp_tree[1]
     out = ["footprint", fpid, ["layer", Str(layer)], ["uuid", Str(str(uuid.uuid4()))],
            ["at", x, y] + ([rot] if rot else [])]
@@ -189,7 +227,7 @@ def pack_remaining(placed_boxes, refs, footprints, outline, step=(1.0, 1.0), rot
             while y < y1 - 1 and spot is None:
                 x = x0 + 1
                 while x < x1 - 1 and spot is None:
-                    bx = bbox_of(fp, x, y, rot, margin=0.3)
+                    bx = bbox_of(fp, x, y, rot, margin=0.3, side="B")
                     inside = bx[0] >= x0 and bx[2] <= x1 and bx[1] >= y0 and bx[3] <= y1
                     clear = all(bx[2] <= b[0] or bx[0] >= b[2] or bx[3] <= b[1] or bx[1] >= b[3] for b in boxes)
                     if inside and clear:
@@ -237,11 +275,17 @@ def build(netlist_path, board_template, layout_path, out_path, fp_dirs=()):
 
     place = dict(layout.PLACE)
     outline = layout.OUTLINE
-    boxes = [bbox_of(footprints[r], x, y, rot) for r, (x, y, rot) in place.items() if r in footprints]
+    # Through-hole parts go through both sides, so their pads block the back too.
+    back_boxes = [bbox_of(footprints[r], x, y, rot, pads_only=True)
+                  for r, (x, y, rot) in place.items() if r in footprints]
     remaining = [r for r in sorted(footprints, key=lambda s: (re.sub(r"\d+", "", s), int(re.sub(r"\D", "", s) or 0)))
                  if r not in place]
     if remaining:
-        place.update(pack_remaining(boxes, remaining, footprints, outline))
+        place.update(pack_remaining(back_boxes, remaining, footprints, outline))
+    sides = {r: ("B.Cu" if is_smd(footprints[r]) else "F.Cu") for r in footprints}
+    for r in remaining:
+        if sides[r] != "B.Cu":
+            raise RuntimeError("packer can only place SMD parts, not " + r)
 
     body = [["version", 20260206], ["generator", Str("pcbgen")],
             ["general", ["thickness", 1.6]], ["paper", Str("A4")], layers, setup]
@@ -251,7 +295,7 @@ def build(netlist_path, board_template, layout_path, out_path, fp_dirs=()):
         x, y, rot = place[ref]
         c = comps[ref]
         index = pad_nets.get(ref, {})
-        fp = wrap_footprint(footprints[ref], ref, c["value"], x, y, rot, index)
+        fp = wrap_footprint(footprints[ref], ref, c["value"], x, y, rot, index, sides[ref])
         body.append(fp)
 
     board = ["kicad_pcb"] + body
