@@ -96,6 +96,15 @@ def polar(cx, cy, r, deg):
     return cx + r * math.cos(rad), cy - r * math.sin(rad)
 
 
+TITLE = "Quad Mixer"          # module name printed at the top of the panel
+TITLE_SIZE = 2.5              # same size as the Attenuverter's title
+TITLE_THICKNESS = 0.3
+TITLE_OFFSET_Y = 7.85         # Attenuverter: title 7.85 mm below the top edge
+OUT_LABEL_SIZE = 2.0          # + and - under the output jacks
+OUT_LABEL_THICKNESS = 0.3
+JACK_OUTER_R = 4.95           # outer radius of the output jack rings
+OUT_LABEL_GAP = 1.6           # gap between a jack ring and its + or -
+
 POT_RING_R = 8.25
 JACK_RING_R = 5.0
 
@@ -206,13 +215,27 @@ def build(board, template, out_path):
                                   (mx_left, my_bot), (mx_right, my_bot)], start=1):
         body.append(hole_fp("Panel:MountingHole_3.2mm", round(mx, 3), round(my, 3), MOUNT_D, "H%d" % i))
 
+    # module title, centred on the panel like the Attenuverter's
+    body.append(["gr_text", Str(TITLE), ["at", round((x0 + x1) / 2, 3), round(y0 + TITLE_OFFSET_Y, 3), 0],
+                 ["layer", Str("F.SilkS")], ["uuid", uid()],
+                 ["effects", ["font", ["size", TITLE_SIZE, TITLE_SIZE], ["thickness", TITLE_THICKNESS], "italic"]]])
+
+    # + to the left of J5 (non-inverting output), - to the right of J6 (inverting output)
+    (j5x, j5y), (j6x, j6y) = jacks_out
+    out_labels = [("+", j5x - JACK_OUTER_R - OUT_LABEL_GAP, j5y),
+                  ("-", j6x + JACK_OUTER_R + OUT_LABEL_GAP, j6y)]
+    for text, lx, ly in out_labels:
+        body.append(["gr_text", Str(text), ["at", round(lx, 3), round(ly, 3), 0],
+                     ["layer", Str("F.SilkS")], ["uuid", uid()],
+                     ["effects", ["font", ["size", OUT_LABEL_SIZE, OUT_LABEL_SIZE], ["thickness", OUT_LABEL_THICKNESS]]]])
+
     # Schentronics logo, same offset from the panel's top-left corner as on the
     # Attenuverter faceplate (logo at 130.25, 146.5 with the panel at 115, 25.75).
     logo = load_footprint_file(LOGO_LIB)
     logo_fp = pcbgen.wrap_footprint(logo, "LOGO", "", round(x0 + 15.25, 3),
                                     round(y0 + 120.75, 3), 0, {}, "F.Cu")
-    for child in logo_fp:                       # the value field is a placeholder: hide it
-        if isinstance(child, list) and child and child[0] == "property" and child[1] == "Value":
+    for child in logo_fp:                       # the placeholder reference and value text: hide them
+        if isinstance(child, list) and child and child[0] == "property" and child[1] in ("Value", "Reference"):
             child.append(["hide", "yes"])
     body.append(logo_fp)
 
