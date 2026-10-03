@@ -276,13 +276,17 @@ def build(netlist_path, board_template, layout_path, out_path, fp_dirs=()):
     place = dict(layout.PLACE)
     outline = layout.OUTLINE
     # Through-hole parts go through both sides, so their pads block the back too.
-    back_boxes = [bbox_of(footprints[r], x, y, rot, pads_only=True)
+    overrides = getattr(layout, "SIDE", {})
+    sides = {r: overrides.get(r, "B.Cu" if is_smd(footprints[r]) else "F.Cu") for r in footprints}
+    # Back-side parts block the back by their courtyard; front-side
+    # through-hole parts only block the back through their pads.
+    back_boxes = [bbox_of(footprints[r], x, y, rot, side=sides[r],
+                          pads_only=(sides[r] != "B.Cu"))
                   for r, (x, y, rot) in place.items() if r in footprints]
     remaining = [r for r in sorted(footprints, key=lambda s: (re.sub(r"\d+", "", s), int(re.sub(r"\D", "", s) or 0)))
                  if r not in place]
     if remaining:
         place.update(pack_remaining(back_boxes, remaining, footprints, outline))
-    sides = {r: ("B.Cu" if is_smd(footprints[r]) else "F.Cu") for r in footprints}
     for r in remaining:
         if sides[r] != "B.Cu":
             raise RuntimeError("packer can only place SMD parts, not " + r)
