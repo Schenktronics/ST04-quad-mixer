@@ -75,6 +75,67 @@ def gr_circle(cx, cy, r, width, layer):
             ["layer", Str(layer)], ["uuid", uid()]]
 
 
+def gr_arc(cx, cy, r, start_deg, sweep_deg, width, layer):
+    """Arc on a circle of radius r about (cx, cy), from start_deg sweeping sweep_deg.
+
+    Angles are counter-clockwise as seen on screen, the same convention as the
+    Attenuverter's arcs. KiCad 10 wants start, mid and end points.
+    """
+    def pt(a):
+        rad = math.radians(a)
+        return round(cx + r * math.cos(rad), 4), round(cy - r * math.sin(rad), 4)
+    a0, a1 = start_deg, start_deg + sweep_deg
+    return ["gr_arc", ["start", *pt(a0)], ["mid", *pt((a0 + a1) / 2)], ["end", *pt(a1)],
+            ["stroke", ["width", width], ["type", "default"]],
+            ["layer", Str(layer)], ["uuid", uid()]]
+
+
+def polar(cx, cy, r, deg):
+    """Point at angle deg (counter-clockwise on screen) on a circle of radius r."""
+    rad = math.radians(deg)
+    return cx + r * math.cos(rad), cy - r * math.sin(rad)
+
+
+POT_RING_R = 8.25
+JACK_RING_R = 5.0
+
+
+def channel_group(pot, jack, r_pot=POT_RING_R, r_jack=JACK_RING_R):
+    """Outline around one pot and its jack: the outer arcs of a ring around each,
+    joined by the two external tangent lines (top and bottom). The inner arc
+    segments between the tangent points are trimmed away, leaving one smooth
+    oblong shape per channel."""
+    px, py = pot
+    jx, jy = jack
+    # Work in y-up coordinates. A tangent normal n touches both rings when
+    # n . (jack - pot) = r_pot - r_jack; the two solutions are the top and bottom tangents.
+    dx, dy = jx - px, -(jy - py)
+    d = math.hypot(dx, dy)
+    ux, uy = dx / d, dy / d
+    k = (r_pot - r_jack) / d
+    perp = math.sqrt(1 - k * k)
+    normals = []
+    for s in (1, -1):
+        nx = k * ux - s * perp * uy
+        ny = k * uy + s * perp * ux
+        normals.append((nx, ny))
+    top = max(normals, key=lambda n: n[1])
+    bot = min(normals, key=lambda n: n[1])
+    ang_top = math.degrees(math.atan2(top[1], top[0]))
+    ang_bot = math.degrees(math.atan2(bot[1], bot[0]))
+    out = []
+    # outer arc of the pot ring: from the top tangent point clockwise round the far side to the bottom
+    out.append(gr_arc(px, py, r_pot, ang_top, -((ang_top - ang_bot) % 360), WIDTH_SHORT, "F.SilkS"))
+    # outer arc of the jack ring: from the bottom tangent point clockwise round the far side to the top
+    out.append(gr_arc(jx, jy, r_jack, ang_bot, -((ang_bot - ang_top) % 360), WIDTH_SHORT, "F.SilkS"))
+    # the two tangent lines, top and bottom
+    for ang in (ang_top, ang_bot):
+        a = polar(px, py, r_pot, ang)
+        b = polar(jx, jy, r_jack, ang)
+        out.append(gr_line(a[0], a[1], b[0], b[1], WIDTH_SHORT, "F.SilkS"))
+    return out
+
+
 def pot_ticks(cx, cy, x_max=None):
     """Radial tick marks around a pot shaft, as on the Attenuverter faceplate.
 
@@ -161,6 +222,9 @@ def build(board, template, out_path):
         body.extend(pot_ticks(x, y, x_max=x1 - 0.05))
     for i, (x, y) in enumerate(jacks_in, start=1):
         body.append(hole_fp("Panel:Jack_6mm", x, y, JACK_D, "JH%d" % i))
+    # each input jack grouped with its own pot
+    for (px, py), (jx, jy) in zip(pots, jacks_in):
+        body.extend(channel_group((px, py), (jx, jy)))
     for i, (x, y) in enumerate(jacks_out, start=5):
         body.append(hole_fp("Panel:Jack_6mm", x, y, JACK_D, "JH%d" % i))
         body.append(gr_circle(x, y, RING_R, RING_W, "F.SilkS"))
