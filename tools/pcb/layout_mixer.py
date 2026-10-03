@@ -8,15 +8,15 @@ bottom. Everything else is packed into the free space.
 
 OUTLINE = (100.0, 50.0, 130.0, 150.0)
 
-POT_X = 120.0
-POT_ROWS = [62.0, 88.0, 114.0, 140.0]
-JACK_X = 106.0
+POT_X = 124.9
+POT_ROWS = [63.5, 89.5, 115.5, 141.5]
+JACK_X = 101.9
 
 PLACE = {}
 for k, y in enumerate(POT_ROWS, start=1):
     PLACE["RV%d" % k] = (POT_X, y, 90)
-    PLACE["J%d" % k] = (JACK_X, y, 270)
+    PLACE["J%d" % k] = (JACK_X, y, 90)   # pads point in toward the pot
 
-PLACE["J5"] = (128.0, 122.0, 90)   # output, right side
-PLACE["J6"] = (128.0, 146.0, 90)   # output, right side near bottom
+PLACE["J5"] = (126.0, 122.0, 270)   # output, right side
+PLACE["J6"] = (126.0, 146.0, 270)   # output, right side near bottom
 PLACE["P1"] = (110.0, 147.0, 90)   # 10-pin power header along the bottom edge

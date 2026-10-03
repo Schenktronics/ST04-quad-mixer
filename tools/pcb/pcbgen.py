@@ -170,30 +170,39 @@ def edge_cuts(x0, y0, x1, y1):
     return out
 
 
-def pack_remaining(placed_boxes, refs, footprints, outline, start_grid=(2.0, 2.0)):
-    """Greedy grid packer for parts without a planned position."""
+def pack_remaining(placed_boxes, refs, footprints, outline, step=(1.0, 1.0), rotations=(0, 90)):
+    """Greedy grid packer for parts without a planned position.
+
+    Tries each rotation on a 1 mm grid, left to right, bottom to top, and
+    keeps the first spot that is inside the outline and clear of every box
+    already placed.
+    """
     x0, y0, x1, y1 = outline
-    gx, gy = start_grid
+    gx, gy = step
     result = {}
     boxes = list(placed_boxes)
     for ref in refs:
         fp = footprints[ref]
-        placed = False
-        y = y0 + 3
-        while y < y1 - 3 and not placed:
-            x = x0 + 2.5
-            while x < x1 - 2.5 and not placed:
-                bx = bbox_of(fp, x, y, 0)
-                inside = bx[0] >= x0 and bx[2] <= x1 and bx[1] >= y0 and bx[3] <= y1
-                clear = all(bx[2] <= b[0] or bx[0] >= b[2] or bx[3] <= b[1] or bx[1] >= b[3] for b in boxes)
-                if inside and clear:
-                    result[ref] = (x, y, 0)
-                    boxes.append(bx)
-                    placed = True
-                x += gx
-            y += gy
-        if not placed:
+        spot = None
+        for rot in rotations:
+            y = y0 + 1
+            while y < y1 - 1 and spot is None:
+                x = x0 + 1
+                while x < x1 - 1 and spot is None:
+                    bx = bbox_of(fp, x, y, rot, margin=0.3)
+                    inside = bx[0] >= x0 and bx[2] <= x1 and bx[1] >= y0 and bx[3] <= y1
+                    clear = all(bx[2] <= b[0] or bx[0] >= b[2] or bx[3] <= b[1] or bx[1] >= b[3] for b in boxes)
+                    if inside and clear:
+                        spot = (x, y, rot, bx)
+                    x += gx
+                y += gy
+            if spot:
+                break
+        if spot is None:
             raise RuntimeError("no room for " + ref)
+        x, y, rot, bx = spot
+        result[ref] = (x, y, rot)
+        boxes.append(bx)
     return result
 
 
