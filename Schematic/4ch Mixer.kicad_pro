@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.6,
-          "height": 5.0,
-          "width": 5.0
+          "drill": 2.0,
+          "height": 4.0,
+          "width": 4.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -515,7 +515,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": -1,
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -849,7 +849,7 @@
         "uuid": "63a3e36f-21d6-4747-a383-9f022e8caafb"
       }
     ],
-    "used_designators": "J2-4,J7-8",
+    "used_designators": "C5-6,J2-4,J7-8",
     "variants": []
   },
   "sheets": [

@@ -435,214 +435,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "4ch-Mixer-rescue:CP"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "CP"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Field42" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP* C_Axial* C_Radial* TantalC* C*elec c_elec* SMD*_Pol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CP_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end -2.286 1.016)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 0.508)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 1.016)
-					(end -2.286 1.016)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 1.016)
-					(end 2.286 0.508)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "CP_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "4ch-Mixer-rescue:D"
 			(pin_numbers
 				(hide yes)
@@ -2911,10 +2703,10 @@
 		(uuid "175abfa9-9b3b-41fc-ade6-e6bdb31524aa")
 	)
 	(junction
-		(at 46.99 165.1)
+		(at 123.19 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2010284b-cf70-4a85-8f7f-5f0ce7caf3ef")
+		(uuid "20e0d90c-5a2d-4b67-8eb7-1ae0ebd62ccd")
 	)
 	(junction
 		(at 195.58 66.04)
@@ -2927,6 +2719,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21daccd1-acdf-4dd3-875c-365374cb48a3")
+	)
+	(junction
+		(at 185.42 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26473ad2-d322-441c-84e0-729e9cbc7854")
+	)
+	(junction
+		(at 55.88 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33e23286-1b46-47a6-9fa9-13daa8a5a3e4")
 	)
 	(junction
 		(at 209.55 146.05)
@@ -2947,6 +2751,18 @@
 		(uuid "42208955-3cab-4701-9f82-8e4c2a50e1ee")
 	)
 	(junction
+		(at 55.88 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54d547d0-9621-46fb-a5a2-fd1416e384ce")
+	)
+	(junction
+		(at 55.88 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6aadb0eb-7c1d-41a4-be4c-2a82f8c01a5b")
+	)
+	(junction
 		(at 209.55 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2959,16 +2775,28 @@
 		(uuid "7bf86d0a-89b9-430f-8cc6-a9721cff02b9")
 	)
 	(junction
-		(at 46.99 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "800e4a51-51af-460d-8cd7-854cdf6a7596")
-	)
-	(junction
 		(at 195.58 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ba91211-d7dd-4281-8412-29efad9b1d1f")
+	)
+	(junction
+		(at 195.58 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e1b0127-c5c9-4b9d-93fc-7cee6803333f")
+	)
+	(junction
+		(at 176.53 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fe2dca9-6f75-4015-b058-3c7bd16d714a")
+	)
+	(junction
+		(at 55.88 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9696ddaf-c06f-4063-984d-0f659b1f0d88")
 	)
 	(junction
 		(at 71.12 165.1)
@@ -3017,6 +2845,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b88f5069-1d97-4df8-9e86-3988f98127ba")
+	)
+	(junction
+		(at 106.68 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9c0f2ca-c41f-44d2-b134-33bcd976dd97")
 	)
 	(junction
 		(at 88.9 154.94)
@@ -3079,6 +2913,12 @@
 		(uuid "e3a11d25-c879-4fbf-9d71-01e4957ccf4f")
 	)
 	(junction
+		(at 167.64 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e42685d4-a554-4de0-9a19-a572888bfb30")
+	)
+	(junction
 		(at 157.48 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3089,6 +2929,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e77bf272-17f2-40e2-81c3-8f9969fc7048")
+	)
+	(junction
+		(at 176.53 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8463637-3862-427c-9ce8-40fea19ea129")
 	)
 	(junction
 		(at 71.12 50.8)
@@ -3114,12 +2960,6 @@
 		(color 0 0 0 0)
 		(uuid "f5e67068-4ffc-4254-a5ed-ed79c6b05d4f")
 	)
-	(junction
-		(at 46.99 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fdfbc0b7-2d52-4c85-b30b-71845c97dfc3")
-	)
 	(no_connect
 		(at 231.14 96.52)
 		(uuid "7c3aff5e-f022-421a-b132-a455cc68670a")
@@ -3140,7 +2980,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 45.72) (xy 195.58 52.07)
+			(xy 195.58 45.72) (xy 195.58 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3190,6 +3030,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 127) (xy 55.88 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06d2442d-200c-4456-93ac-d725bf2085fd")
+	)
+	(wire
+		(pts
 			(xy 55.88 148.59) (xy 55.88 146.05)
 		)
 		(stroke
@@ -3220,6 +3070,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 116.84) (xy 123.19 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1097aa52-efa2-4c87-b2b8-30d6972634bc")
+	)
+	(wire
+		(pts
 			(xy 231.14 132.08) (xy 231.14 146.05)
 		)
 		(stroke
@@ -3247,6 +3107,16 @@
 			(type default)
 		)
 		(uuid "14c5af95-a33d-4911-a4b6-22e7248e2a64")
+	)
+	(wire
+		(pts
+			(xy 176.53 48.26) (xy 185.42 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14f457b6-0412-45bc-9d22-bd90fd537b72")
 	)
 	(wire
 		(pts
@@ -3290,6 +3160,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 116.84) (xy 125.73 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e496c3-091c-482f-a626-a5d5d1169ced")
+	)
+	(wire
+		(pts
 			(xy 195.58 66.04) (xy 195.58 59.69)
 		)
 		(stroke
@@ -3297,6 +3177,16 @@
 			(type default)
 		)
 		(uuid "249ee507-aa82-47b2-9818-ad8b127f1d74")
+	)
+	(wire
+		(pts
+			(xy 55.88 88.9) (xy 60.96 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26f0ba63-8b8e-4c33-8d43-8d0c37f14ff4")
 	)
 	(wire
 		(pts
@@ -3320,7 +3210,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 45.72) (xy 185.42 52.07)
+			(xy 185.42 45.72) (xy 185.42 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3337,6 +3227,16 @@
 			(type default)
 		)
 		(uuid "2c725b59-cc40-4085-8c6c-056cd9e5f64c")
+	)
+	(wire
+		(pts
+			(xy 195.58 48.26) (xy 195.58 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d5bc94b-b2da-4db3-955c-b0c1e5329414")
 	)
 	(wire
 		(pts
@@ -3380,6 +3280,26 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 50.8) (xy 55.88 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37f92cc1-4d70-4b17-9a89-f07fd5c4acb3")
+	)
+	(wire
+		(pts
+			(xy 176.53 33.02) (xy 201.93 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3881c1d1-e3e4-46e1-9d34-fd73257a703f")
+	)
+	(wire
+		(pts
 			(xy 43.18 104.14) (xy 46.99 104.14)
 		)
 		(stroke
@@ -3410,7 +3330,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 116.84) (xy 125.73 116.84)
+			(xy 100.33 116.84) (xy 106.68 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3480,6 +3400,36 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 99.06) (xy 133.35 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47aaa435-44bf-42e5-b811-36b9ea64f2d2")
+	)
+	(wire
+		(pts
+			(xy 176.53 33.02) (xy 176.53 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a8f46a4-4463-45a9-9f1e-12a7eb91ac37")
+	)
+	(wire
+		(pts
+			(xy 185.42 48.26) (xy 195.58 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad4ba80-f254-4d26-b197-f6ddb3ab2305")
+	)
+	(wire
+		(pts
 			(xy 180.34 116.84) (xy 182.88 116.84)
 		)
 		(stroke
@@ -3510,7 +3460,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 40.64) (xy 106.68 154.94)
+			(xy 106.68 40.64) (xy 106.68 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3520,7 +3470,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 127) (xy 60.96 127)
+			(xy 46.99 127) (xy 55.88 127)
 		)
 		(stroke
 			(width 0)
@@ -3537,6 +3487,16 @@
 			(type default)
 		)
 		(uuid "56c034c4-09e9-48f3-8592-28fe43a73739")
+	)
+	(wire
+		(pts
+			(xy 106.68 116.84) (xy 106.68 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56ffae31-7bbc-4c53-94fa-d2f83ba8361e")
 	)
 	(wire
 		(pts
@@ -3570,6 +3530,16 @@
 	)
 	(wire
 		(pts
+			(xy 55.88 50.8) (xy 60.96 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "648ed137-4814-49a3-9f81-e406c7cc46b2")
+	)
+	(wire
+		(pts
 			(xy 46.99 71.12) (xy 46.99 88.9)
 		)
 		(stroke
@@ -3577,16 +3547,6 @@
 			(type default)
 		)
 		(uuid "651d944b-e163-4820-a80a-8563ae14042c")
-	)
-	(wire
-		(pts
-			(xy 116.84 99.06) (xy 116.84 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65ccc7b9-4522-4982-b932-37a772d512f8")
 	)
 	(wire
 		(pts
@@ -3620,13 +3580,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 99.06) (xy 116.84 99.06)
+			(xy 55.88 165.1) (xy 60.96 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6a682fff-1ccd-473f-b521-ccf833f62556")
+		(uuid "69c3ff70-3175-4ef5-bbc9-70637700f1ac")
 	)
 	(wire
 		(pts
@@ -3660,7 +3620,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 80.01) (xy 55.88 91.44)
+			(xy 55.88 80.01) (xy 55.88 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3690,6 +3650,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 116.84) (xy 123.19 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a06bd1c-303d-4d71-9f2d-26085deeceb9")
+	)
+	(wire
+		(pts
 			(xy 43.18 68.58) (xy 55.88 68.58)
 		)
 		(stroke
@@ -3710,7 +3680,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 48.26) (xy 226.06 48.26)
+			(xy 149.86 48.26) (xy 167.64 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3720,7 +3690,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 50.8) (xy 60.96 50.8)
+			(xy 46.99 50.8) (xy 55.88 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3780,6 +3750,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 48.26) (xy 226.06 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881984cf-4d13-402b-8707-20aa4f05a588")
+	)
+	(wire
+		(pts
 			(xy 55.88 106.68) (xy 55.88 110.49)
 		)
 		(stroke
@@ -3800,7 +3780,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 33.02) (xy 201.93 33.02)
+			(xy 167.64 33.02) (xy 176.53 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3850,6 +3830,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 48.26) (xy 167.64 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "924a5079-2bd4-406c-aec6-e5f28bd3567f")
+	)
+	(wire
+		(pts
 			(xy 71.12 43.18) (xy 71.12 50.8)
 		)
 		(stroke
@@ -3857,6 +3847,16 @@
 			(type default)
 		)
 		(uuid "94af5be9-2d59-4809-b619-52f6e20b673a")
+	)
+	(wire
+		(pts
+			(xy 185.42 48.26) (xy 185.42 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "952aa331-b3b7-46e9-9e8a-c29a2ddad241")
 	)
 	(wire
 		(pts
@@ -3920,13 +3920,23 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 41.91) (xy 55.88 53.34)
+			(xy 55.88 41.91) (xy 55.88 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9edb4e8c-0429-4888-a2bd-701cd39dc0f9")
+	)
+	(wire
+		(pts
+			(xy 167.64 48.26) (xy 176.53 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a011a8dc-d966-46cd-903a-a548c7223491")
 	)
 	(wire
 		(pts
@@ -3960,17 +3970,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 96.52) (xy 172.72 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "affffaf0-0217-47e8-933f-088725f34a1f")
-	)
-	(wire
-		(pts
-			(xy 55.88 118.11) (xy 55.88 129.54)
+			(xy 55.88 118.11) (xy 55.88 127)
 		)
 		(stroke
 			(width 0)
@@ -4020,7 +4020,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 45.72) (xy 176.53 52.07)
+			(xy 176.53 45.72) (xy 176.53 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4040,7 +4040,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 165.1) (xy 60.96 165.1)
+			(xy 46.99 165.1) (xy 55.88 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4110,7 +4110,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 88.9) (xy 60.96 88.9)
+			(xy 46.99 88.9) (xy 55.88 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4140,7 +4140,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 45.72) (xy 167.64 52.07)
+			(xy 167.64 45.72) (xy 167.64 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4150,7 +4150,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 104.14) (xy 123.19 123.19)
+			(xy 180.34 96.52) (xy 184.15 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1a67d16-55f8-4c82-9f79-1e9018ad84b2")
+	)
+	(wire
+		(pts
+			(xy 123.19 104.14) (xy 123.19 116.84)
 		)
 		(stroke
 			(width 0)
@@ -4170,7 +4180,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 156.21) (xy 55.88 167.64)
+			(xy 55.88 156.21) (xy 55.88 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4197,6 +4207,16 @@
 			(type default)
 		)
 		(uuid "d96df2fd-77cb-4ebe-b666-ef56cec03d13")
+	)
+	(wire
+		(pts
+			(xy 55.88 165.1) (xy 55.88 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9c73b18-57f8-43e1-a4a2-7abeff78be70")
 	)
 	(wire
 		(pts
@@ -4290,7 +4310,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 31.75) (xy 176.53 38.1)
+			(xy 176.53 31.75) (xy 176.53 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4310,6 +4330,26 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 48.26) (xy 176.53 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2496e75-31cf-441d-95ae-82453f614303")
+	)
+	(wire
+		(pts
+			(xy 55.88 127) (xy 60.96 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2de6e19-de02-4b60-92b8-1198a93b9411")
+	)
+	(wire
+		(pts
 			(xy 55.88 68.58) (xy 55.88 72.39)
 		)
 		(stroke
@@ -4317,6 +4357,16 @@
 			(type default)
 		)
 		(uuid "f3afcc45-e8c8-4f97-b8f4-30f162668449")
+	)
+	(wire
+		(pts
+			(xy 55.88 88.9) (xy 55.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3ed86e6-22d4-4d28-83a8-fc0828037762")
 	)
 	(wire
 		(pts
@@ -4357,16 +4407,6 @@
 			(type default)
 		)
 		(uuid "f8820624-ac0c-4a6f-9092-163b1860dc0d")
-	)
-	(wire
-		(pts
-			(xy 172.72 96.52) (xy 184.15 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fab3c1ef-476b-4f39-ae56-e733f9c53e3c")
 	)
 	(wire
 		(pts
@@ -6859,7 +6899,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:R")
-		(at 96.52 40.64 90)
+		(at 96.52 40.64 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6870,7 +6910,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a07dff")
 		(property "Reference" "R9"
-			(at 96.52 42.672 90)
+			(at 96.52 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6890,7 +6930,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 96.52 38.862 90)
+			(at 96.52 42.418 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7245,7 +7285,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 116.84 104.14 0)
+		(at 129.54 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7255,7 +7295,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a097b5")
 		(property "Reference" "#PWR014"
-			(at 116.84 110.49 0)
+			(at 129.54 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7266,7 +7306,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 116.84 107.95 0)
+			(at 129.54 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7276,7 +7316,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 104.14 0)
+			(at 129.54 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7286,7 +7326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 104.14 0)
+			(at 129.54 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7296,7 +7336,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 104.14 0)
+			(at 129.54 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7718,7 +7758,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 172.72 106.68 0)
+		(at 180.34 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7728,7 +7768,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a0b28f")
 		(property "Reference" "#PWR017"
-			(at 172.72 113.03 0)
+			(at 180.34 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7739,7 +7779,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 172.72 110.49 0)
+			(at 180.34 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7749,7 +7789,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 106.68 0)
+			(at 180.34 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7759,7 +7799,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 106.68 0)
+			(at 180.34 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7769,7 +7809,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 172.72 106.68 0)
+			(at 180.34 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8403,164 +8443,6 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4ch-Mixer-rescue:CP")
-		(at 185.42 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000058a145ea")
-		(property "Reference" "C5"
-			(at 186.055 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uf"
-			(at 186.055 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
-			(at 186.3852 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 185.42 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1779fed5-efc3-4134-b2d7-6cf36e3e302d")
-		)
-		(pin "2"
-			(uuid "b2443ecb-d7dd-4f3f-b1f8-e5f93538b676")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4ch-Mixer-rescue:CP")
-		(at 185.42 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000058a1466f")
-		(property "Reference" "C6"
-			(at 186.055 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uf"
-			(at 186.055 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
-			(at 186.3852 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 185.42 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 185.42 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2a67818e-37e9-452a-9527-e41501f3fae0")
-		)
-		(pin "2"
-			(uuid "a591dc67-fb50-4869-9d3c-70bc8f765d9a")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -10014,80 +9896,6 @@
 		)
 	)
 	(symbol
-		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "45f8a9ed-7734-4197-a275-092bbc724deb")
-		(property "Reference" "#PWR028"
-			(at 55.88 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f13")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
 		(at 236.22 129.54 180)
 		(unit 1)
@@ -10170,8 +9978,8 @@
 		)
 	)
 	(symbol
-		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 165.1 0)
+		(lib_id "4ch-Mixer-rescue:C")
+		(at 185.42 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10179,9 +9987,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4fa6dff8-2535-4b39-8c4d-d26261956fa7")
-		(property "Reference" "#PWR030"
-			(at 55.88 59.69 0)
+		(uuid "6c081fad-ee77-4f5c-a8dd-62f7e72e8396")
+		(property "Reference" "C6"
+			(at 186.055 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uf"
+			(at 186.055 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 186.3852 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10191,28 +10021,8 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 55.88 53.34 0)
+			(at 185.42 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10222,7 +10032,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 53.34 0)
+			(at 185.42 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10232,12 +10042,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f15")
+			(uuid "acaf9c97-f3af-4b44-98c8-39c315ae5d27")
+		)
+		(pin "2"
+			(uuid "e7bcae85-add9-419f-9c59-a32dbebf4490")
 		)
 		(instances
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "#PWR030")
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:C")
+		(at 185.42 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8400d6b8-1823-48ca-9d4e-4674fefb478d")
+		(property "Reference" "C5"
+			(at 186.055 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uf"
+			(at 186.055 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 186.3852 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5bfb4b7b-f9e2-4cf4-89f2-3d539c6d6fbc")
+		)
+		(pin "2"
+			(uuid "c0935f3b-81f2-4db7-9805-af3b4d67b85c")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -10747,80 +10639,6 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f3aa1a69-7beb-4731-91db-b89adabba477")
-		(property "Reference" "#PWR027"
-			(at 55.88 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f12")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "#PWR027")
 					(unit 1)
 				)
 			)
