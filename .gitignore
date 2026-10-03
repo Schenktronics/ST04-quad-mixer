@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# KiCad local files (per-user state, autosave history, backups, lock files)
+*.kicad_prl
+*.lck
+Schematic/.history/
+Schematic/rescue-backup/
