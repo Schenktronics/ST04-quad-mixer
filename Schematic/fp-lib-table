@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "_NTSFootprints") (type "KiCad") (uri "${KIPRJMOD}/lib/_NTSFootprints.pretty") (options "") (descr "Schenktronics custom footprints"))
+)
