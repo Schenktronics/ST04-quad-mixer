@@ -168,11 +168,15 @@ def wrap_footprint(fp_tree, ref, value, x, y, rot, net_index, layer="F.Cu"):
     fpid = fp_tree[1]
     out = ["footprint", fpid, ["layer", Str(layer)], ["uuid", Str(str(uuid.uuid4()))],
            ["at", x, y] + ([rot] if rot else [])]
+    # Labels follow the part's side: back-mounted parts get B.* layers.
+    back = layer == "B.Cu"
+    silk = "B.SilkS" if back else "F.SilkS"
+    fab = "B.Fab" if back else "F.Fab"
     ref_prop = ["property", Str("Reference"), Str(ref),
-                ["at", 0, -2.5, 0], ["layer", Str("F.SilkS")],
+                ["at", 0, -2.5 if not back else 2.5, 0], ["layer", Str(silk)],
                 ["effects", ["font", ["size", 1, 1], ["thickness", 0.15]]]]
     val_prop = ["property", Str("Value"), Str(value),
-                ["at", 0, 2.5, 0], ["layer", Str("F.Fab")],
+                ["at", 0, 2.5 if not back else -2.5, 0], ["layer", Str(fab)],
                 ["effects", ["font", ["size", 1, 1], ["thickness", 0.15]]]]
     out += [ref_prop, val_prop]
     for child in fp_tree[2:]:
