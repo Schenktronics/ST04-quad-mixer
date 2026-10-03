@@ -6,3 +6,4 @@
 *.lck
 Schematic/.history/
 Schematic/rescue-backup/
+__pycache__/
