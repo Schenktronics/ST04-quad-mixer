@@ -251,7 +251,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "A"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -846,13 +846,18 @@
       {
         "filename": "4ch Mixer.kicad_sch",
         "name": "4ch Mixer",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "63a3e36f-21d6-4747-a383-9f022e8caafb"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J7",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "63a3e36f-21d6-4747-a383-9f022e8caafb",
+      "4ch Mixer"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

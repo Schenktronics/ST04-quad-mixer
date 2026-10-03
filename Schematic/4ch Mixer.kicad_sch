@@ -631,570 +631,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "4ch-Mixer-rescue:CONN_02X08"
-			(pin_names
-				(offset 0.0254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "P"
-				(at 0 11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "CONN_02X08"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -30.48 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -30.48 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Field42" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Pin_Header_Straight_2X08 Pin_Header_Angled_2X08 Socket_Strip_Straight_2X08 Socket_Strip_Angled_2X08"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "CONN_02X08_0_1"
-				(rectangle
-					(start -2.54 10.16)
-					(end 2.54 -10.16)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 9.017)
-					(end -1.27 8.763)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 6.477)
-					(end -1.27 6.223)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 3.937)
-					(end -1.27 3.683)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 1.397)
-					(end -1.27 1.143)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -1.143)
-					(end -1.27 -1.397)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -3.683)
-					(end -1.27 -3.937)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -6.223)
-					(end -1.27 -6.477)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -8.763)
-					(end -1.27 -9.017)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 9.017)
-					(end 2.54 8.763)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 6.477)
-					(end 2.54 6.223)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 3.937)
-					(end 2.54 3.683)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 1.397)
-					(end 2.54 1.143)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -1.143)
-					(end 2.54 -1.397)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -3.683)
-					(end 2.54 -3.937)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -6.223)
-					(end 2.54 -6.477)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -8.763)
-					(end 2.54 -9.017)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "CONN_02X08_1_1"
-				(pin passive line
-					(at -6.35 8.89 0)
-					(length 3.81)
-					(name "P1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 8.89 180)
-					(length 3.81)
-					(name "P2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 6.35 0)
-					(length 3.81)
-					(name "P3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 6.35 180)
-					(length 3.81)
-					(name "P4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 3.81 0)
-					(length 3.81)
-					(name "P5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 3.81 180)
-					(length 3.81)
-					(name "P6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 1.27 0)
-					(length 3.81)
-					(name "P7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 1.27 180)
-					(length 3.81)
-					(name "P8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -1.27 0)
-					(length 3.81)
-					(name "P9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -1.27 180)
-					(length 3.81)
-					(name "P10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -3.81 0)
-					(length 3.81)
-					(name "P11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -3.81 180)
-					(length 3.81)
-					(name "P12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -6.35 0)
-					(length 3.81)
-					(name "P13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -6.35 180)
-					(length 3.81)
-					(name "P14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -8.89 0)
-					(length 3.81)
-					(name "P15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -8.89 180)
-					(length 3.81)
-					(name "P16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "4ch-Mixer-rescue:CP"
 			(pin_numbers
 				(hide yes)
@@ -3050,24 +2486,408 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(junction
-		(at 226.06 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05e25df9-3198-48b8-9c05-902281205ba3")
-	)
-	(junction
-		(at 226.06 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0775c50d-2d14-4900-a843-283dcf396ee8")
+		(symbol "Connector_Generic:Conn_02x05_Odd_Even"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 1.27 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_02x05_Odd_Even"
+				(at 1.27 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_02x05_Odd_Even_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 3.81 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 5.207)
+					(end 2.54 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 2.667)
+					(end 2.54 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -4.953)
+					(end 2.54 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 3.81)
+					(name "Pin_10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 88.9 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ea99a9e-ee99-491c-913b-1da9bfa05fe0")
+	)
+	(junction
+		(at 226.06 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1576bb1b-660e-420d-9a7c-7dc73511f62d")
 	)
 	(junction
 		(at 88.9 78.74)
@@ -3104,12 +2924,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dffcdf8-6ef5-44a8-9542-c444d119cd22")
-	)
-	(junction
-		(at 226.06 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3face792-7381-40f9-b63d-a387da0a13d5")
 	)
 	(junction
 		(at 88.9 116.84)
@@ -3166,12 +2980,6 @@
 		(uuid "9a6776f6-f34d-428b-b619-8467306c2466")
 	)
 	(junction
-		(at 226.06 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad885739-29ee-47a8-b70a-841d33660719")
-	)
-	(junction
 		(at 176.53 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3182,6 +2990,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6196f96-7241-4049-8b44-bc34dab3bdf9")
+	)
+	(junction
+		(at 226.06 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b68f7f9c-6e37-4637-87ac-bf450da0c636")
 	)
 	(junction
 		(at 88.9 154.94)
@@ -3208,10 +3022,22 @@
 		(uuid "d813b699-ece6-4388-a320-c93afd6ed81d")
 	)
 	(junction
+		(at 226.06 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd15eefd-4634-4947-8695-a0e4290f0fc8")
+	)
+	(junction
 		(at 200.66 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "de683a5e-67a2-4f84-a03b-120333dec245")
+	)
+	(junction
+		(at 226.06 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1d50b93-7c7b-4af2-8b8e-e6bfb2c94ea7")
 	)
 	(junction
 		(at 46.99 151.13)
@@ -3256,36 +3082,12 @@
 		(uuid "f5e67068-4ffc-4254-a5ed-ed79c6b05d4f")
 	)
 	(no_connect
-		(at 226.06 40.64)
-		(uuid "309dfc47-a379-4734-b6d7-42022e077dd3")
-	)
-	(no_connect
-		(at 238.76 38.1)
-		(uuid "64333167-5871-4d4e-a42b-4b69ecf6b129")
-	)
-	(no_connect
-		(at 226.06 43.18)
-		(uuid "8ce7569c-f23e-442e-8d4e-52174abd62bd")
-	)
-	(no_connect
-		(at 226.06 38.1)
-		(uuid "912c707f-696e-4980-b2d6-b0222a30a67b")
-	)
-	(no_connect
 		(at 231.14 101.6)
 		(uuid "96f78e06-5511-42e9-a93f-60808d9e4ffb")
 	)
 	(no_connect
-		(at 238.76 43.18)
-		(uuid "c60f0209-157c-4284-a218-e7eda0f6d5c7")
-	)
-	(no_connect
 		(at 231.14 132.08)
 		(uuid "d752fb9c-d758-426b-98a7-7b7394b189ff")
-	)
-	(no_connect
-		(at 238.76 40.64)
-		(uuid "dd331c04-d9d8-4dc3-99e7-240403cfbea9")
 	)
 	(wire
 		(pts
@@ -3329,7 +3131,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 45.72) (xy 238.76 45.72)
+			(xy 209.55 45.72) (xy 226.06 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3376,6 +3178,16 @@
 			(type default)
 		)
 		(uuid "0adaf447-0e2e-407b-a7b7-f933a9848e6a")
+	)
+	(wire
+		(pts
+			(xy 226.06 48.26) (xy 238.76 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf718e4-fd08-4472-9e46-5672e6a11bb9")
 	)
 	(wire
 		(pts
@@ -3849,7 +3661,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 48.26) (xy 238.76 48.26)
+			(xy 149.86 48.26) (xy 226.06 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4029,6 +3841,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 55.88) (xy 238.76 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e9fbcaf-7df8-44d2-b342-ee3824c6593e")
+	)
+	(wire
+		(pts
 			(xy 55.88 41.91) (xy 55.88 53.34)
 		)
 		(stroke
@@ -4046,6 +3868,16 @@
 			(type default)
 		)
 		(uuid "a2dbb9a0-f6d8-4ef3-8a85-ffb4a56dcacb")
+	)
+	(wire
+		(pts
+			(xy 226.06 45.72) (xy 238.76 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5f8aa7c-5d10-4ba8-99a5-21e5507697cb")
 	)
 	(wire
 		(pts
@@ -4379,7 +4211,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 55.88) (xy 238.76 55.88)
+			(xy 209.55 55.88) (xy 226.06 55.88)
 		)
 		(stroke
 			(width 0)
@@ -4540,7 +4372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -4655,7 +4487,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 140.97 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5017,302 +4849,6 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f3aa1a69-7beb-4731-91db-b89adabba477")
-		(property "Reference" "#PWR027"
-			(at 55.88 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f12")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "45f8a9ed-7734-4197-a275-092bbc724deb")
-		(property "Reference" "#PWR028"
-			(at 55.88 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f12")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 127.0 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d2e3e625-c877-4328-aa65-7173dc6c65fe")
-		(property "Reference" "#PWR029"
-			(at 55.88 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f12")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "#PWR029")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 165.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4fa6dff8-2535-4b39-8c4d-d26261956fa7")
-		(property "Reference" "#PWR030"
-			(at 55.88 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f12")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4ch-Mixer-rescue:GNDA")
 		(at 55.88 53.34 0)
 		(unit 1)
 		(body_style 1)
@@ -5374,7 +4910,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "87572cf7-6298-4495-9ef9-2247add97f12")
+			(uuid "87572cf7-6298-4495-9ef9-2247add97f16")
 		)
 		(instances
 			(project "4ch Mixer"
@@ -5416,7 +4952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 64.77 49.022 90)
 			(hide yes)
 			(show_name no)
@@ -5494,7 +5030,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 82.55 49.022 90)
 			(hide yes)
 			(show_name no)
@@ -5573,7 +5109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 77.47 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5908,7 +5444,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 64.77 87.122 90)
 			(hide yes)
 			(show_name no)
@@ -5986,7 +5522,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 82.55 87.122 90)
 			(hide yes)
 			(show_name no)
@@ -6065,7 +5601,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 77.47 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6400,7 +5936,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 64.77 125.222 90)
 			(hide yes)
 			(show_name no)
@@ -6478,7 +6014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 82.55 125.222 90)
 			(hide yes)
 			(show_name no)
@@ -6557,7 +6093,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 77.47 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -6818,7 +6354,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 64.77 163.322 90)
 			(hide yes)
 			(show_name no)
@@ -6896,7 +6432,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 82.55 163.322 90)
 			(hide yes)
 			(show_name no)
@@ -6973,7 +6509,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Horizontal"
+		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
 			(at 55.88 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7053,7 +6589,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Horizontal"
+		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
 			(at 55.88 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -7133,7 +6669,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Horizontal"
+		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
 			(at 55.88 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7213,7 +6749,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Horizontal"
+		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
 			(at 55.88 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -7294,7 +6830,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 96.52 38.862 90)
 			(hide yes)
 			(show_name no)
@@ -7371,7 +6907,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 96.52 76.962 90)
 			(hide yes)
 			(show_name no)
@@ -7448,7 +6984,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 96.52 115.062 90)
 			(hide yes)
 			(show_name no)
@@ -7525,7 +7061,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 96.52 153.162 90)
 			(hide yes)
 			(show_name no)
@@ -7602,7 +7138,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 129.54 115.062 90)
 			(hide yes)
 			(show_name no)
@@ -7755,7 +7291,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 191.77 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7850,7 +7386,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 163.83 99.822 90)
 			(hide yes)
 			(show_name no)
@@ -8075,7 +7611,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 186.69 115.062 90)
 			(hide yes)
 			(show_name no)
@@ -8226,7 +7762,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 207.772 102.87 90)
 			(hide yes)
 			(show_name no)
@@ -8451,7 +7987,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 207.772 133.35 90)
 			(hide yes)
 			(show_name no)
@@ -8530,7 +8066,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P10.00mm_Horizontal"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 168.6052 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8609,7 +8145,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P10.00mm_Horizontal"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 168.6052 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -8688,7 +8224,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P10.00mm_Horizontal"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 177.4952 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8767,7 +8303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P10.00mm_Horizontal"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 177.4952 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -8846,7 +8382,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 186.3852 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8925,7 +8461,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 186.3852 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -9002,7 +8538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 222.25 97.282 90)
 			(hide yes)
 			(show_name no)
@@ -9079,7 +8615,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 222.25 127.762 90)
 			(hide yes)
 			(show_name no)
@@ -9126,125 +8662,6 @@
 		)
 	)
 	(symbol
-		(lib_id "4ch-Mixer-rescue:CONN_02X08")
-		(at 232.41 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000058add463")
-		(property "Reference" "P1"
-			(at 232.41 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CONN_02X08"
-			(at 232.41 46.99 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
-			(at 232.41 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 232.41 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 232.41 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "51b26126-b2ee-4822-8965-0ed50ecee96b")
-		)
-		(pin "2"
-			(uuid "3d77821a-37c5-46dc-9cb6-72dea28e1697")
-		)
-		(pin "3"
-			(uuid "07d9a600-c828-4e44-8be9-2f1253cc97c9")
-		)
-		(pin "4"
-			(uuid "899e897e-b528-44a8-94b7-e5f951bc31a1")
-		)
-		(pin "5"
-			(uuid "178a5893-fcf0-4a34-8a66-b25beeebe94e")
-		)
-		(pin "6"
-			(uuid "78fcd4a3-bb78-4d96-9c6e-f76ad477ec4d")
-		)
-		(pin "7"
-			(uuid "a5782860-1c33-492e-9606-df5d0fc39523")
-		)
-		(pin "8"
-			(uuid "bb0882aa-d731-4454-97d9-31469b424b9a")
-		)
-		(pin "9"
-			(uuid "9a5e5460-debc-4341-975e-dfae8a749eb2")
-		)
-		(pin "10"
-			(uuid "2780aa11-2493-4c46-829a-19cd3b51c3e0")
-		)
-		(pin "11"
-			(uuid "9053c788-37b4-4f0e-8b27-e83c671f895a")
-		)
-		(pin "12"
-			(uuid "3a380ae6-4c84-4e25-a7c1-234b5d68bee9")
-		)
-		(pin "13"
-			(uuid "16eb7ede-abb6-4805-a43d-69d742f883ff")
-		)
-		(pin "14"
-			(uuid "44fcc2bc-e266-4d16-ad8a-c6102ab50386")
-		)
-		(pin "15"
-			(uuid "5efa79c2-80d8-46c6-87ce-d4029b3eadcd")
-		)
-		(pin "16"
-			(uuid "fbb6feda-1921-4a7a-9d0d-6adaa9c1a6c9")
-		)
-		(instances
-			(project "4ch Mixer"
-				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
-					(reference "P1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "4ch-Mixer-rescue:D")
 		(at 195.58 41.91 270)
 		(unit 1)
@@ -9275,7 +8692,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 195.58 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -9352,7 +8769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9429,7 +8846,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 200.66 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -9508,7 +8925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric"
 			(at 200.66 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -9589,7 +9006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:3.5mm_Mono_Vertical_QuingPu_WQP-PJ301M-12"
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
 			(at 40.64 29.845 0)
 			(hide yes)
 			(show_name no)
@@ -9672,7 +9089,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:3.5mm_Mono_Vertical_QuingPu_WQP-PJ301M-12"
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
 			(at 40.64 66.675 0)
 			(hide yes)
 			(show_name no)
@@ -9755,7 +9172,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:3.5mm_Mono_Vertical_QuingPu_WQP-PJ301M-12"
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
 			(at 40.64 104.775 0)
 			(hide yes)
 			(show_name no)
@@ -9838,7 +9255,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:3.5mm_Mono_Vertical_QuingPu_WQP-PJ301M-12"
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
 			(at 40.64 144.145 0)
 			(hide yes)
 			(show_name no)
@@ -9920,7 +9337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:3.5mm_Mono_Vertical_QuingPu_WQP-PJ301M-12"
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
 			(at 234.95 97.155 0)
 			(hide yes)
 			(show_name no)
@@ -10002,7 +9419,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:3.5mm_Mono_Vertical_QuingPu_WQP-PJ301M-12"
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
 			(at 234.95 127.635 0)
 			(hide yes)
 			(show_name no)
@@ -10381,7 +9798,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 182.88 124.1552 0)
 			(hide yes)
 			(show_name no)
@@ -10682,7 +10099,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 125.73 124.1552 0)
 			(hide yes)
 			(show_name no)
@@ -10945,6 +10362,406 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "#FLG029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:GNDA")
+		(at 46.99 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45f8a9ed-7734-4197-a275-092bbc724deb")
+		(property "Reference" "#PWR028"
+			(at 55.88 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 55.88 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87572cf7-6298-4495-9ef9-2247add97f13")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:GNDA")
+		(at 46.99 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4fa6dff8-2535-4b39-8c4d-d26261956fa7")
+		(property "Reference" "#PWR030"
+			(at 55.88 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 55.88 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87572cf7-6298-4495-9ef9-2247add97f15")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
+		(at 233.68 50.8 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cab0e1ce-f554-4278-bc06-b14547cac2b9")
+		(property "Reference" "P1"
+			(at 232.41 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Power"
+			(at 232.41 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 233.68 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06274ac7-c66b-4817-8b60-13e203d6c5a6")
+		)
+		(pin "2"
+			(uuid "33c1268a-65d9-4ec4-aa54-47f4a838bfca")
+		)
+		(pin "3"
+			(uuid "076daf2e-e95a-49f0-8b91-f37e2283eef3")
+		)
+		(pin "4"
+			(uuid "d0a232e2-954d-4b40-b0f7-5b05efae74f7")
+		)
+		(pin "5"
+			(uuid "37fde54f-712e-4bd2-b3d4-178fb7e6233c")
+		)
+		(pin "6"
+			(uuid "53db2834-ee15-4b8a-9e29-f4ea8731231d")
+		)
+		(pin "7"
+			(uuid "7b520e9f-dc9d-412a-b5f8-53491b9da469")
+		)
+		(pin "8"
+			(uuid "ff72eeec-4659-4450-b851-ba115829fa6e")
+		)
+		(pin "9"
+			(uuid "f155e468-7127-4581-a159-de237a4ab49b")
+		)
+		(pin "10"
+			(uuid "732d72f5-e4b6-479c-892e-dad5e71fdcf3")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "P1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:GNDA")
+		(at 46.99 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d2e3e625-c877-4328-aa65-7173dc6c65fe")
+		(property "Reference" "#PWR029"
+			(at 55.88 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 55.88 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87572cf7-6298-4495-9ef9-2247add97f14")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:GNDA")
+		(at 46.99 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3aa1a69-7beb-4731-91db-b89adabba477")
+		(property "Reference" "#PWR027"
+			(at 55.88 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 55.88 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87572cf7-6298-4495-9ef9-2247add97f12")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
