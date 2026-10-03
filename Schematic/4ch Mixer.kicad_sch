@@ -2727,7 +2727,7 @@
 		(uuid "26473ad2-d322-441c-84e0-729e9cbc7854")
 	)
 	(junction
-		(at 55.88 127)
+		(at 41.91 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33e23286-1b46-47a6-9fa9-13daa8a5a3e4")
@@ -2751,16 +2751,34 @@
 		(uuid "42208955-3cab-4701-9f82-8e4c2a50e1ee")
 	)
 	(junction
-		(at 55.88 50.8)
+		(at 57.15 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4258f84e-db7b-4eac-9d89-6d750eae7f91")
+	)
+	(junction
+		(at 41.91 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54d547d0-9621-46fb-a5a2-fd1416e384ce")
 	)
 	(junction
-		(at 55.88 88.9)
+		(at 57.15 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "608bdc42-ef95-4059-821b-b6428cb09341")
+	)
+	(junction
+		(at 41.91 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6aadb0eb-7c1d-41a4-be4c-2a82f8c01a5b")
+	)
+	(junction
+		(at 57.15 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "739183b5-55e8-46fb-adf7-a0dd1cf8f134")
 	)
 	(junction
 		(at 209.55 99.06)
@@ -2769,7 +2787,7 @@
 		(uuid "76d021db-c177-4e36-a314-4916fc20ebe5")
 	)
 	(junction
-		(at 46.99 33.02)
+		(at 33.02 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7bf86d0a-89b9-430f-8cc6-a9721cff02b9")
@@ -2793,7 +2811,7 @@
 		(uuid "8fe2dca9-6f75-4015-b058-3c7bd16d714a")
 	)
 	(junction
-		(at 55.88 165.1)
+		(at 41.91 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9696ddaf-c06f-4063-984d-0f659b1f0d88")
@@ -2817,7 +2835,7 @@
 		(uuid "9a6776f6-f34d-428b-b619-8467306c2466")
 	)
 	(junction
-		(at 46.99 148.59)
+		(at 33.02 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad674b84-91ca-4fac-90b1-00bc1913c58d")
@@ -2841,7 +2859,7 @@
 		(uuid "b68f7f9c-6e37-4637-87ac-bf450da0c636")
 	)
 	(junction
-		(at 46.99 127)
+		(at 33.02 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b88f5069-1d97-4df8-9e86-3988f98127ba")
@@ -2859,7 +2877,7 @@
 		(uuid "bd07ccff-3f66-4e17-863b-4e189c78a490")
 	)
 	(junction
-		(at 46.99 71.12)
+		(at 33.02 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c00c7b28-71a4-434b-9072-fc7c1a404aa2")
@@ -2889,6 +2907,12 @@
 		(uuid "d813b699-ece6-4388-a320-c93afd6ed81d")
 	)
 	(junction
+		(at 57.15 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9522cc1-6e97-427a-bd75-d75f51c0ea55")
+	)
+	(junction
 		(at 226.06 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2907,7 +2931,7 @@
 		(uuid "e1d50b93-7c7b-4af2-8b8e-e6bfb2c94ea7")
 	)
 	(junction
-		(at 46.99 109.22)
+		(at 33.02 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3a11d25-c879-4fbf-9d71-01e4957ccf4f")
@@ -2970,7 +2994,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 109.22) (xy 46.99 127)
+			(xy 33.02 109.22) (xy 33.02 127)
 		)
 		(stroke
 			(width 0)
@@ -3030,7 +3054,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 127) (xy 55.88 129.54)
+			(xy 41.91 127) (xy 41.91 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3040,7 +3064,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 148.59) (xy 55.88 146.05)
+			(xy 41.91 148.59) (xy 41.91 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3067,6 +3091,16 @@
 			(type default)
 		)
 		(uuid "0bf718e4-fd08-4472-9e46-5672e6a11bb9")
+	)
+	(wire
+		(pts
+			(xy 57.15 38.1) (xy 71.12 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0db7e7c7-81b6-4ca6-99f1-75a90aba8ee6")
 	)
 	(wire
 		(pts
@@ -3100,7 +3134,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 104.14) (xy 46.99 109.22)
+			(xy 33.02 104.14) (xy 33.02 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3120,7 +3154,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 109.22) (xy 46.99 109.22)
+			(xy 29.21 109.22) (xy 33.02 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3140,7 +3174,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 27.94) (xy 46.99 33.02)
+			(xy 33.02 27.94) (xy 33.02 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3150,7 +3184,17 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 71.12) (xy 46.99 71.12)
+			(xy 53.34 152.4) (xy 71.12 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "198f5677-2799-41ca-bd6a-110f296ac1c4")
+	)
+	(wire
+		(pts
+			(xy 29.21 71.12) (xy 33.02 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3177,16 +3221,6 @@
 			(type default)
 		)
 		(uuid "249ee507-aa82-47b2-9818-ad8b127f1d74")
-	)
-	(wire
-		(pts
-			(xy 55.88 88.9) (xy 60.96 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26f0ba63-8b8e-4c33-8d43-8d0c37f14ff4")
 	)
 	(wire
 		(pts
@@ -3270,7 +3304,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 148.59) (xy 46.99 165.1)
+			(xy 33.02 148.59) (xy 33.02 165.1)
 		)
 		(stroke
 			(width 0)
@@ -3280,7 +3314,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 50.8) (xy 55.88 53.34)
+			(xy 41.91 50.8) (xy 41.91 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3300,7 +3334,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 104.14) (xy 46.99 104.14)
+			(xy 29.21 104.14) (xy 33.02 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3310,7 +3344,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 66.04) (xy 46.99 66.04)
+			(xy 29.21 66.04) (xy 33.02 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3440,7 +3474,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 143.51) (xy 46.99 143.51)
+			(xy 29.21 143.51) (xy 33.02 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3470,7 +3504,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 127) (xy 55.88 127)
+			(xy 33.02 127) (xy 41.91 127)
 		)
 		(stroke
 			(width 0)
@@ -3500,7 +3534,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 66.04) (xy 46.99 71.12)
+			(xy 33.02 66.04) (xy 33.02 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3530,17 +3564,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 50.8) (xy 60.96 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "648ed137-4814-49a3-9f81-e406c7cc46b2")
-	)
-	(wire
-		(pts
-			(xy 46.99 71.12) (xy 46.99 88.9)
+			(xy 33.02 71.12) (xy 33.02 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3580,16 +3604,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 165.1) (xy 60.96 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69c3ff70-3175-4ef5-bbc9-70637700f1ac")
-	)
-	(wire
-		(pts
 			(xy 76.2 48.26) (xy 76.2 55.88)
 		)
 		(stroke
@@ -3620,7 +3634,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 80.01) (xy 55.88 88.9)
+			(xy 41.91 80.01) (xy 41.91 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3630,7 +3644,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 146.05) (xy 55.88 146.05)
+			(xy 29.21 146.05) (xy 41.91 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3660,7 +3674,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 68.58) (xy 55.88 68.58)
+			(xy 29.21 68.58) (xy 41.91 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3670,7 +3684,17 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 148.59) (xy 46.99 148.59)
+			(xy 41.91 50.8) (xy 60.96 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a91225e-9f5b-400d-be93-639c66248252")
+	)
+	(wire
+		(pts
+			(xy 29.21 148.59) (xy 33.02 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3690,7 +3714,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 50.8) (xy 55.88 50.8)
+			(xy 33.02 50.8) (xy 41.91 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3707,16 +3731,6 @@
 			(type default)
 		)
 		(uuid "7ec5e4e0-afda-4e7f-a63a-a5cce9ac90f6")
-	)
-	(wire
-		(pts
-			(xy 59.69 76.2) (xy 71.12 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "808fc299-3508-45bd-99ae-24d0d603dae4")
 	)
 	(wire
 		(pts
@@ -3740,7 +3754,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 33.02) (xy 46.99 33.02)
+			(xy 29.21 33.02) (xy 33.02 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3760,7 +3774,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 106.68) (xy 55.88 110.49)
+			(xy 41.91 127) (xy 60.96 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "886ee38e-c71a-40de-980f-484f92353364")
+	)
+	(wire
+		(pts
+			(xy 41.91 106.68) (xy 41.91 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3860,6 +3884,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 38.1) (xy 57.15 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97aeb9aa-5531-4f80-b63f-ed2b55d7d9cd")
+	)
+	(wire
+		(pts
 			(xy 157.48 101.6) (xy 157.48 129.54)
 		)
 		(stroke
@@ -3870,23 +3904,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 106.68) (xy 55.88 106.68)
+			(xy 29.21 106.68) (xy 41.91 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9bb5c8b5-54e8-47e3-8045-146561f322f0")
-	)
-	(wire
-		(pts
-			(xy 71.12 152.4) (xy 59.69 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bfa720b-606e-46f9-9b85-d689b0cbca7c")
 	)
 	(wire
 		(pts
@@ -3900,7 +3924,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 27.94) (xy 46.99 27.94)
+			(xy 29.21 27.94) (xy 33.02 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3920,7 +3944,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 41.91) (xy 55.88 50.8)
+			(xy 41.91 41.91) (xy 41.91 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3937,6 +3961,16 @@
 			(type default)
 		)
 		(uuid "a011a8dc-d966-46cd-903a-a548c7223491")
+	)
+	(wire
+		(pts
+			(xy 53.34 114.3) (xy 71.12 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1758152-70a8-46b9-8bf4-25634b4c640f")
 	)
 	(wire
 		(pts
@@ -3970,7 +4004,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 118.11) (xy 55.88 127)
+			(xy 41.91 118.11) (xy 41.91 127)
 		)
 		(stroke
 			(width 0)
@@ -4020,6 +4054,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 76.2) (xy 71.12 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b70ab8c1-14cd-4782-b83c-528df57e7e87")
+	)
+	(wire
+		(pts
 			(xy 176.53 45.72) (xy 176.53 48.26)
 		)
 		(stroke
@@ -4040,7 +4084,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 165.1) (xy 55.88 165.1)
+			(xy 33.02 165.1) (xy 41.91 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4070,7 +4114,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 143.51) (xy 46.99 148.59)
+			(xy 33.02 143.51) (xy 33.02 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4100,17 +4144,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 38.1) (xy 71.12 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c82f0923-2be4-4b35-abed-376a2eab45c2")
-	)
-	(wire
-		(pts
-			(xy 46.99 88.9) (xy 55.88 88.9)
+			(xy 33.02 88.9) (xy 41.91 88.9)
 		)
 		(stroke
 			(width 0)
@@ -4180,7 +4214,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 156.21) (xy 55.88 165.1)
+			(xy 41.91 156.21) (xy 41.91 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4200,6 +4234,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 88.9) (xy 60.96 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d828d319-65c7-4546-aa14-a3b2f459391e")
+	)
+	(wire
+		(pts
 			(xy 78.74 127) (xy 68.58 127)
 		)
 		(stroke
@@ -4210,7 +4254,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 165.1) (xy 55.88 167.64)
+			(xy 41.91 165.1) (xy 41.91 167.64)
 		)
 		(stroke
 			(width 0)
@@ -4260,6 +4304,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 165.1) (xy 60.96 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4e95ce7-c268-4008-a3e1-3d9e52531764")
+	)
+	(wire
+		(pts
 			(xy 185.42 66.04) (xy 185.42 59.69)
 		)
 		(stroke
@@ -4290,23 +4344,13 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 33.02) (xy 46.99 50.8)
+			(xy 33.02 33.02) (xy 33.02 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ec043413-9f3b-4176-a96d-3716d1142c28")
-	)
-	(wire
-		(pts
-			(xy 59.69 114.3) (xy 71.12 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed31f71c-8dab-4b18-baf4-4c24a2b35db2")
 	)
 	(wire
 		(pts
@@ -4340,17 +4384,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 127) (xy 60.96 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2de6e19-de02-4b60-92b8-1198a93b9411")
-	)
-	(wire
-		(pts
-			(xy 55.88 68.58) (xy 55.88 72.39)
+			(xy 41.91 68.58) (xy 41.91 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4360,7 +4394,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 88.9) (xy 55.88 91.44)
+			(xy 41.91 88.9) (xy 41.91 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4370,7 +4404,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 30.48) (xy 43.18 30.48)
+			(xy 41.91 30.48) (xy 29.21 30.48)
 		)
 		(stroke
 			(width 0)
@@ -4380,7 +4414,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 30.48) (xy 55.88 34.29)
+			(xy 41.91 30.48) (xy 41.91 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4948,7 +4982,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 55.88 53.34 0)
+		(at 41.91 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4958,7 +4992,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a04839")
 		(property "Reference" "#PWR05"
-			(at 55.88 59.69 0)
+			(at 41.91 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4969,7 +5003,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
+			(at 41.91 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4979,7 +5013,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 53.34 0)
+			(at 41.91 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4989,7 +5023,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 53.34 0)
+			(at 41.91 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4999,7 +5033,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 53.34 0)
+			(at 41.91 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5440,7 +5474,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 55.88 91.44 0)
+		(at 41.91 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5450,7 +5484,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a05668")
 		(property "Reference" "#PWR08"
-			(at 55.88 97.79 0)
+			(at 41.91 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5461,7 +5495,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 55.88 95.25 0)
+			(at 41.91 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5471,7 +5505,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 91.44 0)
+			(at 41.91 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5481,7 +5515,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 91.44 0)
+			(at 41.91 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5491,7 +5525,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 91.44 0)
+			(at 41.91 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5932,7 +5966,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 55.88 129.54 0)
+		(at 41.91 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5942,7 +5976,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a05936")
 		(property "Reference" "#PWR011"
-			(at 55.88 135.89 0)
+			(at 41.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5953,7 +5987,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 55.88 133.35 0)
+			(at 41.91 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5963,7 +5997,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 129.54 0)
+			(at 41.91 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5973,7 +6007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 129.54 0)
+			(at 41.91 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5983,7 +6017,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 129.54 0)
+			(at 41.91 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6350,7 +6384,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 55.88 167.64 0)
+		(at 41.91 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6360,7 +6394,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a06342")
 		(property "Reference" "#PWR013"
-			(at 55.88 173.99 0)
+			(at 41.91 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6371,7 +6405,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 55.88 171.45 0)
+			(at 41.91 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6381,7 +6415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 167.64 0)
+			(at 41.91 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6391,7 +6425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 167.64 0)
+			(at 41.91 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6401,7 +6435,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 167.64 0)
+			(at 41.91 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6579,7 +6613,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:POT")
-		(at 55.88 38.1 0)
+		(at 41.91 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6589,7 +6623,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a069ce")
 		(property "Reference" "RV1"
-			(at 51.435 38.1 90)
+			(at 37.465 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6599,7 +6633,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 53.34 38.1 90)
+			(at 39.37 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6609,7 +6643,7 @@
 			)
 		)
 		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
-			(at 55.88 38.1 0)
+			(at 41.91 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6620,7 +6654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 38.1 0)
+			(at 41.91 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6630,7 +6664,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 38.1 0)
+			(at 41.91 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6659,7 +6693,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:POT")
-		(at 55.88 76.2 0)
+		(at 41.91 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6669,7 +6703,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a072b4")
 		(property "Reference" "RV2"
-			(at 51.435 76.2 90)
+			(at 37.465 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6679,7 +6713,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 53.34 76.2 90)
+			(at 39.37 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6689,7 +6723,7 @@
 			)
 		)
 		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
-			(at 55.88 76.2 0)
+			(at 41.91 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6700,7 +6734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 76.2 0)
+			(at 41.91 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6710,7 +6744,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 76.2 0)
+			(at 41.91 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6739,7 +6773,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:POT")
-		(at 55.88 114.3 0)
+		(at 41.91 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6749,7 +6783,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a07441")
 		(property "Reference" "RV3"
-			(at 51.435 114.3 90)
+			(at 37.465 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6759,7 +6793,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 53.34 114.3 90)
+			(at 39.37 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6769,7 +6803,7 @@
 			)
 		)
 		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
-			(at 55.88 114.3 0)
+			(at 41.91 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6780,7 +6814,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 114.3 0)
+			(at 41.91 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6790,7 +6824,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 114.3 0)
+			(at 41.91 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6819,7 +6853,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:POT")
-		(at 55.88 152.4 0)
+		(at 41.91 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6829,7 +6863,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058a075e2")
 		(property "Reference" "RV4"
-			(at 51.435 152.4 90)
+			(at 37.465 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6839,7 +6873,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 53.34 152.4 90)
+			(at 39.37 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6849,7 +6883,7 @@
 			)
 		)
 		(property "Footprint" "_NTSFootprints:Potentiometer_Alps_RK09L_Plated_Mount_Holes"
-			(at 55.88 152.4 0)
+			(at 41.91 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6860,7 +6894,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 152.4 0)
+			(at 41.91 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6870,7 +6904,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 152.4 0)
+			(at 41.91 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8469,7 +8503,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 222.25 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8546,7 +8580,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 222.25 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9813,9 +9847,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 38.1 106.68 0)
-		(mirror x)
+		(lib_id "4ch-Mixer-rescue:R")
+		(at 49.53 76.2 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9823,9 +9856,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "28d35d9e-e1a0-4c51-866a-27e7ee606a23")
-		(property "Reference" "J3"
-			(at 38.1 100.33 0)
+		(uuid "078bb5fc-1028-43c4-87d7-424d9dd1c052")
+		(property "Reference" "R21"
+			(at 49.53 78.232 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9834,8 +9867,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 37.465 113.03 0)
+		(property "Value" "1k"
+			(at 49.53 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9844,8 +9877,8 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
-			(at 38.1 106.68 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 49.53 74.422 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9856,7 +9889,466 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 106.68 0)
+			(at 49.53 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "772cbf41-9dac-4e1b-b174-ba761d310dd7")
+		)
+		(pin "2"
+			(uuid "45ca4f3c-5a6a-4540-b01c-ea6605c01064")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 118.11 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0c4592c8-ada9-4065-9ccd-00a5158b96b3")
+		(property "Reference" "D8"
+			(at 59.69 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b91c5c2-f820-4fc4-bbdd-403bb054dc45")
+		)
+		(pin "2"
+			(uuid "dd14696c-39e0-46c9-b624-03cfec1fe651")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:R")
+		(at 49.53 38.1 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1797c3e7-f7bb-493c-bc9d-333aba242b6c")
+		(property "Reference" "R20"
+			(at 49.53 40.132 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 49.53 38.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 49.53 36.322 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a1328ece-5dc4-47bb-9d60-3b5e05525639")
+		)
+		(pin "2"
+			(uuid "3fc07ee1-d5cd-4835-9023-7b7a2f4f8a55")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:-12VA")
+		(at 57.15 160.02 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "17cf1e60-1042-49a8-97ae-26690e4f26c3")
+		(property "Reference" "#PWR035"
+			(at 57.15 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-12VA"
+			(at 57.15 163.576 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf3512b3-cbf1-4515-9585-31b939726259")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:-12VA")
+		(at 57.15 121.92 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "19190c3a-a190-47ad-810f-60e5cfaabb68")
+		(property "Reference" "#PWR033"
+			(at 57.15 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-12VA"
+			(at 57.15 125.476 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ad0c73c6-59b3-4f3a-92a4-32be9ff3a27f")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 80.01 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1b5c2e18-8263-469a-a3a7-b4407d31e96f")
+		(property "Reference" "D6"
+			(at 59.69 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "563d60ee-eb9c-4df8-b863-b43b28b46c47")
+		)
+		(pin "2"
+			(uuid "93587bc8-056a-4800-9cab-c4f51abb6c6c")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 24.13 106.68 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "28d35d9e-e1a0-4c51-866a-27e7ee606a23")
+		(property "Reference" "J3"
+			(at 24.13 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 23.495 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
+			(at 24.13 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9867,7 +10359,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
-			(at 38.1 106.68 0)
+			(at 24.13 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9890,6 +10382,310 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 72.39 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d72fa59-85ed-4539-b187-da55be234e07")
+		(property "Reference" "D5"
+			(at 59.69 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96479855-faab-4c86-a905-c481fd6e7483")
+		)
+		(pin "2"
+			(uuid "52b40c23-3cc5-4b9b-a33c-6018cfa64a23")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:+12VA")
+		(at 57.15 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2eb24b7b-711e-4b41-b133-98934d54cd5b")
+		(property "Reference" "#PWR027"
+			(at 57.15 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 57.15 26.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "520b8e9a-d8c4-4a60-8a7c-ba8cef431c5b")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:+12VA")
+		(at 57.15 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3069475b-4298-4052-8b22-1f99b8b0da0b")
+		(property "Reference" "#PWR030"
+			(at 57.15 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 57.15 65.024 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "616db99d-90ec-4b9b-9424-60300cdaec66")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 156.21 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45f14ff0-f01b-4459-b69a-05cfd123d815")
+		(property "Reference" "D10"
+			(at 59.69 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 156.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd10d005-30f9-408d-a55a-03a597e7c1b4")
+		)
+		(pin "2"
+			(uuid "854a0510-6277-41a3-98cf-bd7188a3f65a")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -9978,6 +10774,83 @@
 		)
 	)
 	(symbol
+		(lib_id "4ch-Mixer-rescue:R")
+		(at 49.53 114.3 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5847d148-70e6-4f21-bd67-1aa9a83ee0e4")
+		(property "Reference" "R22"
+			(at 49.53 116.332 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 49.53 114.3 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 49.53 112.522 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0705aef-6b98-4558-b355-c940e8126a9c")
+		)
+		(pin "2"
+			(uuid "c18af2b7-43d2-41e5-b105-babdf7b4ab63")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "4ch-Mixer-rescue:C")
 		(at 185.42 55.88 0)
 		(unit 1)
@@ -10051,6 +10924,84 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 34.29 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8296e838-5706-47af-b2f2-884e94fd624b")
+		(property "Reference" "D3"
+			(at 59.69 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cdf1ea4f-419c-4b6e-bed1-38da908b39bb")
+		)
+		(pin "2"
+			(uuid "dda7fdca-2a47-49a3-a738-0291a134ddf1")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -10137,7 +11088,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 38.1 30.48 0)
+		(at 24.13 30.48 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -10148,7 +11099,7 @@
 		(dnp no)
 		(uuid "948e36a1-5a13-4903-9f38-fad1a4dad973")
 		(property "Reference" "J1"
-			(at 38.1 24.13 0)
+			(at 24.13 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10158,7 +11109,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 37.465 36.83 0)
+			(at 23.495 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10168,7 +11119,7 @@
 			)
 		)
 		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
-			(at 38.1 30.48 0)
+			(at 24.13 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10179,7 +11130,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 30.48 0)
+			(at 24.13 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10190,7 +11141,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
-			(at 38.1 30.48 0)
+			(at 24.13 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10219,9 +11170,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 38.1 68.58 0)
-		(mirror x)
+		(lib_id "4ch-Mixer-rescue:-12VA")
+		(at 57.15 83.82 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10229,9 +11179,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c731ba11-e57f-4cc6-abac-79feacc258f4")
-		(property "Reference" "J2"
-			(at 38.1 62.23 0)
+		(uuid "9569fc21-95e7-430b-9bf9-58d7b33d185a")
+		(property "Reference" "#PWR031"
+			(at 57.15 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10240,8 +11191,8 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 37.465 74.93 0)
+		(property "Value" "-12VA"
+			(at 57.15 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10250,8 +11201,155 @@
 				)
 			)
 		)
-		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
-			(at 38.1 68.58 0)
+		(property "Footprint" ""
+			(at 57.15 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0273c61-78f8-4d90-a88d-e5e857dae95e")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:-12VA")
+		(at 57.15 45.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad093a34-e5aa-4fe0-bfdc-af3c2c0ef4f8")
+		(property "Reference" "#PWR028"
+			(at 57.15 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-12VA"
+			(at 57.15 49.276 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e62cfb7b-f1fd-47ac-9594-cd10bedaeca6")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:R")
+		(at 49.53 152.4 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bf6035d7-0741-4eb0-975f-a8cf1276fa0a")
+		(property "Reference" "R23"
+			(at 49.53 154.432 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 49.53 152.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 49.53 150.622 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10262,7 +11360,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 68.58 0)
+			(at 49.53 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0fef353-ede9-46a1-98c2-3d03ef0842ec")
+		)
+		(pin "2"
+			(uuid "915cd13d-fd33-4818-88d9-01fccb4364cb")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 24.13 68.58 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c731ba11-e57f-4cc6-abac-79feacc258f4")
+		(property "Reference" "J2"
+			(at 24.13 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 23.495 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
+			(at 24.13 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10273,7 +11449,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
-			(at 38.1 68.58 0)
+			(at 24.13 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10296,6 +11472,84 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 41.91 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca3b2ed3-1564-45fb-bd73-92b73efa55d5")
+		(property "Reference" "D4"
+			(at 59.69 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b60e23fe-c929-4d6a-af48-ee5ecd2bb818")
+		)
+		(pin "2"
+			(uuid "4af930e5-8ee1-4cd2-ab12-8460cad276a6")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -10407,7 +11661,7 @@
 	)
 	(symbol
 		(lib_id "4ch-Mixer-rescue:GNDA")
-		(at 46.99 127 0)
+		(at 33.02 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10417,7 +11671,7 @@
 		(dnp no)
 		(uuid "d2e3e625-c877-4328-aa65-7173dc6c65fe")
 		(property "Reference" "#PWR029"
-			(at 55.88 59.69 0)
+			(at 41.91 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10428,7 +11682,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 55.88 57.15 0)
+			(at 41.91 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10438,7 +11692,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 53.34 0)
+			(at 41.91 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10448,7 +11702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 53.34 0)
+			(at 41.91 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10458,7 +11712,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 53.34 0)
+			(at 41.91 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10474,6 +11728,162 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 110.49 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d45f97be-865d-410f-8f70-14138b14949e")
+		(property "Reference" "D7"
+			(at 59.69 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "257ec72d-7602-4164-989c-525985643a63")
+		)
+		(pin "2"
+			(uuid "2f7af31e-1d74-4c32-9415-783a5359943b")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:D")
+		(at 57.15 148.59 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d690a565-598f-40dc-88e1-8d5992cd005f")
+		(property "Reference" "D9"
+			(at 59.69 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 54.61 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 57.15 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d8a3251-6b38-49ec-8965-efb64bea2aeb")
+		)
+		(pin "2"
+			(uuid "25f5fc8b-1c48-42fc-8836-a7e621d6a11f")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -10563,7 +11973,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 38.1 146.05 0)
+		(at 24.13 146.05 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -10574,7 +11984,7 @@
 		(dnp no)
 		(uuid "e30eedf1-654c-4bad-95ff-c3d37fec6f96")
 		(property "Reference" "J4"
-			(at 38.1 139.7 0)
+			(at 24.13 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10584,7 +11994,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 37.465 152.4 0)
+			(at 23.495 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10594,7 +12004,7 @@
 			)
 		)
 		(property "Footprint" "_NTSFootprints:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CenterHole_OvalPads"
-			(at 38.1 146.05 0)
+			(at 24.13 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10605,7 +12015,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 146.05 0)
+			(at 24.13 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10616,7 +12026,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
-			(at 38.1 146.05 0)
+			(at 24.13 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10639,6 +12049,154 @@
 			(project "4ch Mixer"
 				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:+12VA")
+		(at 57.15 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe4cee04-458d-4932-b184-f2d59f862e91")
+		(property "Reference" "#PWR032"
+			(at 57.15 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 57.15 103.124 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "717e7248-a1a4-4b17-ab44-7dc5a2d193d5")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "4ch-Mixer-rescue:+12VA")
+		(at 57.15 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "feeaf60a-9911-4af1-89f1-b9c2055d0ed6")
+		(property "Reference" "#PWR034"
+			(at 57.15 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12VA"
+			(at 57.15 141.224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b008514-f60c-46e8-853d-a2ab2bc66d70")
+		)
+		(instances
+			(project "4ch Mixer"
+				(path "/63a3e36f-21d6-4747-a383-9f022e8caafb"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
