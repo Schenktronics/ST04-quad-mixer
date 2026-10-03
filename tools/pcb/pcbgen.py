@@ -196,6 +196,12 @@ def wrap_footprint(fp_tree, ref, value, x, y, rot, net_index, layer="F.Cu"):
             # keep the library's pad fields but drop any uuid it already has
             pad = [x for x in child if not (isinstance(x, list) and x and x[0] == "uuid")]
             name = str(pad[1])
+            # KiCad stores each pad's angle including the part's rotation; without it
+            # the pad shape stays unrotated when the part is turned.
+            at = [x for x in pad if isinstance(x, list) and x and x[0] == "at"]
+            if at and rot:
+                local = float(at[0][3]) if len(at[0]) > 3 else 0.0
+                at[0][:] = ["at", at[0][1], at[0][2], (local + rot) % 360] if local + rot else ["at", at[0][1], at[0][2]]
             nets = net_index.get(name)
             if nets is not None:
                 code, netname = nets

@@ -56,6 +56,8 @@ def main():
     ap.add_argument("--gap", type=float, default=1.0, help="min clearance between parts (mm)")
     ap.add_argument("--iters", type=int, default=60000)
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--rotate", action="store_true",
+                    help="allow 90 degree moves (off by default: rotated SMD pads don't turn with the part)")
     ap.add_argument("--fixed-margin", type=float, default=1.5,
                     help="extra clearance around fixed back-side parts (covers model error)")
     a = ap.parse_args()
@@ -123,6 +125,8 @@ def main():
         return hpwl() + OVERLAP_PENALTY * total_violations()
 
     # Start from the current positions; movable parts are free to move.
+    for ref in movable:
+        state[ref]["rot"] = 0
     cur = cost()
     temp = 8.0
     cooling = (0.02 / 8.0) ** (1.0 / a.iters)
@@ -130,7 +134,7 @@ def main():
         ref = random.choice(movable)
         old = dict(state[ref])
         span = max(0.5, 12.0 * temp / 8.0)
-        if random.random() < 0.1:
+        if a.rotate and random.random() < 0.1:
             state[ref]["rot"] = 90 if old["rot"] == 0 else 0
         else:
             state[ref]["x"] = round(min(max(old["x"] + random.gauss(0, span), x0 + 1), x1 - 1), 2)
