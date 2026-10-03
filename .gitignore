@@ -4,6 +4,6 @@
 # KiCad local files (per-user state, autosave history, backups, lock files)
 *.kicad_prl
 *.lck
-Schematic/.history/
-Schematic/rescue-backup/
+.history/
+rescue-backup/
 __pycache__/
