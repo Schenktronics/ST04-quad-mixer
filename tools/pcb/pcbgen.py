@@ -103,16 +103,20 @@ def bbox_of(fp_tree, x, y, rot, margin=0.5, side="F", pads_only=False):
     side="B" mirrors the footprint across its y axis first (SMD on the back).
     Uses the courtyard when the footprint has one, otherwise the pads.
     """
-    flip = -1.0 if side == "B" else 1.0
+    # KiCad mirrors back-side parts and turns them the other way: the global
+    # position is mirror-x then rotate by -rot (checked against drill holes).
+    back = side in ("B", "B.Cu")
+    flip = -1.0 if back else 1.0
+    eff_rot = -rot if back else rot
     xs, ys = [], []
     if not pads_only:
         for px, py in courtyard_points(fp_tree):
-            rx, ry = rotate(flip * px, py, rot)
+            rx, ry = rotate(flip * px, py, eff_rot)
             xs.append(rx)
             ys.append(ry)
     if not xs:
         for name, px, py, w, h in pads_of(fp_tree):
-            rx, ry = rotate(flip * px, py, rot)
+            rx, ry = rotate(flip * px, py, eff_rot)
             xs += [rx - w / 2, rx + w / 2]
             ys += [ry - h / 2, ry + h / 2]
     if not xs:
