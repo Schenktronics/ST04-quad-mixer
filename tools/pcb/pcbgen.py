@@ -185,7 +185,8 @@ def wrap_footprint(fp_tree, ref, value, x, y, rot, net_index, layer="F.Cu"):
         if head == "property":
             continue
         if head == "pad":
-            pad = list(child)
+            # keep the library's pad fields but drop any uuid it already has
+            pad = [x for x in child if not (isinstance(x, list) and x and x[0] == "uuid")]
             name = str(pad[1])
             nets = net_index.get(name)
             if nets is not None:
