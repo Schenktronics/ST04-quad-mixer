@@ -1,0 +1,10 @@
+{
+  "product": "4ch Mixer",
+  "pcbVersion": "v1.0",
+  "repo": "schenkzoola/4ch-Mixer",
+  "branch": "main",
+  "documents": [
+    { "src": "manual.md", "out": "4ch-mixer-manual.pdf", "title": "User Manual" },
+    { "src": "assembly-guide.md", "out": "4ch-mixer-assembly-guide.pdf", "title": "Assembly Guide" }
+  ]
+}
