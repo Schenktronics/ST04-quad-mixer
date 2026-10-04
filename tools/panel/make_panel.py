@@ -109,7 +109,7 @@ POT_RING_R = 8.25
 JACK_RING_R = 5.0
 
 
-def channel_group(pot, jack, r_pot=POT_RING_R, r_jack=JACK_RING_R):
+def channel_group(pot, jack, r_pot=POT_RING_R, r_jack=JACK_RING_R, x_max=None):
     """Outline around one pot and its jack: the outer arcs of a ring around each,
     joined by the two external tangent lines (top and bottom). The inner arc
     segments between the tangent points are trimmed away, leaving one smooth
@@ -133,8 +133,14 @@ def channel_group(pot, jack, r_pot=POT_RING_R, r_jack=JACK_RING_R):
     ang_top = math.degrees(math.atan2(top[1], top[0]))
     ang_bot = math.degrees(math.atan2(bot[1], bot[0]))
     out = []
-    # outer arc of the pot ring: from the top tangent point clockwise round the far side to the bottom
-    out.append(gr_arc(px, py, r_pot, ang_top, -((ang_top - ang_bot) % 360), WIDTH_SHORT, "F.SilkS"))
+    # outer arc of the pot ring: from the top tangent point clockwise round the far side to the bottom.
+    # Where it would run past x_max (the panel edge), the arc is cut and only the parts inside are kept.
+    if x_max is not None and px + r_pot > x_max:
+        a_c = math.degrees(math.acos(max(-1.0, min(1.0, (x_max - px) / r_pot))))
+        out.append(gr_arc(px, py, r_pot, ang_top, -(ang_top - a_c), WIDTH_SHORT, "F.SilkS"))
+        out.append(gr_arc(px, py, r_pot, -a_c, -((-a_c - ang_bot) % 360), WIDTH_SHORT, "F.SilkS"))
+    else:
+        out.append(gr_arc(px, py, r_pot, ang_top, -((ang_top - ang_bot) % 360), WIDTH_SHORT, "F.SilkS"))
     # outer arc of the jack ring: from the bottom tangent point clockwise round the far side to the top
     out.append(gr_arc(jx, jy, r_jack, ang_bot, -((ang_bot - ang_top) % 360), WIDTH_SHORT, "F.SilkS"))
     # the two tangent lines, top and bottom
@@ -220,10 +226,10 @@ def build(board, template, out_path):
                  ["layer", Str("F.SilkS")], ["uuid", uid()],
                  ["effects", ["font", ["size", TITLE_SIZE, TITLE_SIZE], ["thickness", TITLE_THICKNESS], "italic"]]])
 
-    # + to the left of J5 (non-inverting output), - to the right of J6 (inverting output)
+    # + to the right of J5 (non-inverting output), - to the left of J6 (inverting output)
     (j5x, j5y), (j6x, j6y) = jacks_out
-    out_labels = [("+", j5x - JACK_OUTER_R - OUT_LABEL_GAP, j5y),
-                  ("-", j6x + JACK_OUTER_R + OUT_LABEL_GAP, j6y)]
+    out_labels = [("+", j5x + JACK_OUTER_R + OUT_LABEL_GAP, j5y),
+                  ("-", j6x - JACK_OUTER_R - OUT_LABEL_GAP, j6y)]
     for text, lx, ly in out_labels:
         body.append(["gr_text", Str(text), ["at", round(lx, 3), round(ly, 3), 0],
                      ["layer", Str("F.SilkS")], ["uuid", uid()],
@@ -247,7 +253,7 @@ def build(board, template, out_path):
         body.append(hole_fp("Panel:Jack_6mm", x, y, JACK_D, "JH%d" % i))
     # each input jack grouped with its own pot
     for (px, py), (jx, jy) in zip(pots, jacks_in):
-        body.extend(channel_group((px, py), (jx, jy)))
+        body.extend(channel_group((px, py), (jx, jy), x_max=x1 - 0.05))
     for i, (x, y) in enumerate(jacks_out, start=5):
         body.append(hole_fp("Panel:Jack_6mm", x, y, JACK_D, "JH%d" % i))
         body.append(gr_circle(x, y, RING_R, RING_W, "F.SilkS"))
