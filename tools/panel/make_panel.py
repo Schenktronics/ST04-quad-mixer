@@ -6,8 +6,8 @@ mixer board, so they line up with the pots and jacks. Hole sizes, tick marks
 and the output jack rings follow the Attenuverter faceplate.
 
 Usage (from the project root):
-    python3 tools/panel/make_panel.py --board "Schematic/4ch Mixer.kicad_pcb" \
-        --template "Schematic/4ch Mixer.kicad_pcb" --out "Faceplate/4ch Mixer Faceplate.kicad_pcb"
+    python3 tools/panel/make_panel.py --board "hardware/mixer/4ch Mixer.kicad_pcb" \
+        --template "hardware/mixer/4ch Mixer.kicad_pcb" --out "hardware/panel/4ch Mixer Faceplate.kicad_pcb"
 
 The copper pour is a zone on F.Cu; run kicad-cli pcb drc --refill-zones to fill it.
 """
@@ -43,7 +43,7 @@ EDGE_CLEAR = 0.5
 TICK_ANGLES = [a for a in range(-180, 180, 15) if not (-105 <= a <= -75)]
 
 
-LOGO_LIB = os.path.join(os.path.dirname(__file__), "..", "..", "Faceplate", "lib",
+LOGO_LIB = os.path.join(os.path.dirname(__file__), "..", "..", "hardware", "panel", "lib",
                         "_NTSFootprints.pretty", "SchentronicsLogo.kicad_mod")
 
 

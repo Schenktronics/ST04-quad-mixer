@@ -1,7 +1,7 @@
 """Generate a KiCad PCB file from a KiCad netlist and a placement.
 
 Usage (from the project root):
-    python3 tools/pcb/pcbgen.py --netlist netlist.net --board "Schematic/4ch Mixer.kicad_pcb" \
+    python3 tools/pcb/pcbgen.py --netlist netlist.net --board "hardware/mixer/4ch Mixer.kicad_pcb" \
         --layout tools/pcb/layout_mixer.py
 
 The layout module defines OUTLINE (x0, y0, x1, y1) and PLACE, a dict of

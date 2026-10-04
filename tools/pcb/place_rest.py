@@ -1,8 +1,8 @@
 """Place the movable parts of an existing board, keeping hand-placed parts fixed.
 
 Usage (from the project root):
-    python3 tools/pcb/place_rest.py --board "Schematic/4ch Mixer.kicad_pcb" \
-        --netlist netlist.net --movable R C --fp-dir Schematic/lib
+    python3 tools/pcb/place_rest.py --board "hardware/mixer/4ch Mixer.kicad_pcb" \
+        --netlist netlist.net --movable R C --fp-dir hardware/mixer/lib
 
 Each movable part goes to the free spot nearest the centroid of the parts it
 is wired to (ignoring the ground and power nets). Back-side parts block each

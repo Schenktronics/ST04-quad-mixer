@@ -8,9 +8,9 @@ every through-hole pad keeps `gap` mm from back-side parts, so there is room
 to solder by hand.
 
 Usage (from the project root):
-    python3 tools/pcb/anneal_place.py --board "Schematic/4ch Mixer.kicad_pcb" \
+    python3 tools/pcb/anneal_place.py --board "hardware/mixer/4ch Mixer.kicad_pcb" \
         --netlist netlist.net --movable R C --fixed P1 F1 F2 D1 D2 U1 U2 \
-        --fp-dir Schematic/lib
+        --fp-dir hardware/mixer/lib
 """
 import argparse
 import math
