@@ -1,0 +1,11 @@
+Manufacturer Part Number,Manufacturer,Description,Reference Designators,Quantity,Footprint,Source / note
+08053C104KAT2A,AVX Corporation,CAP CER 0.1UF 25V X7R 0805,"C1, C2, C3, C4",4,Capacitor_SMD:C_0805_2012Metric,Attenuverter BOM
+TMK212BBJ106KG-T,Taiyo Yuden,CAP CER 10UF 25V X5R 0805,"C5, C6",2,Capacitor_SMD:C_0805_2012Metric,Attenuverter BOM
+CC0805JRNPO9BN100,Yageo,CAP CER 10PF 50V C0G/NPO 0805,"C7, C8",2,Capacitor_SMD:C_0805_2012Metric,Attenuverter BOM
+MRA4003T3G,ON Semiconductor,DIODE GEN PURP 200V 1A SMA,"D1, D2",2,Diode_SMD:D_SMA,"Attenuverter BOM (D1, D2 on the Attenuverter); 200 V rating, drop-in for 1N4002"
+1N4148WS-7-F,Diodes Incorporated,DIODE SWITCHING 75V 150MA SOD-323,"D3, D4, D5, D6, D7, D8, D9, D10",8,Diode_SMD:D_SOD-323,"Not in the Attenuverter BOM; SOD-323, matches footprint"
+0ZCJ0020FF2E,Bel Fuse Inc.,PTC RESET FUSE 30V 200MA 1206,"F1, F2",2,Fuse:Fuse_1206_3216Metric,Attenuverter BOM
+RC0805FR-0710KL,Yageo,RES SMD 10K OHM 1% 1/8W 0805,"R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17",17,Resistor_SMD:R_0805_2012Metric,"Confirmed on distributor listings (10k, 1%, 125 mW, 0805)"
+RC0805FR-071KL,Yageo,RES SMD 1K OHM 1% 1/8W 0805,"R18, R19, R20, R21, R22, R23",6,Resistor_SMD:R_0805_2012Metric,Attenuverter BOM
+TL074CDR,Texas Instruments,IC OPAMP JFET 4 CIRCUIT 14SOIC,U1,1,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,Attenuverter BOM
+TL072CDR,Texas Instruments,IC OPAMP JFET 2 CIRCUIT 8SOIC,U2,1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,"Confirmed on distributor listings (dual JFET, SOIC-8)"

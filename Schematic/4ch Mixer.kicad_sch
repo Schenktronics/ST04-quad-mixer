@@ -8657,7 +8657,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4002"
+		(property "Value" "MRA4003T3G"
 			(at 193.04 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8734,7 +8734,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4002"
+		(property "Value" "MRA4003T3G"
 			(at 193.04 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8811,7 +8811,7 @@
 				)
 			)
 		)
-		(property "Value" "250mA"
+		(property "Value" "200mA"
 			(at 205.74 35.56 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8890,7 +8890,7 @@
 				)
 			)
 		)
-		(property "Value" "250mA"
+		(property "Value" "200mA"
 			(at 205.74 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
