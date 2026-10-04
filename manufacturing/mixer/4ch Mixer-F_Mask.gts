@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,10.0.6*%
-%TF.CreationDate,2026-10-03T17:24:46-07:00*%
+%TF.CreationDate,2026-10-03T20:02:19-07:00*%
 %TF.ProjectId,4ch Mixer,34636820-4d69-4786-9572-2e6b69636164,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.6) date 2026-10-03 17:24:46*
+G04 Created by KiCad (PCBNEW 10.0.6) date 2026-10-03 20:02:19*
 %MOMM*%
 %LPD*%
 G01*
@@ -59,7 +59,7 @@ X123000000Y-64020000D03*
 X120500000Y-64020000D03*
 %TD*%
 D10*
-%TO.C,J6*%
+%TO.C,J5*%
 X122000000Y-145000000D03*
 D15*
 X128477000Y-145000000D03*
@@ -68,7 +68,7 @@ X117077000Y-145000000D03*
 X125377000Y-145000000D03*
 %TD*%
 D10*
-%TO.C,J5*%
+%TO.C,J6*%
 X108077000Y-145000000D03*
 D17*
 X101600000Y-145000000D03*

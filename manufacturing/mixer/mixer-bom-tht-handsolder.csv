@@ -1,5 +1,5 @@
 Manufacturer Part Number,Manufacturer,Description,Reference Designators,Quantity,Note
 MJ-3507,CUI Devices,CONN AUDIO JACK 3.5MM MONO (with switch),"J1, J2, J3, J4, J5, J6",6,Attenuverter BOM; footprint PJ398SM
 302-S101,On Shore Technology Inc.,CONN HEADER VERT 10POS 2.54MM (shrouded),P1,1,Attenuverter BOM
-PTV09A-4225F-B104,Bourns Inc.,POT 100K OHM 1/20W CARBON LINEAR,"RV1, RV2, RV3, RV4",4,Attenuverter BOM
+EVU-F3AF20B14,Panasonic,"POT 10K OHM LINEAR (EVU-F series), same pin pattern as the RK09L footprint","RV1, RV2, RV3, RV4",4,Substituted for 100k pot; confirm bushing/mounting fit on the panel
 1221-J,"Davies Molding, LLC","KNOB SERRATED 0.236"" PLASTIC",(4 knobs),4,Attenuverter BOM
