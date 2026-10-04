@@ -90,7 +90,7 @@
 		(descr "TRS 3.5mm, vertical, Thonkiconn, PCB mount, (http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html)")
 		(tags "WQP-PJ398SM WQP-PJ301M-12 TRS 3.5mm mono vertical jack thonkiconn qingpu")
 		(property "Reference" "J1"
-			(at -3.5 -0.023 270)
+			(at -4 1 270)
 			(layer "F.SilkS")
 			(uuid "6a544993-a6a6-4487-84a8-2ea623d8e62d")
 			(effects
@@ -817,7 +817,7 @@
 		(descr "TRS 3.5mm, vertical, Thonkiconn, PCB mount, (http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html)")
 		(tags "WQP-PJ398SM WQP-PJ301M-12 TRS 3.5mm mono vertical jack thonkiconn qingpu")
 		(property "Reference" "J6"
-			(at -4.03 1.08 0)
+			(at 4 1.077 0)
 			(layer "F.SilkS")
 			(uuid "41ac4662-86e9-410e-ad2d-3a342189935f")
 			(effects
@@ -5700,18 +5700,6 @@
 			(layer "B.Fab")
 			(uuid "c06e35c3-287e-433f-9d2b-aaf1e389088a")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "cf8319b0-6e82-4459-a5ba-cf3ce966e32a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
 			(size 0.6 0.45)
@@ -6410,18 +6398,6 @@
 			)
 			(layer "B.Fab")
 			(uuid "9cfffb01-7409-4487-b5ba-f16e73dae6d6")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "dd5920ae-53a4-47f5-90fd-4510098347d2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
@@ -7263,18 +7239,6 @@
 			)
 			(layer "B.Fab")
 			(uuid "e55e2211-33f0-42dc-b8aa-6112ac3b2406")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "70677e00-42b4-4d45-b545-9590083beb4a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
@@ -8281,18 +8245,6 @@
 			(layer "B.Fab")
 			(uuid "b69999f5-abdf-4e9b-bc42-acad41d5f164")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(uuid "8cd00d6b-85df-40c0-ba72-3099decec68f")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd roundrect
 			(at -0.9125 0 270)
 			(size 1.025 1.4)
@@ -8446,18 +8398,6 @@
 			(fill no)
 			(layer "B.Fab")
 			(uuid "8a6c8cd0-41b6-426b-9d3f-660575110f48")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(uuid "cb6b1b6e-6678-4cf0-9b0c-e3324dd0377d")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" smd roundrect
 			(at -0.9125 0 270)
@@ -9087,18 +9027,6 @@
 			)
 			(layer "B.Fab")
 			(uuid "b41c6168-9486-48f9-b060-f5dea25322c7")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "5fae97d5-4e36-4d43-9d8e-0cd291d8fc5d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
@@ -10215,18 +10143,6 @@
 			(layer "B.Fab")
 			(uuid "a594d6e2-cdd1-4a3a-b883-64d7dd19f297")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "76fbe0e2-5c13-411e-8c83-7df5a65a4449")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
 			(size 0.6 0.45)
@@ -10932,18 +10848,6 @@
 			(fill no)
 			(layer "B.Fab")
 			(uuid "5056558c-813e-48b4-ab7c-db31c1a6e0fa")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(uuid "7d7822ac-2191-40ee-b6a5-94b307e019f1")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" smd roundrect
 			(at -0.9125 0 270)
@@ -12043,18 +11947,6 @@
 			(layer "B.Fab")
 			(uuid "a35acc62-fe5b-4c57-a4db-108526a7ad21")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
-			(layer "B.Fab")
-			(uuid "3d94350f-d8be-47b2-85ee-afc5ebe3082d")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd roundrect
 			(at -0.9125 0 270)
 			(size 1.025 1.4)
@@ -12327,18 +12219,6 @@
 			)
 			(layer "B.Fab")
 			(uuid "fa387660-8920-425c-8987-b1d06f9520be")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "18defcbf-727a-40de-9d3c-dd70a52d1153")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
 		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
@@ -12613,18 +12493,6 @@
 			(layer "B.Fab")
 			(uuid "35d37a59-9431-4de0-8e5c-c314d27b8d2e")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "35d52517-ac9a-49cf-a227-44f8162d7245")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
 			(size 0.6 0.45)
@@ -12898,18 +12766,6 @@
 			(layer "B.Fab")
 			(uuid "47cce77b-eda6-47eb-8832-5e74301221d6")
 		)
-		(fp_text user "${REFERENCE}"
-			(at 0 1.85 90)
-			(layer "B.Fab")
-			(uuid "2a2bb586-842a-45f2-acb0-814d2c39af1b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(pad "1" smd roundrect
 			(at -1.05 0 90)
 			(size 0.6 0.45)
@@ -12992,6 +12848,18 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "de5ea19f-6411-465b-8d19-bd308eb9c5ea")
+	)
+	(gr_text "Quad Mixer\nV1.0\nschenktronics.com"
+		(at 101.6 95 0)
+		(layer "F.SilkS")
+		(uuid "f1d763ec-7cda-4d2e-9e87-f89722da8bad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
 	)
 	(gr_text "-12V"
 		(at 113.2 114.6 0)
