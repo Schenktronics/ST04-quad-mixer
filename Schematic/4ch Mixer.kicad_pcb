@@ -9573,6 +9573,7 @@
 		(layer "B.Cu")
 		(uuid "baccc5ba-9874-420c-8a33-b4807dc48eb4")
 		(at 111.4 54.4 180)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "B.SilkS")
