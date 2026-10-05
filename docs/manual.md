@@ -1,10 +1,10 @@
-# 4ch Mixer — User Manual
+# Quad Mixer — User Manual
 
-<img src="images/panel.svg" alt="4ch Mixer front panel: four channels, each with an input jack on the left and a knob on the right; the − and + outputs are at the bottom" width="300">
+<img src="images/panel.svg" alt="Quad Mixer front panel: four channels, each with an input jack on the left and a knob on the right; the − and + outputs are at the bottom" width="300">
 
 ## Overview
 
-The 4ch Mixer is a 6HP Eurorack mixer with four channels. Each channel has an input jack and a knob. The knob sets how much of its input goes into the mix, and each channel can be turned up to twice its input level. The four channels are summed into two outputs: **+**, the mix as it came in, and **−**, the same mix upside down.
+The Quad Mixer is a 6HP Eurorack mixer with four channels. Each channel has an input jack and a knob. The knob sets how much of its input goes into the mix, and each channel can be turned up to twice its input level. The four channels are summed into two outputs: **+**, the mix as it came in, and **−**, the same mix upside down.
 
 The mixer is active: it needs ±12 V from your case's power supply.
 

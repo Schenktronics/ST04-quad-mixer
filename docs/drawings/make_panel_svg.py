@@ -197,14 +197,14 @@ def annotated(outline, holes, silk):
             body += label_right(oy, title, sub, ox + 6.2, oy)
     pad = 4
     return svg((x0 - pad - 46, y0 - pad, (x1 - x0) + 2 * pad + 92, (y1 - y0) + 2 * pad), body,
-               "4ch Mixer front panel")
+               "Quad Mixer front panel")
 
 
 def plain(outline, holes, silk):
     x0, y0, x1, y1 = outline
     pad = 1
     return svg((x0 - pad, y0 - pad, (x1 - x0) + 2 * pad, (y1 - y0) + 2 * pad), panel_body(outline, holes, silk),
-               "4ch Mixer front panel")
+               "Quad Mixer front panel")
 
 
 def main():

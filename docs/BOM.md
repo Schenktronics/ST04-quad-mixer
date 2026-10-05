@@ -1,4 +1,4 @@
-# Bill of Materials — 4ch Mixer v1.0
+# Bill of Materials — Quad Mixer v1.0
 
 A machine-readable copy is in [BOM.csv](BOM.csv). The fabrication files are in [manufacturing/mixer/](../manufacturing/mixer/): the surface-mount list and placement file for the board house are `mixer-bom-smd-fab.csv` and `mixer-pos-smd-fab.csv`, and the hand-assembly list for the through-hole parts is `mixer-bom-tht-handsolder.csv`.
 

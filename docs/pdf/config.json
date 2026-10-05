@@ -1,7 +1,7 @@
 {
-  "product": "4ch Mixer",
+  "product": "Quad Mixer",
   "pcbVersion": "v1.0",
-  "repo": "schenkzoola/4ch-Mixer",
+  "repo": "schenkzoola/Quad-Mixer",
   "branch": "main",
   "documents": [
     { "src": "manual.md", "out": "4ch-mixer-manual.pdf", "title": "User Manual" },

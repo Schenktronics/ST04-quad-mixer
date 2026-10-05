@@ -1,4 +1,4 @@
-# 4ch Mixer — Assembly Guide
+# Quad Mixer — Assembly Guide
 
 This kit has 156 solder joints, 108 of them on surface-mount parts: 0805 resistors and capacitors, diodes, fuses and two chips. It takes about 2–3 hours if you're experienced with surface-mount soldering, and longer if you're not. If you haven't soldered surface-mount parts before, practice on a scrap board first, or start with a through-hole kit.
 

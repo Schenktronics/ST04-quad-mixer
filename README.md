@@ -3,11 +3,11 @@
   <img src="docs/images/logo-dark.png" alt="Schenktronics" width="320">
 </picture>
 
-# 4ch Mixer
+# Quad Mixer
 
 A 6HP Eurorack four-channel active mixer from **Schenktronics**. Each channel has an input jack and a level knob that takes the input from silent up to twice its level. The four channels are summed into two outputs: a non-inverting mix (+) and an inverted one (−). Unplugged inputs are silent, so only the channels you patch affect the mix.
 
-<img src="docs/images/panel.svg" alt="4ch Mixer front panel" width="160">
+<img src="docs/images/panel.svg" alt="Quad Mixer front panel" width="160">
 
 ## Features
 
