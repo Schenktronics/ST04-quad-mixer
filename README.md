@@ -11,7 +11,7 @@ A 6HP Eurorack four-channel active mixer from **Schenktronics**. Each channel ha
 
 ## Features
 
-- 6HP Eurorack, 30.48 mm wide, ⟨check⟩ mm deep. Powered from ±12 V.
+- 6HP Eurorack, 30.48 mm wide, 20 mm deep. Powered from ±12 V.
 - Four channels, each with a level knob from silent to ×2
 - Two outputs: + (the mix) and − (the mix, inverted)
 - Empty inputs are silent, so unused channels add nothing

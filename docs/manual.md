@@ -16,7 +16,7 @@ An input with nothing plugged into it is silent. Only the channels you patch aff
 |---|---|
 | Format | Eurorack, 6HP |
 | Panel | 30.48 × 128.5 mm |
-| Depth | ⟨check⟩ mm |
+| Depth | 20 mm |
 | Power | ⟨check⟩ mA on +12 V, ⟨check⟩ mA on −12 V, no +5 V. 10-pin header. |
 | Protection | Reverse-power diodes and resettable fuses on both rails, and clamp diodes on each op-amp input |
 | Jacks | 6 × 3.5 mm mono (TS): 4 inputs, 2 outputs |
