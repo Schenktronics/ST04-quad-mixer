@@ -109,19 +109,23 @@
 <line x1='121.512' y1='112.635' x2='104.098' y2='109.441' stroke='#1a1a1a' stroke-width='0.2' stroke-linecap='round'/>
 <line x1='121.509' y1='120.406' x2='104.096' y2='123.605' stroke='#1a1a1a' stroke-width='0.2' stroke-linecap='round'/>
 <line x1='121.512' y1='136.635' x2='104.098' y2='133.441' stroke='#1a1a1a' stroke-width='0.2' stroke-linecap='round'/>
-<path d='M121.509 48.406 A8.250 8.250 0 1 1 121.512 64.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M121.509 48.406 A8.250 8.250 0 0 1 130.190 52.474' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M130.190 60.566 A8.250 8.250 0 0 1 121.512 64.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
 <path d='M104.098 61.441 A5.000 5.000 0 0 1 104.096 51.605' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
-<path d='M121.509 72.406 A8.250 8.250 0 1 1 121.512 88.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M121.509 72.406 A8.250 8.250 0 0 1 130.190 76.475' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M130.190 84.566 A8.250 8.250 0 0 1 121.512 88.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
 <path d='M104.098 85.441 A5.000 5.000 0 0 1 104.096 75.605' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
-<path d='M121.509 96.406 A8.250 8.250 0 1 1 121.512 112.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M121.509 96.406 A8.250 8.250 0 0 1 130.190 100.475' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M130.190 108.566 A8.250 8.250 0 0 1 121.512 112.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
 <path d='M104.098 109.441 A5.000 5.000 0 0 1 104.096 99.605' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
-<path d='M121.509 120.406 A8.250 8.250 0 1 1 121.512 136.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M121.509 120.406 A8.250 8.250 0 0 1 130.190 124.475' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<path d='M130.190 132.565 A8.250 8.250 0 0 1 121.512 136.635' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
 <path d='M104.098 133.441 A5.000 5.000 0 0 1 104.096 123.605' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
-<circle cx='108.077' cy='145.0' r='2.450000000000003' fill='none' stroke='#1a1a1a' stroke-width='5.0'/>
 <circle cx='122.0' cy='145.0' r='2.450000000000003' fill='none' stroke='#1a1a1a' stroke-width='5.0'/>
+<circle cx='108.077' cy='145.0' r='2.450000000000003' fill='none' stroke='#1a1a1a' stroke-width='5.0'/>
 <text x='115.0' y='43.600' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.875' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Quad Mixer</text>
-<text x='101.527' y='145.000' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.300' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>+</text>
-<text x='128.55' y='145.000' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.300' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>-</text>
+<text x='128.55' y='145.000' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.300' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>+</text>
+<text x='101.527' y='145.000' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.300' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>-</text>
 <circle cx='107.26' cy='38.75' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
 <circle cx='122.51' cy='38.75' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
 <circle cx='107.26' cy='161.25' r='1.6' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
@@ -150,12 +154,12 @@
 <circle cx='105.0' cy='128.523' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
 <circle cx='105.0' cy='128.523' r='3.0999999999999996' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
 <circle cx='105.0' cy='128.523' r='1.8' fill='#1a1a1a'/>
-<circle cx='108.077' cy='145.0' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
-<circle cx='108.077' cy='145.0' r='3.0999999999999996' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
-<circle cx='108.077' cy='145.0' r='1.8' fill='#1a1a1a'/>
 <circle cx='122.0' cy='145.0' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
 <circle cx='122.0' cy='145.0' r='3.0999999999999996' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
 <circle cx='122.0' cy='145.0' r='1.8' fill='#1a1a1a'/>
+<circle cx='108.077' cy='145.0' r='3.9' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<circle cx='108.077' cy='145.0' r='3.0999999999999996' fill='none' stroke='#1a1a1a' stroke-width='0.2'/>
+<circle cx='108.077' cy='145.0' r='1.8' fill='#1a1a1a'/>
 <polyline points='101.0,56.523 97.76,52.523 94.76,52.523' fill='none' stroke='#555' stroke-width='0.3'/>
 <circle cx='101.0' cy='56.523' r='0.5' fill='#555'/>
 <text x='92.76' y='50.923' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' text-anchor='end' dominant-baseline='central'>In 1</text>
@@ -163,7 +167,7 @@
 <polyline points='127.8,56.52 132.24,56.52 135.24,56.52' fill='none' stroke='#555' stroke-width='0.3'/>
 <circle cx='127.8' cy='56.52' r='0.5' fill='#555'/>
 <text x='137.24' y='54.92' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>Knob 1</text>
-<text x='137.24' y='58.92' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>level. Ends: silent, ×2</text>
+<text x='137.24' y='58.92' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>anticlockwise silent, clockwise ×2</text>
 <polyline points='129.24,80.52 132.24,80.52 135.24,80.52' fill='none' stroke='#555' stroke-width='0.3'/>
 <circle cx='129.24' cy='80.52' r='0.5' fill='#555'/>
 <text x='137.24' y='78.92' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>Channel 2</text>
@@ -176,12 +180,12 @@
 <circle cx='129.24' cy='128.52' r='0.5' fill='#555'/>
 <text x='137.24' y='126.92000000000002' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>Channel 4</text>
 <text x='137.24' y='130.92000000000002' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>same as channel 1</text>
-<polyline points='101.877,145.0 97.76,145.0 94.76,145.0' fill='none' stroke='#555' stroke-width='0.3'/>
-<circle cx='101.877' cy='145.0' r='0.5' fill='#555'/>
-<text x='92.76' y='143.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' text-anchor='end' dominant-baseline='central'>+ output</text>
-<text x='92.76' y='147.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' text-anchor='end' dominant-baseline='central'>non-inverting mix</text>
 <polyline points='128.2,145.0 132.24,145.0 135.24,145.0' fill='none' stroke='#555' stroke-width='0.3'/>
 <circle cx='128.2' cy='145.0' r='0.5' fill='#555'/>
-<text x='137.24' y='143.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>− output</text>
-<text x='137.24' y='147.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>inverted mix</text>
+<text x='137.24' y='143.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' dominant-baseline='central'>+ output</text>
+<text x='137.24' y='147.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' dominant-baseline='central'>non-inverting mix</text>
+<polyline points='101.877,145.0 97.76,145.0 94.76,145.0' fill='none' stroke='#555' stroke-width='0.3'/>
+<circle cx='101.877' cy='145.0' r='0.5' fill='#555'/>
+<text x='92.76' y='143.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.2' font-weight='bold' fill='#1a1a1a' text-anchor='end' dominant-baseline='central'>− output</text>
+<text x='92.76' y='147.4' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.4' fill='#555' text-anchor='end' dominant-baseline='central'>inverted mix</text>
 </svg>

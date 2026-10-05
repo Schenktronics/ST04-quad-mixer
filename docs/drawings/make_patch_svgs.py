@@ -34,10 +34,10 @@ def marker(color, name):
 class Patch:
     def __init__(self, data):
         self.data = data
-        outline, holes, _ = data
+        outline, holes, silk = data
         self.x0, self.y0, self.x1, self.y1 = outline
         self.jacks, self.knobs = {}, {}
-        channels, outputs = controls(holes)
+        channels, outputs = controls(holes, silk)
         for n, ((kx, ky), (ix, iy)) in enumerate(channels, start=1):
             self.knobs[f"Knob {n}"] = (kx, ky)
             self.jacks[f"In {n}"] = (ix, iy)
@@ -61,9 +61,11 @@ class Patch:
                            f"fill='none' stroke='{color}' stroke-width='0.9' stroke-linecap='round'/>")
         self.plugs.append(f"<circle cx='{jx}' cy='{jy}' r='2.3' fill='{color}' stroke='{INK}' stroke-width='0.3'/>")
 
-    def dest(self, jack, title, sub, color=RED, side="right", y=None):
-        """A module that receives from an output jack. `side` is where its box sits."""
+    def dest(self, jack, title, sub, color=RED, side=None, y=None):
+        """A module that receives from an output jack. The box sits on the jack's outer side unless `side` says otherwise."""
         jx, jy = self.jacks[jack]
+        if side is None:
+            side = "right" if jx > (self.x0 + self.x1) / 2 else "left"
         by_ = self.jacks[jack][1] if y is None else y
         bx, by = self.box(side, by_, title, sub)
         self.cable((jx, jy), (bx, by), color, into_jack=False)
@@ -115,7 +117,7 @@ def blend(data):
     p.source("In 2", "Osc 2", "out", color=BLUE)
     p.turn("Knob 1", 60)
     p.turn("Knob 2", -30, color=BLUE)
-    p.dest("Out +", "Filter", "audio in", side="left", y=145)
+    p.dest("Out +", "Filter", "audio in", y=145)
     p.note("Knob 2", "Knob 2", "sets Osc 2's level", color=BLUE, side="right")
     return p.render("Patch example: blend two oscillators")
 
@@ -123,7 +125,7 @@ def blend(data):
 def inverted(data):
     p = Patch(data)
     p.source("In 4", "LFO", "out")
-    p.dest("Out −", "Filter", "cutoff CV in", side="right")
+    p.dest("Out −", "Filter", "cutoff CV in")
     p.turn("Knob 4", 70)
     return p.render("Patch example: an inverted output")
 
@@ -134,7 +136,7 @@ def cv_sum(data):
     p.source("In 4", "LFO", "out", color=BLUE)
     p.turn("Knob 3", 40)
     p.turn("Knob 4", 20, color=BLUE)
-    p.dest("Out +", "VCA", "CV in", side="left", y=145)
+    p.dest("Out +", "VCA", "CV in", y=145)
     p.note("Knob 3", "Keep the sum low", "two ×2 channels add up", side="right")
     return p.render("Patch example: summing two CVs")
 

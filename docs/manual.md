@@ -1,6 +1,6 @@
 # 4ch Mixer — User Manual
 
-<img src="images/panel.svg" alt="4ch Mixer front panel: four channels, each with an input jack on the left and a knob on the right; the + and − outputs are at the bottom" width="300">
+<img src="images/panel.svg" alt="4ch Mixer front panel: four channels, each with an input jack on the left and a knob on the right; the − and + outputs are at the bottom" width="300">
 
 ## Overview
 
@@ -20,9 +20,9 @@ An input with nothing plugged into it is silent. Only the channels you patch aff
 | Power | ⟨check⟩ mA on +12 V, ⟨check⟩ mA on −12 V, no +5 V. 10-pin header. |
 | Protection | Reverse-power diodes and resettable fuses on both rails, and clamp diodes on each op-amp input |
 | Jacks | 6 × 3.5 mm mono (TS): 4 inputs, 2 outputs |
-| Controls | 4 × knobs, 100 kΩ linear potentiometers, with a center detent ⟨check⟩ |
-| Channel gain | 0 at one end of the knob, about ×1 at the center ⟨check⟩, ×2 at the other end |
-| Input impedance | About 100 kΩ |
+| Controls | 4 × knobs, 10 kΩ linear potentiometers with a center detent, 6 mm D shaft |
+| Channel gain | 0 fully anticlockwise, ×1 at the center detent, ×2 fully clockwise |
+| Input impedance | About 10 kΩ. A source with a high output impedance loses a little level into it. |
 | Empty inputs | Silent |
 | Outputs | + (non-inverting mix) and − (inverted mix) |
 | Output impedance | 1 kΩ |
@@ -31,7 +31,7 @@ An input with nothing plugged into it is silent. Only the channels you patch aff
 
 ## Panel layout
 
-The panel has four identical channels, numbered 1 to 4 from the top. Each channel has its input jack on the left and its knob on the right. The two outputs are at the bottom: **+** on the left and **−** on the right. The printed "+" and "−" mark the outputs' polarity.
+The panel has four identical channels, numbered 1 to 4 from the top. Each channel has its input jack on the left and its knob on the right. The two outputs are at the bottom: **−** on the left and **+** on the right. The printed "+" and "−" mark the outputs' polarity.
 
 ## Using the mixer
 
@@ -41,9 +41,9 @@ Each knob sets the level its channel adds to the mix:
 
 | Knob position | Channel level |
 |---------------|---------------|
-| One end (fully anticlockwise ⟨check⟩) | Silent: 0 |
+| Fully anticlockwise | Silent: 0 |
 | Center (the click) | About ×1: the input passes at its own level |
-| Other end (fully clockwise ⟨check⟩) | About ×2: twice the input |
+| Fully clockwise | About ×2: twice the input |
 
 The center click is easy to find by feel, so it's quick to return a channel to unity gain.
 
@@ -108,7 +108,7 @@ The module is protected against a cable plugged in backwards, but don't rely on 
 
 ## Circuit
 
-The inputs are switched jacks, so an empty jack connects its input to ground. A plugged-in signal goes to one end of a 100 kΩ potentiometer, whose other end is grounded. The wiper goes through a 1 kΩ resistor to the non-inverting input of one channel of a TL074 quad op-amp (U1), wired as an amplifier with a gain of 2. Each op-amp input has two clamp diodes, which hold it between about +12 V and −12 V.
+The inputs are switched jacks, so an empty jack connects its input to ground. A plugged-in signal goes to one end of a 10 kΩ potentiometer, whose other end is grounded. The wiper goes through a 1 kΩ resistor to the non-inverting input of one channel of a TL074 quad op-amp (U1), wired as an amplifier with a gain of 2. Each op-amp input has two clamp diodes, which hold it between about +12 V and −12 V.
 
 The four channels feed a summing amplifier (U2, a TL072), through 10 kΩ resistors. U2's first half inverts the sum, which is the **−** output, through 1 kΩ. Its second half inverts that again, giving the **+** output, through 1 kΩ. A 10 pF capacitor across each of U2's feedback resistors keeps the summing stages stable. Each rail has two 0.1 µF capacitors and a 10 µF capacitor to ground.
 

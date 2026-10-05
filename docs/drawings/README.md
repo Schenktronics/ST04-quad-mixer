@@ -29,7 +29,7 @@ The panel drawing in the [user manual](../manual.md) ([`../images/panel.svg`](..
 | `F.SilkS` lines, arcs, circles and text | The title, the scales around the knobs, the output rings and the "+" and "−" labels |
 | The logo footprint's `F.SilkS` polygons | The Schenktronics logo |
 
-The channels are matched by height: the pot and the input jack on the same row make a channel, numbered from the top. The two output jacks at the bottom are "+" (left) and "−" (right), by the nearest printed label.
+The channels are matched by height: the pot and the input jack on the same row make a channel, numbered from the top. Each of the two output jacks at the bottom is matched to the nearest printed "+" or "−", so the drawings follow the faceplate if the outputs are swapped.
 
 The captions ("In 1", "Knob 1" and so on) are added by the script, not read from KiCad.
 

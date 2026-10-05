@@ -150,7 +150,7 @@ If a diode in this table reads OL, it's fitted backwards, missing, or not solder
 ## Step 4 — Fit the pots and jacks
 
 1. Push the four pots into RV1–RV4 from the **front** of the PCB. Each pot fits only one way round: the three pins go in the row of three small holes, and the two mounting lugs go in the large holes. The lugs clip into the board and hold the pot in place.
-2. Insert the six jacks from the front. J1 to J4 are the inputs, one per channel, from the top. J5 (the **+** output) and J6 (the **−** output) are at the bottom: J5 on the left and J6 on the right, matching the printed "+" and "−" on the faceplate. Make sure each jack sits flat, with all its legs through their pads.
+2. Insert the six jacks from the front. J1 to J4 are the inputs, one per channel, from the top. J5 (the **+** output) and J6 (the **−** output) are at the bottom: J6 on the left and J5 on the right, matching the printed "−" and "+" on the faceplate. Make sure each jack sits flat, with all its legs through their pads.
 3. Don't solder anything yet.
 
 <img src="images/assembly-3-parts.svg" alt="Front of the PCB with the positions of the eight jacks highlighted, and the four pots at RV1 to RV4" width="640">
@@ -192,7 +192,7 @@ Repeat the rail test from Step 3 on the header pins. Then check the jacks and ou
 |------|-----------------|
 | Each input jack (J1–J4), with no plug in: tip pin (T) to sleeve pin (S) | Beeps. The switch contact connects the tip to ground when the jack is empty. |
 | Each output jack (J5, J6): tip (T) to sleeve (S) | About 11 kΩ, not a beep. The output resistors and their load resistors are in the way. |
-| Each pot: wiper (pin 2) to pin 3, turning the knob | Changes from about 0 to about 100 kΩ as you turn it. |
+| Each pot: wiper (pin 2) to pin 3, turning the knob | Changes from about 0 to about 10 kΩ as you turn it. |
 
 Then plug a patch cable into each input. The beep should stop, because the plug breaks the connection to ground. If it doesn't, check the jack's switch pin (TN).
 
@@ -206,9 +206,9 @@ Connect the module to your case (see [Install](#step-9--install)), with the red 
 
 | Knob 1 | + output (J5) | − output (J6) |
 |--------|---------------|---------------|
-| One end | About 0 V | About 0 V |
+| Fully anticlockwise | About 0 V | About 0 V |
 | Center click | About +2 V | About −2 V |
-| Other end | About +4 V | About −4 V |
+| Fully clockwise | About +4 V | About −4 V |
 
 Then repeat the test for In 2, In 3 and In 4. If the center reads far from 2 V, or the outputs don't match each other, see the troubleshooting table.
 

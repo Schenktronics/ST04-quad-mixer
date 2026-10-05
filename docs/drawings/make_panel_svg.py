@@ -140,17 +140,21 @@ def svg(view, body, title):
             + "\n".join(body) + "\n</svg>\n")
 
 
-def controls(holes):
-    """Each channel's (knob, input jack) as (x, y), top to bottom, plus the two outputs.
+def controls(holes, silk):
+    """Each channel's (knob, input jack) as (x, y), top to bottom, plus the two outputs by polarity.
 
     The four pots and the four input jacks share a row each. The outputs are the
-    two jacks at the bottom of the panel: "+" (J5) on the left, "−" (J6) on the right.
+    two jacks at the bottom of the panel. Each is matched to the "+" or "-" printed
+    beside it, so the drawings follow the faceplate if the outputs are swapped.
     """
     pots = sorted(((x, y) for k, x, y, d in holes if k == "pot"), key=lambda p: p[1])
     inputs = sorted(((x, y) for k, x, y, d in holes if k == "jack" and y < 140), key=lambda p: p[1])
-    outputs = sorted(((x, y) for k, x, y, d in holes if k == "jack" and y >= 140), key=lambda p: p[0])
+    jacks = [(x, y) for k, x, y, d in holes if k == "jack" and y >= 140]
+    labels = {t["text"]: (t["x"], t["y"]) for t in silk["texts"] if t["text"] in ("+", "-")}
+    nearest = lambda label: min(jacks, key=lambda j: math.dist(j, labels[label]))
+    outputs = {"+": nearest("+"), "−": nearest("-")}
     channels = [(pots[i], inputs[i]) for i in range(len(pots))]
-    return channels, {"+": outputs[0], "−": outputs[1]}
+    return channels, outputs
 
 
 def annotated(outline, holes, silk):
@@ -177,17 +181,20 @@ def annotated(outline, holes, silk):
                 f"<text x='{tx_left}' y='{y + 2.4}' {FONT} font-size='2.4' fill='{DIM}' "
                 f"text-anchor='end' dominant-baseline='central'>{sub}</text>"]
 
-    channels, outputs = controls(holes)
+    channels, outputs = controls(holes, silk)
     (kx, ky), (ix, iy) = channels[0]
     # Channel 1 is labelled in full. The jack's label goes out to the left, the knob's to the right.
     body += label_left(iy - 4, "In 1", "input. Empty: silent", ix - 4, iy)
-    body += label_right(ky, "Knob 1", "level. Ends: silent, ×2", kx + KNOB_R, ky)
+    body += label_right(ky, "Knob 1", "anticlockwise silent, clockwise ×2", kx + KNOB_R, ky)
     for n, ((kx, ky), _) in enumerate(channels[1:], start=2):
         body += label_right(ky, f"Channel {n}", "same as channel 1", x1 - 1, ky)
-    ox, oy = outputs["+"]
-    body += label_left(oy, "+ output", "non-inverting mix", ox - 6.2, oy)
-    ox, oy = outputs["−"]
-    body += label_right(oy, "− output", "inverted mix", ox + 6.2, oy)
+    centre = (x0 + x1) / 2
+    for polarity, title, sub in (("+", "+ output", "non-inverting mix"), ("−", "− output", "inverted mix")):
+        ox, oy = outputs[polarity]
+        if ox < centre:
+            body += label_left(oy, title, sub, ox - 6.2, oy)
+        else:
+            body += label_right(oy, title, sub, ox + 6.2, oy)
     pad = 4
     return svg((x0 - pad - 46, y0 - pad, (x1 - x0) + 2 * pad + 92, (y1 - y0) + 2 * pad), body,
                "4ch Mixer front panel")

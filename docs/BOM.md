@@ -17,7 +17,7 @@ The **Easy Build Kit** includes a PCB with every surface-mount part below alread
 | 4 | C1–C4 | Capacitor, 0.1 µF, 25 V, X7R, 0805 | AVX 08053C104KAT2A, or equivalent | Decoupling on the ±12 V rails. |
 | 2 | C5, C6 | Capacitor, 10 µF, 25 V, X5R, 0805 | Taiyo Yuden TMK212BBJ106KG-T, or equivalent | Bulk decoupling on the ±12 V rails. |
 | 2 | C7, C8 | Capacitor, 10 pF, 50 V, C0G/NP0, 0805 | Yageo CC0805JRNPO9BN100, or equivalent | Feedback capacitors on the output stage. |
-| 2 | D1, D2 | Diode, 1 A, 200 V, SMA | ON Semiconductor MRA4003T3G, or equivalent | Reverse-power protection. The cathode (stripe) end matters. |
+| 2 | D1, D2 | Diode, 1 A, 300 V, SMA | ON Semiconductor MRA4003T3G, or equivalent | Reverse-power protection. The cathode (stripe) end matters. |
 | 8 | D3–D10 | Diode, 1N4148, SOD-323, 75 V, 150 mA | Diodes Incorporated 1N4148WS-7-F, or equivalent | [Datasheet](https://datasheet.octopart.com/1N4148WS-7-F-Diodes-Inc.-datasheet-7284054.pdf). Input clamps. The cathode (stripe) end matters. |
 | 2 | F1, F2 | Resettable fuse (PTC), 200 mA hold, 30 V, 1206 | Bel Fuse 0ZCJ0020FF2E, or equivalent | Either way round. F1 is on +12 V, F2 on −12 V. |
 
@@ -27,8 +27,8 @@ The **Easy Build Kit** includes a PCB with every surface-mount part below alread
 |----:|-----------|------|--------------------------|-------|
 | 1 | P1 | Shrouded pin header, 2 × 5, 2.54 mm, vertical | On Shore Technology 302-S101, or equivalent | Eurorack power connector. Pins 1–2 are −12 V, pins 9–10 are +12 V, pins 3–8 are ground. |
 | 6 | J1–J6 | 3.5 mm mono switched jack, vertical PCB mount, with nut | CUI Devices MJ-3507, or QingPu WQP-PJ398SM or WQP518MA | The inputs (J1–J4) need the switched contact: it grounds an empty input. The outputs (J5, J6) don't use it. Any of these fits the PJ398SM footprint. The CUI part needs a short wire from its sleeve lug to the square ground pad (see the [assembly guide](assembly-guide.md#step-6--solder-the-pots-and-jacks)). |
-| 4 | RV1–RV4 | Potentiometer, 100 kΩ linear, 9 mm, bushingless, 25 mm flat (D) shaft, with board-lock lugs | Bourns PTV09A-4225F-B104, or equivalent | [Datasheet](https://www.bourns.com/docs/Product-Datasheets/PTV09.pdf). The pot's three pins go to the input, the wiper and ground. An equivalent must fit the 9 mm footprint (3 pins in a row, 2 mounting lugs) and pass through the 7 mm panel hole. |
-| 4 | — | Knob, for 6 mm shaft | Davies Molding 1221-J, or equivalent | An equivalent must fit the pot's D shaft. |
+| 4 | RV1–RV4 | Potentiometer, 10 kΩ linear, center detent, 6 mm D shaft, no bushing | Panasonic EVU-F3AF20B14 | The pot's three pins go to the input, the wiper and ground. It mounts on its board-lock lugs and passes through the 7 mm panel hole. Clockwise from the detent boosts the channel to ×2; anticlockwise attenuates it to silence. |
+| 4 | — | Knob, for 6 mm D shaft | Davies Molding 1221-J, or equivalent | Fits the pot's 6 mm D shaft. |
 | 1 | — | Main PCB, 30 × 100 mm, 2-layer, 1.6 mm | Schenktronics | Fabrication files: [manufacturing/mixer/](../manufacturing/mixer/) |
 | 1 | — | Faceplate, 6HP (30.48 × 128.5 mm), 1.6 mm aluminium PCB | Schenktronics | Fabrication files: [manufacturing/panel/](../manufacturing/panel/). Single-sided, so it can also be made in FR4. |
 | 1 | — | Eurorack power cable, 10-pin to 16-pin | | Red stripe marks −12 V. |

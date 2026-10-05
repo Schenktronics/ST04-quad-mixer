@@ -6,12 +6,12 @@ Qty,Reference,Description,Manufacturer,Part Number,Link
 4,C1-C4,"Capacitor, 0.1uF, 25V, X7R, 0805",AVX,08053C104KAT2A,
 2,"C5, C6","Capacitor, 10uF, 25V, X5R, 0805",Taiyo Yuden,TMK212BBJ106KG-T,
 2,"C7, C8","Capacitor, 10pF, 50V, C0G/NP0, 0805",Yageo,CC0805JRNPO9BN100,
-2,"D1, D2","Diode, 1A, 200V, SMA. Cathode (stripe) matters",ON Semiconductor,MRA4003T3G,
+2,"D1, D2","Diode, 1A, 300V, SMA. Cathode (stripe) matters",ON Semiconductor,MRA4003T3G,
 8,D3-D10,"Diode, 1N4148, SOD-323, 75V, 150mA. Cathode (stripe) matters",Diodes Incorporated,1N4148WS-7-F,https://datasheet.octopart.com/1N4148WS-7-F-Diodes-Inc.-datasheet-7284054.pdf
 2,"F1, F2","Resettable fuse (PTC), 200mA hold, 30V, 1206",Bel Fuse,0ZCJ0020FF2E,
 1,P1,"Shrouded pin header, 2x5, 2.54mm, vertical",On Shore Technology,302-S101,
 6,J1-J6,"3.5mm mono switched jack, vertical, with nut. CUI MJ-3507 also works, with a ground wire from its sleeve lug to the square pad",QingPu / CUI Devices,WQP-PJ398SM or WQP518MA (or CUI MJ-3507),http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html
-4,RV1-RV4,"Potentiometer, 100k linear, 9mm, bushingless, 25mm D shaft, board-lock lugs (or equivalent)",Bourns,PTV09A-4225F-B104,https://www.bourns.com/docs/Product-Datasheets/PTV09.pdf
+4,RV1-RV4,"Potentiometer, 10k linear, center detent, 6mm D shaft, no bushing",Panasonic,EVU-F3AF20B14,
 4,,"Knob, fits 6mm D shaft (or equivalent)",Davies Molding,1221-J,
 1,,"Main PCB, 30x100mm, 2-layer, 1.6mm",Schenktronics,4ch Mixer v1.0,manufacturing/mixer/
 1,,"Faceplate, 6HP (30.48x128.5mm), 1.6mm aluminium PCB",Schenktronics,4ch Mixer Faceplate,manufacturing/panel/
