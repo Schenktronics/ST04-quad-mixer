@@ -84,8 +84,8 @@
 	(net 0 "")
 	(net 1 "GND")
 	(gr_line
-		(start 99.76 35.75)
-		(end 130.24 35.75)
+		(start 100.0 35.75)
+		(end 130.0 35.75)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -94,8 +94,8 @@
 		(uuid "380e15b4-bac2-4769-b837-6cf7be3011e9")
 	)
 	(gr_line
-		(start 130.24 35.75)
-		(end 130.24 164.25)
+		(start 130.0 35.75)
+		(end 130.0 164.25)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -104,8 +104,8 @@
 		(uuid "22e06da4-f35e-416f-8700-dcd357e54346")
 	)
 	(gr_line
-		(start 130.24 164.25)
-		(end 99.76 164.25)
+		(start 130.0 164.25)
+		(end 100.0 164.25)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -114,8 +114,8 @@
 		(uuid "45c11096-450b-43ac-9df1-3e2559682ed0")
 	)
 	(gr_line
-		(start 99.76 164.25)
-		(end 99.76 35.75)
+		(start 100.0 164.25)
+		(end 100.0 35.75)
 		(stroke
 			(width 0.05)
 			(type default)
