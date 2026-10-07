@@ -305,7 +305,7 @@
       "step": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "/Users/nathanschenk/Products/NTSFootprints/Schenktronics A4.kicad_wks"
   },
   "schematic": {
     "bus_aliases": {},
@@ -317,7 +317,8 @@
         "name": "4ch Mixer Faceplate",
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
-    ]
+    ],
+    "page_layout_descr_file": "/Users/nathanschenk/Products/NTSFootprints/Schenktronics A4.kicad_wks"
   },
   "sheets": [],
   "text_variables": {},
