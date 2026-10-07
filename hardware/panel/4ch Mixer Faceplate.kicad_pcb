@@ -150,7 +150,7 @@
 	(footprint "Panel:MountingHole_3.2mm"
 		(layer "F.Cu")
 		(uuid "5adf8f96-9227-4555-a3bf-b22fe65c398d")
-		(at 107.26 38.75)
+		(at 107.5 38.75)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(property "Reference" "H1"
 			(at 0 0 0)
@@ -174,7 +174,7 @@
 	(footprint "Panel:MountingHole_3.2mm"
 		(layer "F.Cu")
 		(uuid "470bb633-0e69-4b2f-a589-c02d99e0afd1")
-		(at 107.26 161.25)
+		(at 107.5 161.25)
 		(attr board_only exclude_from_pos_files exclude_from_bom)
 		(property "Reference" "H3"
 			(at 0 0 0)
@@ -208,7 +208,7 @@
 		)
 	)
 	(gr_text "ST-04"
-		(at 102.1300 162.4597 90)
+		(at 102.2500 162.4597 90)
 		(layer "F.SilkS")
 		(uuid "8a7b6c5d-4e3f-4210-9fed-cba987654321")
 		(effects
@@ -1560,7 +1560,7 @@
 		(footprint "_NTSFootprints:SchentronicsLogoSqueeze2mm"
 		(layer "F.Cu")
 		(uuid "7c2e9a41-5f3b-4d8c-91a0-6b4e2f8d9a11")
-		(at 120.0867 161.2500)
+		(at 120.2067 161.2500)
 		(property "Reference" "G***" (at 0 0 0) (layer "F.SilkS") (hide yes) (effects (font (size 1.524 1.524) (thickness 0.3))))
 		(property "Value" "LOGO" (at 0.75 0 0) (layer "F.SilkS") (hide yes) (effects (font (size 1.524 1.524) (thickness 0.3))))
 		(fp_poly
