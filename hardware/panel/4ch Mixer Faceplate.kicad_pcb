@@ -196,7 +196,7 @@
 		)
 	)
 	(gr_text "Quad Mixer"
-		(at 115.0 43.6 0)
+		(at 115.0 44.0 0)
 		(layer "F.SilkS")
 		(uuid "abfb542a-d2d3-4165-acde-7b32a3a85fba")
 		(effects
