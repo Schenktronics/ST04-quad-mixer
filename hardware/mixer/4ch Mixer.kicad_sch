@@ -12,6 +12,7 @@
 		(comment 1 "4 Channel Active Mixer")
 		(comment 2 "Eurorack")
 		(comment 3 "Nathan Schenk")
+		(comment 4 "PCB-ST04-MAIN")
 	)
 	(lib_symbols
 		(symbol "4ch-Mixer-rescue:+12VA"
