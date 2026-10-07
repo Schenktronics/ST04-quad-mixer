@@ -12848,10 +12848,10 @@
 		(layer "Edge.Cuts")
 		(uuid "de5ea19f-6411-465b-8d19-bd308eb9c5ea")
 	)
-	(gr_text "Quad Mixer\nV1.0\nschenktronics.com"
+	(gr_text "ST-04 v1.0\nQuad Mixer\nschenktronics.com"
 		(at 101.6 95 0)
 		(layer "F.SilkS")
-		(uuid "f1d763ec-7cda-4d2e-9e87-f89722da8bad")
+		(uuid "e9b26cd3-c22c-4e79-96df-e7ec8c334d58")
 		(effects
 			(font
 				(size 1 1)
