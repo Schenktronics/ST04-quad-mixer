@@ -12848,18 +12848,6 @@
 		(layer "Edge.Cuts")
 		(uuid "de5ea19f-6411-465b-8d19-bd308eb9c5ea")
 	)
-	(gr_text "ST-04 v1.0\nQuad Mixer\nschenktronics.com"
-		(at 101.6 95 0)
-		(layer "F.SilkS")
-		(uuid "e9b26cd3-c22c-4e79-96df-e7ec8c334d58")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "-12V"
 		(at 113.2 114.6 0)
 		(layer "B.SilkS")
@@ -12872,10 +12860,46 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "ST-04 v1.0\nQuad Mixer"
+		(at 124.2 53.8 0)
+		(layer "B.SilkS")
+		(uuid "e9b26cd3-c22c-4e79-96df-e7ec8c334d58")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "+12V"
 		(at 129.6 114.6 0)
 		(layer "B.SilkS")
 		(uuid "d95b743f-1d58-43d3-b5f6-8ab6ae269c1b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "CC BY-NC-SA 4.0"
+		(at 100.6 117.6 270)
+		(layer "B.SilkS")
+		(uuid "20571b24-eb90-4f4b-833d-ccca97e398d4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "schenktronics.com"
+		(at 100.8 87.6 270)
+		(layer "B.SilkS")
+		(uuid "5431177e-5f66-4efd-9ebe-fe547c6ea076")
 		(effects
 			(font
 				(size 1 1)
@@ -13116,22 +13140,6 @@
 		(uuid "09a0405d-f72e-4aa8-92f0-afc0237e164e")
 	)
 	(segment
-		(start 111.7555 143.7555)
-		(end 113 145)
-		(width 0.25)
-		(layer "B.Cu")
-		(net "Net-(J6-PadT)")
-		(uuid "2d0713da-e1a9-4267-8f7a-596db6ca9a22")
-	)
-	(segment
-		(start 111.7555 140.4)
-		(end 111.7555 143.7555)
-		(width 0.25)
-		(layer "B.Cu")
-		(net "Net-(J6-PadT)")
-		(uuid "c9f3905f-2768-4f3d-80d1-1945c538adfa")
-	)
-	(segment
 		(start 119.647 142.43)
 		(end 117.077 145)
 		(width 0.25)
@@ -13146,6 +13154,22 @@
 		(layer "B.Cu")
 		(net "Net-(J5-PadT)")
 		(uuid "ad2d6d9a-21bb-44b6-a37e-e69edfd68012")
+	)
+	(segment
+		(start 111.7555 143.7555)
+		(end 113 145)
+		(width 0.25)
+		(layer "B.Cu")
+		(net "Net-(J6-PadT)")
+		(uuid "2d0713da-e1a9-4267-8f7a-596db6ca9a22")
+	)
+	(segment
+		(start 111.7555 140.4)
+		(end 111.7555 143.7555)
+		(width 0.25)
+		(layer "B.Cu")
+		(net "Net-(J6-PadT)")
+		(uuid "c9f3905f-2768-4f3d-80d1-1945c538adfa")
 	)
 	(segment
 		(start 105 75.6)
