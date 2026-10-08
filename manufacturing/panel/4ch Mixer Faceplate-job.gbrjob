@@ -5,16 +5,16 @@
       "Application": "Pcbnew",
       "Version": "10.0.6"
     },
-    "CreationDate": "2026-10-03T20:02:20-07:00"
+    "CreationDate": "2026-10-07T19:38:52-07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "4ch Mixer Faceplate",
       "GUID": "34636820-4d69-4786-9572-204661636570",
-      "Revision": "rev?"
+      "Revision": "1.0"
     },
     "Size": {
-      "X": 30.53,
+      "X": 30.05,
       "Y": 128.55
     },
     "LayerNumber": 2,

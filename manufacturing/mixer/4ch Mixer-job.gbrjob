@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.6"
     },
-    "CreationDate": "2026-10-03T20:02:19-07:00"
+    "CreationDate": "2026-10-07T19:38:16-07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "4ch Mixer",
       "GUID": "34636820-4d69-4786-9572-2e6b69636164",
-      "Revision": "rev?"
+      "Revision": "1.0"
     },
     "Size": {
       "X": 30.05,
