@@ -81,7 +81,7 @@ class Patch:
         self.plugs.append(f"<circle cx='{jx}' cy='{jy}' r='2.3' fill='{color}' stroke='{INK}' stroke-width='0.3'/>")
 
     def turn(self, knob, degrees, color=RED):
-        """Show a knob's setting: 0 is the center detent (12 o'clock), negative is left."""
+        """Show a knob's setting: 0 is the center (12 o'clock), negative is left."""
         kx, ky = self.knobs[knob]
         a = math.radians(degrees)
         point = lambda r: (kx + r * math.sin(a), ky - r * math.cos(a))
@@ -137,7 +137,7 @@ def cv_sum(data):
     p.turn("Knob 3", 40)
     p.turn("Knob 4", 20, color=BLUE)
     p.dest("Out +", "VCA", "CV in", y=145)
-    p.note("Knob 3", "Keep the sum low", "two ×2 channels add up", side="right")
+    p.note("Knob 3", "Keep the sum low", "two full channels add up", side="right")
     return p.render("Patch example: summing two CVs")
 
 

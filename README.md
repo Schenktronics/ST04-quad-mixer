@@ -5,14 +5,14 @@
 
 # Quad Mixer
 
-A 6HP Eurorack four-channel active mixer from **Schenktronics**. Each channel has an input jack and a level knob that takes the input from silent up to twice its level. The four channels are summed into two outputs: a non-inverting mix (+) and an inverted one (−). Unplugged inputs are silent, so only the channels you patch affect the mix.
+A 6HP Eurorack four-channel active mixer from **Schenktronics**. Each channel has an input jack and a level knob that takes the input from silent up to its own level. The four channels are summed into two outputs: a non-inverting mix (+) and an inverted one (−). Unplugged inputs are silent, so only the channels you patch affect the mix.
 
-<img src="docs/images/panel.svg" alt="Quad Mixer front panel" width="160">
+<img src="docs/images/outline-front.svg" alt="Quad Mixer front panel" width="120">
 
 ## Features
 
 - 6HP Eurorack, 30.48 mm wide, 20 mm deep. Powered from ±12 V.
-- Four channels, each with a level knob from silent to ×2
+- Four channels, each with a level knob from silent to ×1
 - Two outputs: + (the mix) and − (the mix, inverted)
 - Empty inputs are silent, so unused channels add nothing
 - Reverse-power protection on both rails
@@ -32,6 +32,7 @@ hardware/
   mixer/                        Main PCB (KiCad 10)
     4ch Mixer.kicad_sch           Schematic
     4ch Mixer.kicad_pcb           PCB layout
+    4ch Mixer.step                3D model
     lib/                          Custom symbols and footprints
   panel/                        Faceplate (KiCad 10, made as an aluminium PCB)
     4ch Mixer Faceplate.kicad_pcb Faceplate layout

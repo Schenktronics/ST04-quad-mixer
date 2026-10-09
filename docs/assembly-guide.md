@@ -4,6 +4,8 @@ This kit has 156 solder joints, 108 of them on surface-mount parts: 0805 resisto
 
 **Building the Easy Build Kit?** Its board arrives with every surface-mount part already soldered and tested, so skip [Step 1](#step-1--solder-the-surface-mount-parts) and start at [Step 2](#step-2--fit-the-power-header). That leaves 48 through-hole joints, about 45–60 minutes, and no surface-mount soldering at all.
 
+<img src="images/outline-bare-parts.svg" alt="The faceplate and the bare PCB, before assembly" width="260">
+
 ## What you need
 
 ### Kit contents
@@ -14,7 +16,8 @@ Check your kit against this list before you start (full details in the [BOM](BOM
 
 - [ ] 1 × TL074 quad op-amp (U1, 14 pins)
 - [ ] 1 × TL072 dual op-amp (U2, 8 pins)
-- [ ] 17 × 10 kΩ resistors (R1–R17)
+- [ ] 13 × 10 kΩ resistors (R1–R4, R9–R17)
+- [ ] 4 × 0 Ω resistors (R5–R8)
 - [ ] 6 × 1 kΩ resistors (R18–R23)
 - [ ] 4 × 0.1 µF capacitors (C1–C4)
 - [ ] 2 × 10 µF capacitors (C5, C6)
@@ -71,7 +74,8 @@ Work in this order, from the most difficult part to the easiest:
 
    | Value | Where |
    |-------|-------|
-   | 10 kΩ (17) | R1–R17 |
+   | 10 kΩ (13) | R1–R4, R9–R17 |
+   | 0 Ω (4) | R5–R8 |
    | 1 kΩ (6) | R18–R23 |
 
 4. **Capacitors**, one value at a time. Open one strip at a time so you don't mix them up.
@@ -180,7 +184,7 @@ Turn the assembly over and solder from the back of the PCB, between the surface-
 
 ## Step 7 — Fit the knobs
 
-Push each knob onto its pot shaft. The flat on the shaft sets the knob's position. Turn each knob to its center click and check that the pointer points straight up, at the center mark on the panel. Check that each knob turns without rubbing on the panel.
+Push each knob onto its pot shaft. The flat on the shaft sets the knob's position. Turn each knob so the pointer points straight up, at the center mark on the panel. Check that each knob turns without rubbing on the panel.
 
 ## Step 8 — Test
 
@@ -192,7 +196,7 @@ Repeat the rail test from Step 3 on the header pins. Then check the jacks and ou
 |------|-----------------|
 | Each input jack (J1–J4), with no plug in: tip pin (T) to sleeve pin (S) | Beeps. The switch contact connects the tip to ground when the jack is empty. |
 | Each output jack (J5, J6): tip (T) to sleeve (S) | About 11 kΩ, not a beep. The output resistors and their load resistors are in the way. |
-| Each pot: wiper (pin 2) to pin 3, turning the knob | Changes from about 0 to about 10 kΩ as you turn it. |
+| Each pot: wiper (pin 2) to pin 3, turning the knob | Changes from about 0 to about 100 kΩ as you turn it. |
 
 Then plug a patch cable into each input. The beep should stop, because the plug breaks the connection to ground. If it doesn't, check the jack's switch pin (TN).
 
@@ -207,14 +211,16 @@ Connect the module to your case (see [Install](#step-9--install)), with the red 
 | Knob 1 | + output (J5) | − output (J6) |
 |--------|---------------|---------------|
 | Fully anticlockwise | About 0 V | About 0 V |
-| Center click | About +2 V | About −2 V |
-| Fully clockwise | About +4 V | About −4 V |
+| Center | About +1 V | About −1 V |
+| Fully clockwise | About +2 V | About −2 V |
 
-Then repeat the test for In 2, In 3 and In 4. If the center reads far from 2 V, or the outputs don't match each other, see the troubleshooting table.
+Then repeat the test for In 2, In 3 and In 4. If the center reads far from 1 V, or the outputs don't match each other, see the troubleshooting table.
 
 ## Step 9 — Install
 
 Install the module in your case with the included power cable and four M3 rack screws (two will do). The details, and how to use the module, are in the [User Manual](manual.md#installation).
+
+<img src="images/outline-iso-top-left.svg" alt="Assembled module, isometric view" width="160">
 
 ## Troubleshooting
 
@@ -226,6 +232,6 @@ Install the module in your case with the included power cable and four M3 rack s
 | Both outputs are dead, but every channel is fine | A bad joint or missing part in the summing stage: U2, or R9–R15. Check U2's power pins (4 and 8). |
 | One output is dead | The 1 kΩ output resistor for that output is missing (R18 for +, R19 for −), or its joint is bad. |
 | An output is stuck near +10 V or −10 V | The channel's feedback resistor is missing (R5–R8 for U1, one per channel), or its clamp diode is reversed. |
-| The center reads far from about 2 V, or the outputs don't match | A resistor of the wrong value beside that channel (check R1–R12, and R13–R15 for the summing stage), or a pot of a different type from the BOM. |
+| The center reads far from about 1 V, or the outputs don't match | A resistor of the wrong value beside that channel (check R1–R12, and R13–R15 for the summing stage), or a pot of a different type from the BOM. |
 | A knob works backwards | The pot is a different type from the one in the BOM. |
 | A knob rubs on the panel | The shaft isn't centered in its hole, or the knob is pushed on too far. |

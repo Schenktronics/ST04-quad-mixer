@@ -12,7 +12,8 @@ The **Easy Build Kit** includes a PCB with every surface-mount part below alread
 |----:|-----------|------|--------------------------|-------|
 | 1 | U1 | Quad JFET op-amp, SOIC-14 | Texas Instruments TL074CDR (TI, Microchip or Analog Devices only) | [Datasheet](https://www.ti.com/lit/ds/symlink/tl074.pdf). Pin 1 is marked on the board. |
 | 1 | U2 | Dual JFET op-amp, SOIC-8 | Texas Instruments TL072CDR (TI, Microchip or Analog Devices only) | Pin 1 is marked on the board. |
-| 17 | R1–R17 | Resistor, 10 kΩ, 1%, 0805 | Yageo RC0805FR-0710KL, or equivalent | Mixing and gain resistors. |
+| 13 | R1–R4, R9–R17 | Resistor, 10 kΩ, 1%, 0805 | Yageo RC0805FR-0710KL, or equivalent | Gain-setting and mixing resistors. |
+| 4 | R5–R8 | Resistor, 0 Ω jumper, 0805 | Yageo RC0805FR-070RL, or equivalent | Feedback link for each channel's op-amp, set for unity gain. |
 | 6 | R18–R23 | Resistor, 1 kΩ, 1%, 0805 | Yageo RC0805FR-071KL, or equivalent | R18 and R19 are the output resistors. R20–R23 sit between each channel's knob and its op-amp. |
 | 4 | C1–C4 | Capacitor, 0.1 µF, 25 V, X7R, 0805 | AVX 08053C104KAT2A, or equivalent | Decoupling on the ±12 V rails. |
 | 2 | C5, C6 | Capacitor, 10 µF, 25 V, X5R, 0805 | Taiyo Yuden TMK212BBJ106KG-T, or equivalent | Bulk decoupling on the ±12 V rails. |
@@ -27,7 +28,7 @@ The **Easy Build Kit** includes a PCB with every surface-mount part below alread
 |----:|-----------|------|--------------------------|-------|
 | 1 | P1 | Shrouded pin header, 2 × 5, 2.54 mm, vertical | On Shore Technology 302-S101, or equivalent | Eurorack power connector. Pins 1–2 are −12 V, pins 9–10 are +12 V, pins 3–8 are ground. |
 | 6 | J1–J6 | 3.5 mm mono switched jack, vertical PCB mount, with nut | CUI Devices MJ-3507, or QingPu WQP-PJ398SM or WQP518MA | The inputs (J1–J4) need the switched contact: it grounds an empty input. The outputs (J5, J6) don't use it. Any of these fits the PJ398SM footprint. The CUI part needs a short wire from its sleeve lug to the square ground pad (see the [assembly guide](assembly-guide.md#step-6--solder-the-pots-and-jacks)). |
-| 4 | RV1–RV4 | Potentiometer, 10 kΩ linear, center detent, 6 mm D shaft, no bushing | Panasonic EVU-F3AF20B14 | The pot's three pins go to the input, the wiper and ground. It mounts on its board-lock lugs and passes through the 7 mm panel hole. Clockwise from the detent boosts the channel to ×2; anticlockwise attenuates it to silence. |
+| 4 | RV1–RV4 | Potentiometer, 100 kΩ linear, 6 mm D shaft, no bushing | Bourns PTV09A-4020F-B104 | [Datasheet](http://www.farnell.com/datasheets/2259384.pdf). The pot's three pins go to the input, the wiper and ground. It mounts on its board-lock lugs and passes through the 7 mm panel hole. Clockwise increases the channel to ×1; anticlockwise attenuates it to silence. |
 | 4 | — | Knob, for 6 mm D shaft | Davies Molding 1221-J, or equivalent | Fits the pot's 6 mm D shaft. |
 | 1 | — | Main PCB, 30 × 100 mm, 2-layer, 1.6 mm | Schenktronics | Fabrication files: [manufacturing/mixer/](../manufacturing/mixer/) |
 | 1 | — | Faceplate, 6HP (30.48 × 128.5 mm), 1.6 mm aluminium PCB | Schenktronics | Fabrication files: [manufacturing/panel/](../manufacturing/panel/). Single-sided, so it can also be made in FR4. |

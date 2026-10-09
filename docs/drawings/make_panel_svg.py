@@ -91,7 +91,7 @@ def arc_path(x1, y1, xm, ym, x2, y2):
 
 
 def knob(x, y):
-    """A knob seen from the front, pointer at 12 o'clock (the center detent)."""
+    """A knob seen from the front, pointer at 12 o'clock (the center, half gain)."""
     return [f"<circle cx='{x}' cy='{y}' r='{KNOB_R}' fill='#fff' stroke='{INK}' stroke-width='0.35'/>",
             f"<circle cx='{x}' cy='{y}' r='{KNOB_R - 1.3}' fill='#fff' stroke='{INK}' stroke-width='0.25'/>",
             f"<line x1='{x}' y1='{y - KNOB_R}' x2='{x}' y2='{y - 2}' stroke='{INK}' stroke-width='0.6' "
@@ -185,7 +185,7 @@ def annotated(outline, holes, silk):
     (kx, ky), (ix, iy) = channels[0]
     # Channel 1 is labelled in full. The jack's label goes out to the left, the knob's to the right.
     body += label_left(iy - 4, "In 1", "input. Empty: silent", ix - 4, iy)
-    body += label_right(ky, "Knob 1", "anticlockwise silent, clockwise ×2", kx + KNOB_R, ky)
+    body += label_right(ky, "Knob 1", "anticlockwise silent, clockwise ×1", kx + KNOB_R, ky)
     for n, ((kx, ky), _) in enumerate(channels[1:], start=2):
         body += label_right(ky, f"Channel {n}", "same as channel 1", x1 - 1, ky)
     centre = (x0 + x1) / 2

@@ -60,4 +60,24 @@ def inverted(data):
     return p.render("Patch example: an inverted output")
 ```
 
-Jacks and knobs are named `In 1`–`In 4`, `Out +`, `Out −` and `Knob 1`–`Knob 4`, from the top. Sources go on the left, destinations on the left or right, beside their output. `turn()` sets a knob's pointer, in degrees from the center click (negative is anticlockwise). `note()` puts a caption beside a knob or jack. Pass `color=BLUE` to draw a second signal. To add an example, write a new function, add it to the list in `main()`, and run `make_patch_svgs.py`.
+Jacks and knobs are named `In 1`–`In 4`, `Out +`, `Out −` and `Knob 1`–`Knob 4`, from the top. Sources go on the left, destinations on the left or right, beside their output. `turn()` sets a knob's pointer, in degrees from the center (negative is anticlockwise). `note()` puts a caption beside a knob or jack. Pass `color=BLUE` to draw a second signal. To add an example, write a new function, add it to the list in `main()`, and run `make_patch_svgs.py`.
+
+## Outline drawings
+
+`outline-front.svg`, `outline-side.svg`, one `outline-iso-{top,bottom}-{left,right}.svg` per corner, and `outline-bare-parts.svg` (the panel and bare PCB side by side, for the assembly guide's "before you start" shot) are real projections straight from [`ST-04_Quad Mixer.step`](../../hardware/ST-04_Quad%20Mixer.step) in `hardware/` — not diagrams. They replace the old product photos in the README, manual and assembly guide. All four isometric corners are generated every run so there's always a fresh set to pick a hero shot from; `outline-iso-top-left.svg` is the one currently used.
+
+**The generator for these doesn't live in this repo.** Unlike the three scripts above, it needs no product-specific logic — point it at any product's STEP files and it works unchanged — so it's kept as one shared tool in the private `schenktronics-business` repo (`claude/skills/schenktronics-product-docs/assets/drawings/make_outline_svg.py`) rather than forked into every product. Regenerate from this repo's root:
+
+```sh
+pip install cadquery  # no FreeCAD or other CAD tooling needed
+python3 ~/Products/schenktronics-business/claude/skills/schenktronics-product-docs/assets/drawings/make_outline_svg.py \
+  --assembly "hardware/ST-04_Quad Mixer.step" \
+  --panel "hardware/panel/4ch Mixer Faceplate.step" \
+  --board "hardware/mixer/4ch Mixer.step" \
+  --out docs/images \
+  --product "Quad Mixer"
+```
+
+(or add a view name at the end, e.g. `... outline-front.svg`, to regenerate just that one)
+
+**This is slow, and not predictably so — read the module docstring in that script before touching it.** Short version: a straight-on view down an axis where many cylindrical parts line up end-on (every jack here, viewed from the front) is a degenerate case for exact-BRep HLR. The fix that works for this — a perspective projection with its apex centered on the model, not tilting the orthographic direction — is explained in full in the script itself. That script is the one copy serving every product, so fixes and lessons belong there, not duplicated into each product repo's own docs.
