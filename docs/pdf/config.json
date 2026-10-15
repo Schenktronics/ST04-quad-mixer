@@ -1,7 +1,7 @@
 {
   "product": "Quad Mixer",
   "pcbVersion": "v1.0",
-  "repo": "schenkzoola/ST04-quad-mixer",
+  "repo": "Schenktronics/ST04-quad-mixer",
   "branch": "main",
   "documents": [
     { "src": "manual.md", "out": "4ch-mixer-manual.pdf", "title": "User Manual" },
