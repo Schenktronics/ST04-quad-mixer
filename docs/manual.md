@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Quad Mixer is a 6HP mixer with four channels. Each channel has an input jack and a knob, and the knob sets how much of that input goes into the mix, from silent up to its own level. The four channels are summed into two outputs: **+**, the mix as it came in, and **-**, the same mix upside down.
+The Quad Mixer is a 6HP mixer with four channels. Each channel has an input jack and a knob, and the knob sets how much of that input goes into the mix, from silent up to its own level. The four channels are summed into two outputs: **+**, the mix as it came in, and **-**, the same mix, inverted.
 
 An input with nothing plugged into it is silent, so only the channels you patch affect the mix.
 
@@ -57,7 +57,7 @@ An input with nothing plugged in is connected to ground, so it adds nothing to t
 
 ### The + and - outputs
 
-Both outputs carry the same mix. The **+** output has the same polarity as the inputs. The **-** output is upside down: a rising signal falls, and a +3 V CV becomes -3 V. Use the - output when you want an inverted copy of a mix, or when the module you're patching into needs the opposite direction. The outputs are independent, so you can use either one or both.
+Both outputs carry the same mix. The **+** output has the same polarity as the inputs. The **-** output is inverted: a rising signal falls, and a +3 V CV becomes -3 V. Use the - output when you want an inverted copy of a mix, or when the module you're patching into needs the opposite direction. The outputs are independent, so you can use either one or both.
 
 ### Mixing levels
 
