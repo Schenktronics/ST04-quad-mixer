@@ -53,7 +53,7 @@ Turn a channel up to add that input to the mix. Turn it fully counterclockwise t
 
 ### Empty inputs are silent
 
-An input with nothing plugged in is connected to ground, so it adds nothing to the mix, whatever its knob is set to. You can leave unused channels patched or unpatched, and nothing changes in the mix until you plug something in.
+An input with nothing plugged in is connected to ground, so it adds nothing to the mix, whatever its knob is set to. You never need to turn unused channels down.
 
 ### The + and - outputs
 
