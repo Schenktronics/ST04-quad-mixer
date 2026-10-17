@@ -1,10 +1,10 @@
 {
-  "product": "Quad Mixer",
+  "product": "ST-04 Quad Mixer",
   "pcbVersion": "v1.0",
   "repo": "Schenktronics/ST04-quad-mixer",
   "branch": "main",
   "documents": [
-    { "src": "manual.md", "out": "4ch-mixer-manual.pdf", "title": "User Manual" },
-    { "src": "assembly-guide.md", "out": "4ch-mixer-assembly-guide.pdf", "title": "Assembly Guide" }
+    { "src": "manual.md", "out": "ST-04_Quad_Mixer_User_Manual.pdf", "title": "User Manual" },
+    { "src": "assembly-guide.md", "out": "ST-04_Quad_Mixer_Assembly_Guide.pdf", "title": "Assembly Guide" }
   ]
 }

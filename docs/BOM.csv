@@ -14,6 +14,6 @@ Qty,Reference,Description,Manufacturer,Part Number,Link
 6,J1-J6,"3.5mm mono switched jack, vertical, with nut. CUI MJ-3507 also works, with a ground wire from its sleeve lug to the square pad",QingPu / CUI Devices,WQP-PJ398SM or WQP518MA (or CUI MJ-3507),http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html
 4,RV1-RV4,"Potentiometer, 100k linear, 6mm D shaft, no bushing",Bourns,PTV09A-4020F-B104,http://www.farnell.com/datasheets/2259384.pdf
 4,,"Knob, fits 6mm D shaft (or equivalent)",Davies Molding,1221-J,
-1,,"Main PCB, 30x100mm, 2-layer, 1.6mm",Schenktronics,Quad Mixer v1.0,manufacturing/mixer/
-1,,"Faceplate, 6HP (30.48x128.5mm), 1.6mm aluminium PCB",Schenktronics,Quad Mixer Faceplate,manufacturing/panel/
+1,,"Main PCB, 30x100mm, 2-layer, 1.6mm",Schenktronics,ST-04 Quad Mixer v1.0,
+1,,"Faceplate, 6HP (30.48x128.5mm), 1.6mm aluminum PCB",Schenktronics,ST-04 Quad Mixer Faceplate,
 1,,"Eurorack power cable, 10-pin to 16-pin",,,
