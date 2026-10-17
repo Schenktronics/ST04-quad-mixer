@@ -1,7 +1,7 @@
 """Generate the front-panel PCB for the 4ch mixer.
 
 The panel is a 6HP (30.48 mm) board with a solid copper pour on the front
-copper layer. Holes are placed on the centres of the footprint circles on the
+copper layer. Holes are placed on the centers of the footprint circles on the
 mixer board, so they line up with the pots and jacks. Hole sizes, tick marks
 and the output jack rings follow the Attenuverter faceplate.
 
@@ -177,18 +177,18 @@ def pot_ticks(cx, cy, x_max=None):
 def build(board, template, out_path):
     parts = place_rest.board_footprints(board)
 
-    def centre(ref, lx, ly):
+    def center(ref, lx, ly):
         p = parts[ref]
         rx, ry = pcbgen.rotate(lx, ly, p["rot"])
         return round(p["x"] + rx, 3), round(p["y"] + ry, 3)
 
-    pots = [centre("RV%d" % k, 7.5, -2.5) for k in range(1, 5)]          # shaft circle
-    jacks_in = [centre("J%d" % k, 0.0, 6.477) for k in range(1, 5)]      # jack centre hole
-    jacks_out = [centre("J5", 0.0, 6.477), centre("J6", 0.0, 6.477)]
+    pots = [center("RV%d" % k, 7.5, -2.5) for k in range(1, 5)]          # shaft circle
+    jacks_in = [center("J%d" % k, 0.0, 6.477) for k in range(1, 5)]      # jack center hole
+    jacks_out = [center("J5", 0.0, 6.477), center("J6", 0.0, 6.477)]
 
-    # Panel: same x as the board, centred on the board's vertical centre.
+    # Panel: same x as the board, centered on the board's vertical center.
     bx0, by0, bx1, by1 = 100.0, 50.0, 130.0, 150.0
-    # centre the panel on the board horizontally (the board is 30 mm, the panel 30.48 mm)
+    # center the panel on the board horizontally (the board is 30 mm, the panel 30.48 mm)
     bw = bx1 - bx0
     x0 = bx0 - (PANEL_W - bw) / 2
     x1 = x0 + PANEL_W
@@ -221,7 +221,7 @@ def build(board, template, out_path):
                                   (mx_left, my_bot), (mx_right, my_bot)], start=1):
         body.append(hole_fp("Panel:MountingHole_3.2mm", round(mx, 3), round(my, 3), MOUNT_D, "H%d" % i))
 
-    # module title, centred on the panel like the Attenuverter's
+    # module title, centered on the panel like the Attenuverter's
     body.append(["gr_text", Str(TITLE), ["at", round((x0 + x1) / 2, 3), round(y0 + TITLE_OFFSET_Y, 3), 0],
                  ["layer", Str("F.SilkS")], ["uuid", uid()],
                  ["effects", ["font", ["size", TITLE_SIZE, TITLE_SIZE], ["thickness", TITLE_THICKNESS], "italic"]]])

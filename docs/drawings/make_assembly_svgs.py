@@ -128,7 +128,7 @@ def outline_box(fp, view, pad_margin=1.2):
 
 
 def board_svg(board, fps, view, title, highlight=None, labels=(), silk_layer=None, extra=()):
-    """A board view. `highlight` maps (ref, pad number) to a colour; `labels` are references to name."""
+    """A board view. `highlight` maps (ref, pad number) to a color; `labels` are references to name."""
     side = "B" if view == "back" else "F"
     highlight = highlight or {}
     body = [f"<rect x='{X0}' y='{Y0}' width='{X1 - X0}' height='{Y1 - Y0}' rx='0.3' fill='#fff' stroke='{INK}' "
@@ -138,7 +138,7 @@ def board_svg(board, fps, view, title, highlight=None, labels=(), silk_layer=Non
         if fp["layer"] == f"{side}.Cu" or any(p["type"] == "thru_hole" for p in fp["pads"]):
             for pad in fp["pads"]:
                 if pad["type"] == "np_thru_hole":
-                    continue  # the jacks' centre holes are drawn by the panel, not the board
+                    continue  # the jacks' center holes are drawn by the panel, not the board
                 key = (fp["ref"], pad["num"])
                 if key in highlight:
                     body.append(pad_outline(fp, pad, view).replace(f"fill='{PAD}'", f"fill='{highlight[key]}'"))
@@ -189,7 +189,7 @@ def shaft(pot):
 
 
 def jack_hole(jack):
-    """A jack's centre hole: the unnamed non-plated pad, in board coordinates."""
+    """A jack's center hole: the unnamed non-plated pad, in board coordinates."""
     return next(kicad.place(jack, p["x"], p["y"]) for p in jack["pads"] if p["type"] == "np_thru_hole")
 
 
@@ -231,7 +231,7 @@ def fig_header(board, fps):
 
 
 def fig_parts(board, fps):
-    """Front view: the pots and jacks, outlined and labelled."""
+    """Front view: the pots and jacks, outlined and labeled."""
     front = [f for f in fps if f["layer"] == "F.Cu" and f["ref"] and not f["ref"].startswith(("FID", "G", "H"))]
     extra = []
     for f in front:
@@ -348,7 +348,7 @@ def fig_side(board, fps):
     body.append(text(lx, nut_y + 1.1, "Jack nuts", 2.6, "bold"))
     body.append(text(lx, nut_y + 4.3, "finger-tight first", 2.2, color=GREY))
     body.append(text(lx, panel_y + 0.8, "Faceplate", 2.6, "bold"))
-    body.append(text(lx, panel_y + 4, "“Quad Mixer” end over In 1", 2.2, color=GREY))
+    body.append(text(lx, panel_y + 4, "\"Quad Mixer\" end over In 1", 2.2, color=GREY))
     body.append(text(lx, body_top + 3, "Pots and jacks", 2.6, "bold"))
     body.append(text(lx, body_top + 6.2, "not soldered yet", 2.2, color=GREY))
     body.append(text(lx, pcb_y + 0.8, "PCB", 2.6, "bold"))
@@ -357,7 +357,7 @@ def fig_side(board, fps):
     body.append(text(mid, pcb_y + 11, "Center the pot shafts in their holes,", 2.6, "bold", color=RED, anchor="middle"))
     body.append(text(mid, pcb_y + 14.2, "then tighten the jack nuts", 2.2, color=GREY, anchor="middle"))
     body.append(text(u(PANEL_Y0), pcb_y + 11, "Top (In 1 end)", 2, color=GREY))
-    body.append(text(u(PANEL_Y1), pcb_y + 11, "Bottom (+ and − outputs)", 2, color=GREY, anchor="end"))
+    body.append(text(u(PANEL_Y1), pcb_y + 11, "Bottom (+ and - outputs)", 2, color=GREY, anchor="end"))
     body.append(text(u(panel_top), pcb_y + 19, "Side view, not to scale vertically", 2, color=GREY))
     return svg((u(panel_top) - 2, nut_y - 4, (panel_bot - panel_top) + 48, pcb_y - nut_y + 26), body,
                "Step 4: fit the faceplate")
@@ -367,7 +367,6 @@ def main():
     board, fps = load()
     OUT.mkdir(parents=True, exist_ok=True)
     figures = (
-        ("assembly-1-smd.svg", fig_smd(board, fps)),
         ("assembly-2-header.svg", fig_header(board, fps)),
         ("assembly-3-parts.svg", fig_parts(board, fps)),
         ("assembly-4-faceplate.svg", fig_side(board, fps)),

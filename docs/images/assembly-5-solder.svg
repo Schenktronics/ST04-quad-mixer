@@ -2,7 +2,7 @@
 <title>Tack the pads marked red</title>
 <rect x='98.000' y='48.000' width='34.000' height='104.000' fill='#fff'/>
 <rect x='100.0' y='50.0' width='30.0' height='100.0' rx='0.3' fill='#fff' stroke='#1a1a1a' stroke-width='0.3'/>
-<rect x='124.085' y='62.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='124.035' y='62.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='63.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='50.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='123.350' y='59.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
@@ -16,11 +16,11 @@
 <circle cx='107.000' cy='64.020' r='0.500' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='109.500' cy='64.020' r='0.900' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='109.500' cy='64.020' r='0.500' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
-<rect x='100.558' y='144.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='100.608' y='144.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='101.523' cy='145.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='112.173' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='103.873' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
-<rect x='127.435' y='144.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='127.485' y='144.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='128.400' cy='145.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='116.250' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='124.550' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
@@ -44,7 +44,7 @@
 <circle cx='107.000' cy='112.020' r='0.500' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='109.500' cy='112.020' r='0.900' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='109.500' cy='112.020' r='0.500' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
-<rect x='124.085' y='86.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='124.035' y='86.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='87.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='74.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='123.350' y='83.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
@@ -58,11 +58,11 @@
 <circle cx='107.000' cy='136.020' r='0.500' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='109.500' cy='136.020' r='0.900' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='109.500' cy='136.020' r='0.500' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
-<rect x='124.085' y='134.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='124.035' y='134.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='135.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='122.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='123.350' y='131.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
-<rect x='124.085' y='110.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='124.035' y='110.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='111.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='98.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='123.350' y='107.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
@@ -319,6 +319,10 @@
 <line x1='105.950' y1='94.760' x2='107.650' y2='94.760' stroke='#1a1a1a' stroke-width='0.12' stroke-linecap='round'/>
 <line x1='105.950' y1='94.760' x2='105.950' y2='92.100' stroke='#1a1a1a' stroke-width='0.12' stroke-linecap='round'/>
 <text x='116.800' y='114.600' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.000' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>-12V</text>
+<text x='105.800' y='53.150' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.000' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>ST-04 v1.0</text>
+<text x='105.800' y='54.450' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.000' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Quad Mixer</text>
 <text x='100.400' y='114.600' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.000' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>+12V</text>
+<text x='129.400' y='117.600' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.000' fill='#1a1a1a' text-anchor='start' dominant-baseline='central' transform='rotate(270.0 129.400 117.600)'>CC BY-NC-SA 4.0</text>
+<text x='129.200' y='87.600' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.000' fill='#1a1a1a' text-anchor='start' dominant-baseline='central' transform='rotate(270.0 129.200 87.600)'>schenktronics.com</text>
 <text x='114.600' y='114.600' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='1.000' fill='#1a1a1a' text-anchor='start' dominant-baseline='central' transform='rotate(270.0 114.600 114.600)'>Red Stripe</text>
 </svg>

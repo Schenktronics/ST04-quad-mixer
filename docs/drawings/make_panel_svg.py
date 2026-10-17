@@ -69,14 +69,17 @@ def load_panel():
             at = kicad.child(item, "at")
             font = kicad.child(kicad.child(item, "effects"), "font")
             size = float(kicad.child(font, "size")[1])
+            justify = kicad.child(kicad.child(item, "effects"), "justify")
             silk["texts"].append(dict(text=item[1], x=float(at[1]), y=float(at[2]), size=size,
+                                      rot=float(at[3]) if len(at) > 3 else 0.0,
+                                      anchor={"left": "start", "right": "end"}.get(justify[1] if justify else "", "middle"),
                                       italic=kicad.child(font, "italic") is not None))
     return outline, holes, silk
 
 
 def arc_path(x1, y1, xm, ym, x2, y2):
     """SVG path for a KiCad three-point arc, from start through mid to end."""
-    # Circumcentre of the three points.
+    # Circumcenter of the three points.
     d = 2 * (x1 * (ym - y2) + xm * (y2 - y1) + x2 * (y1 - ym))
     cx = ((x1 ** 2 + y1 ** 2) * (ym - y2) + (xm ** 2 + ym ** 2) * (y2 - y1) + (x2 ** 2 + y2 ** 2) * (y1 - ym)) / d
     cy = ((x1 ** 2 + y1 ** 2) * (x2 - xm) + (xm ** 2 + ym ** 2) * (x1 - x2) + (x2 ** 2 + y2 ** 2) * (xm - x1)) / d
@@ -117,8 +120,9 @@ def panel_body(outline, holes, silk):
         style = " font-style='italic'" if t["italic"] else ""
         for i, line in enumerate(t["text"].split("\n")):
             dy = (i - (t["text"].count("\n") / 2)) * t["size"] * 1.3
+            turn = f" transform='rotate({-t['rot']} {t['x']} {t['y']})'" if t["rot"] else ""
             el.append(f"<text x='{t['x']}' y='{t['y'] + dy:.3f}' {FONT} font-size='{t['size'] * 1.15:.3f}'"
-                      f"{style} fill='{INK}' text-anchor='middle' dominant-baseline='central'>{line}</text>")
+                      f"{style}{turn} fill='{INK}' text-anchor='{t['anchor']}' dominant-baseline='central'>{line}</text>")
     for kind, x, y, d in holes:
         if kind == "jack":
             # Jack nut with the socket opening.
@@ -152,7 +156,7 @@ def controls(holes, silk):
     jacks = [(x, y) for k, x, y, d in holes if k == "jack" and y >= 140]
     labels = {t["text"]: (t["x"], t["y"]) for t in silk["texts"] if t["text"] in ("+", "-")}
     nearest = lambda label: min(jacks, key=lambda j: math.dist(j, labels[label]))
-    outputs = {"+": nearest("+"), "−": nearest("-")}
+    outputs = {"+": nearest("+"), "-": nearest("-")}
     channels = [(pots[i], inputs[i]) for i in range(len(pots))]
     return channels, outputs
 
@@ -183,28 +187,28 @@ def annotated(outline, holes, silk):
 
     channels, outputs = controls(holes, silk)
     (kx, ky), (ix, iy) = channels[0]
-    # Channel 1 is labelled in full. The jack's label goes out to the left, the knob's to the right.
+    # Channel 1 is labeled in full. The jack's label goes out to the left, the knob's to the right.
     body += label_left(iy - 4, "In 1", "input. Empty: silent", ix - 4, iy)
-    body += label_right(ky, "Knob 1", "anticlockwise silent, clockwise ×1", kx + KNOB_R, ky)
+    body += label_right(ky, "Knob 1", "counterclockwise silent, clockwise x1", kx + KNOB_R, ky)
     for n, ((kx, ky), _) in enumerate(channels[1:], start=2):
         body += label_right(ky, f"Channel {n}", "same as channel 1", x1 - 1, ky)
-    centre = (x0 + x1) / 2
-    for polarity, title, sub in (("+", "+ output", "non-inverting mix"), ("−", "− output", "inverted mix")):
+    center = (x0 + x1) / 2
+    for polarity, title, sub in (("+", "+ output", "non-inverting mix"), ("-", "- output", "inverted mix")):
         ox, oy = outputs[polarity]
-        if ox < centre:
+        if ox < center:
             body += label_left(oy, title, sub, ox - 6.2, oy)
         else:
             body += label_right(oy, title, sub, ox + 6.2, oy)
     pad = 4
     return svg((x0 - pad - 46, y0 - pad, (x1 - x0) + 2 * pad + 92, (y1 - y0) + 2 * pad), body,
-               "Quad Mixer front panel")
+               "ST-04 Quad Mixer front panel")
 
 
 def plain(outline, holes, silk):
     x0, y0, x1, y1 = outline
     pad = 1
     return svg((x0 - pad, y0 - pad, (x1 - x0) + 2 * pad, (y1 - y0) + 2 * pad), panel_body(outline, holes, silk),
-               "Quad Mixer front panel")
+               "ST-04 Quad Mixer front panel")
 
 
 def main():

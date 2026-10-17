@@ -41,7 +41,7 @@ class Patch:
         for n, ((kx, ky), (ix, iy)) in enumerate(channels, start=1):
             self.knobs[f"Knob {n}"] = (kx, ky)
             self.jacks[f"In {n}"] = (ix, iy)
-        self.jacks["Out +"], self.jacks["Out −"] = outputs["+"], outputs["−"]
+        self.jacks["Out +"], self.jacks["Out -"] = outputs["+"], outputs["-"]
         self.cables, self.boxes, self.plugs, self.notes, self.pointers = [], [], [], [], []
 
     def box(self, side, y, title, sub):
@@ -125,7 +125,7 @@ def blend(data):
 def inverted(data):
     p = Patch(data)
     p.source("In 4", "LFO", "out")
-    p.dest("Out −", "Filter", "cutoff CV in")
+    p.dest("Out -", "Filter", "cutoff CV in")
     p.turn("Knob 4", 70)
     return p.render("Patch example: an inverted output")
 

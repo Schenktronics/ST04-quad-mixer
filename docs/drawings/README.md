@@ -25,11 +25,11 @@ The panel drawing in the [user manual](../manual.md) ([`../images/panel.svg`](..
 | From the KiCad file | Used for |
 |---------------------|----------|
 | `Edge.Cuts` lines | Panel outline |
-| Footprints named `PotShaft`, `Jack` and `MountingHole` | Pot shafts (Ø7.0), jacks (Ø6.0) and rack screw holes (Ø3.2) |
-| `F.SilkS` lines, arcs, circles and text | The title, the scales around the knobs, the output rings and the "+" and "−" labels |
+| Footprints named `PotShaft`, `Jack` and `MountingHole` | Pot shafts (7.0 mm), jacks (6.0 mm) and rack screw holes (3.2 mm) |
+| `F.SilkS` lines, arcs, circles and text | The title, the scales around the knobs, the output rings and the "+" and "-" labels |
 | The logo footprint's `F.SilkS` polygons | The Schenktronics logo |
 
-The channels are matched by height: the pot and the input jack on the same row make a channel, numbered from the top. Each of the two output jacks at the bottom is matched to the nearest printed "+" or "−", so the drawings follow the faceplate if the outputs are swapped.
+The channels are matched by height: the pot and the input jack on the same row make a channel, numbered from the top. Each of the two output jacks at the bottom is matched to the nearest printed "+" or "-", so the drawings follow the faceplate if the outputs are swapped.
 
 The captions ("In 1", "Knob 1" and so on) are added by the script, not read from KiCad.
 
@@ -39,13 +39,12 @@ After changing the main PCB in KiCad, run `make_assembly_svgs.py`.
 
 | Drawing | How it's made |
 |---------|---------------|
-| `assembly-1-smd.svg` | Back board view, drawn from the pads, back silkscreen and references in the PCB file. U1's pin 1 and the diodes' cathode pads (pad 1) are marked red. |
 | `assembly-2-header.svg` | Back board view with the power header outlined. Pin 1 is marked red. |
 | `assembly-3-parts.svg` | Front board view, drawn from the board outline, pads and front silkscreen. The pots and jacks are outlined. |
 | `assembly-4-faceplate.svg` | Side diagram, not to scale. The heights are approximate. |
 | `assembly-5-solder.svg` | Back board view, with the pot and jack pads to solder first (filled red) and the rest outlined. |
 
-The back views are mirrored left to right, so the SMD side reads as you see it from the back of the board. The back silkscreen text ("−12V", "+12V", "Red Stripe") is placed as a viewer on the back reads it.
+The back views are mirrored left to right, so the SMD side reads as you see it from the back of the board. The back silkscreen text ("-12V", "+12V", "Red Stripe") is placed as a viewer on the back reads it.
 
 ## Patch examples
 
@@ -55,18 +54,18 @@ The patch drawings reuse the panel drawing and add module boxes and cables. Each
 def inverted(data):
     p = Patch(data)
     p.source("In 4", "LFO", "out")
-    p.dest("Out −", "Filter", "cutoff CV in", side="right")
+    p.dest("Out -", "Filter", "cutoff CV in", side="right")
     p.turn("Knob 4", 70)
     return p.render("Patch example: an inverted output")
 ```
 
-Jacks and knobs are named `In 1`–`In 4`, `Out +`, `Out −` and `Knob 1`–`Knob 4`, from the top. Sources go on the left, destinations on the left or right, beside their output. `turn()` sets a knob's pointer, in degrees from the center (negative is anticlockwise). `note()` puts a caption beside a knob or jack. Pass `color=BLUE` to draw a second signal. To add an example, write a new function, add it to the list in `main()`, and run `make_patch_svgs.py`.
+Jacks and knobs are named `In 1`-`In 4`, `Out +`, `Out -` and `Knob 1`-`Knob 4`, from the top. Sources go on the left, destinations on the left or right, beside their output. `turn()` sets a knob's pointer, in degrees from the center (negative is counterclockwise). `note()` puts a caption beside a knob or jack. Pass `color=BLUE` to draw a second signal. To add an example, write a new function, add it to the list in `main()`, and run `make_patch_svgs.py`.
 
 ## Outline drawings
 
-`outline-front.svg`, `outline-side.svg`, one `outline-iso-{top,bottom}-{left,right}.svg` per corner, and `outline-bare-parts.svg` (the panel and bare PCB side by side, for the assembly guide's "before you start" shot) are real projections straight from [`ST-04_Quad Mixer.step`](../../hardware/ST-04_Quad%20Mixer.step) in `hardware/` — not diagrams. They replace the old product photos in the README, manual and assembly guide. All four isometric corners are generated every run so there's always a fresh set to pick a hero shot from; `outline-iso-top-left.svg` is the one currently used.
+`outline-front.svg`, `outline-side.svg`, one `outline-iso-{top,bottom}-{left,right}.svg` per corner, and `outline-bare-parts.svg` (the panel and bare PCB side by side, for the assembly guide's "before you start" shot) are real projections straight from [`ST-04_Quad Mixer.step`](../../hardware/ST-04_Quad%20Mixer.step) in `hardware/`, not diagrams. They replace the old product photos in the README, manual and assembly guide. All four isometric corners are generated every run so there's always a fresh set to pick a hero shot from. `outline-iso-top-left.svg` is the one currently used.
 
-**The generator for these doesn't live in this repo.** Unlike the three scripts above, it needs no product-specific logic — point it at any product's STEP files and it works unchanged — so it's kept as one shared tool in the private `schenktronics-business` repo (`claude/skills/schenktronics-product-docs/assets/drawings/make_outline_svg.py`) rather than forked into every product. Regenerate from this repo's root:
+**The generator for these doesn't live in this repo.** Unlike the three scripts above, it needs no product-specific logic (point it at any product's STEP files and it works unchanged), so it's kept as one shared tool in the private `schenktronics-business` repo (`claude/skills/schenktronics-product-docs/assets/drawings/make_outline_svg.py`) rather than forked into every product. Regenerate from this repo's root:
 
 ```sh
 pip install cadquery  # no FreeCAD or other CAD tooling needed
@@ -75,9 +74,9 @@ python3 ~/Products/schenktronics-business/claude/skills/schenktronics-product-do
   --panel "hardware/panel/4ch Mixer Faceplate.step" \
   --board "hardware/mixer/4ch Mixer.step" \
   --out docs/images \
-  --product "Quad Mixer"
+  --product "ST-04 Quad Mixer"
 ```
 
 (or add a view name at the end, e.g. `... outline-front.svg`, to regenerate just that one)
 
-**This is slow, and not predictably so — read the module docstring in that script before touching it.** Short version: a straight-on view down an axis where many cylindrical parts line up end-on (every jack here, viewed from the front) is a degenerate case for exact-BRep HLR. The fix that works for this — a perspective projection with its apex centered on the model, not tilting the orthographic direction — is explained in full in the script itself. That script is the one copy serving every product, so fixes and lessons belong there, not duplicated into each product repo's own docs.
+**This is slow, and not predictably so. Read the module docstring in that script before touching it.** Short version: a straight-on view down an axis where many cylindrical parts line up end-on (every jack here, viewed from the front) is a degenerate case for exact-BRep HLR. The fix that works for this, a perspective projection with its apex centered on the model rather than tilting the orthographic direction, is explained in full in the script itself. That script is the one copy serving every product, so fixes and lessons belong there, not duplicated into each product repo's own docs.
