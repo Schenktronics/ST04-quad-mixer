@@ -5,7 +5,9 @@
 <rect x='124.035' y='62.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='63.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='50.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='51.225' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='59.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='59.525' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='111.750' cy='56.520' r='2.000' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='111.750' cy='56.520' r='1.000' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='102.250' cy='56.520' r='2.000' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
@@ -19,11 +21,15 @@
 <rect x='100.608' y='144.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='101.523' cy='145.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='112.173' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='112.548' y='143.750' width='0.750' height='2.500' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='103.873' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='104.248' y='143.750' width='0.750' height='2.500' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='127.485' y='144.035' width='1.830' height='1.930' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='128.400' cy='145.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='116.250' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='116.625' y='143.750' width='0.750' height='2.500' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='124.550' y='143.350' width='1.500' height='3.300' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='124.925' y='143.750' width='0.750' height='2.500' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='111.750' cy='80.520' r='2.000' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='111.750' cy='80.520' r='1.000' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='102.250' cy='80.520' r='2.000' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
@@ -47,7 +53,9 @@
 <rect x='124.035' y='86.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='87.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='74.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='75.225' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='83.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='83.525' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='111.750' cy='128.520' r='2.000' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='111.750' cy='128.520' r='1.000' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <circle cx='102.250' cy='128.520' r='2.000' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
@@ -61,11 +69,15 @@
 <rect x='124.035' y='134.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='135.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='122.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='123.225' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='131.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='131.525' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='124.035' y='110.085' width='1.930' height='1.830' rx='0.366' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.08'/>
 <circle cx='125.000' cy='111.000' r='0.610' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='98.850' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='99.225' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.350' y='107.150' width='3.300' height='1.500' rx='0.750' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
+<rect x='123.750' y='107.525' width='2.500' height='0.750' rx='0.375' fill='#fff' stroke='#1a1a1a' stroke-width='0.06'/>
 <rect x='123.021' y='66.275' width='1.000' height='1.450' rx='0.200' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='124.921' y='66.275' width='1.000' height='1.450' rx='0.200' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
 <rect x='119.607' y='85.075' width='1.000' height='1.450' rx='0.200' fill='#d2d2d2' stroke='#1a1a1a' stroke-width='0.08'/>
