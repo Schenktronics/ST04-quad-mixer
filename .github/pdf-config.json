@@ -3,6 +3,8 @@
   "pcbVersion": "v1.0",
   "repo": "Schenktronics/ST04-quad-mixer",
   "branch": "main",
+  "qrUrl": "https://schenktronics.com/docs/st-04/",
+  "officialUrl": "schenktronics.com/docs/st-04",
   "docsDir": "../docs",
   "outDir": "../docs/pdf",
   "documents": [
