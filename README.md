@@ -39,13 +39,11 @@ hardware/
   panel/                          Faceplate (KiCad 10, made as an aluminum PCB)
     4ch Mixer Faceplate.kicad_pcb   Faceplate layout
     4ch Mixer Faceplate.step        3D model
-tools/
-  pcb/                            Board generator, placement, and annealing scripts
-  panel/                          Faceplate generator (holes, ticks, rings, logo, title)
 docs/                             Manual, assembly guide, BOM, images
-  drawings/                         Scripts that generate the drawings
-  pdf/                              PDF versions and their build settings
+  pdf/                              PDF versions of the manual and assembly guide
 ```
+
+The `.github/` folder holds the automation that builds the PDFs. You can ignore it.
 
 ## Fabrication
 
