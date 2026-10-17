@@ -164,13 +164,13 @@
 <circle cx='123.0' cy='128.52' r='3.5' fill='#fff' stroke='#1a1a1a' stroke-width='0.25'/>
 <line x1='124.88' y1='127.84' x2='127.51' y2='126.88' stroke='#d9302c' stroke-width='0.8' stroke-linecap='round'/>
 <path d='M78.00 122.02 H100.00 Q105.00 122.02 105.00 128.52' fill='none' stroke='#d9302c' stroke-width='0.9' stroke-linecap='round'/>
-<path d='M108.08 145.00 C123.12 145.00 62.96 145.00 78.00 145.00' fill='none' stroke='#d9302c' stroke-width='0.9' stroke-linecap='round' marker-end='url(#r)'/>
+<path d='M108.08 145.00 V150.00 Q108.08 153.00 111.08 153.00 H146.00 Q149.00 153.00 152.00 153.00' fill='none' stroke='#d9302c' stroke-width='0.9' stroke-linecap='round' marker-end='url(#r)'/>
 <circle cx='105.0' cy='128.523' r='2.3' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.3'/>
 <circle cx='108.077' cy='145.0' r='2.3' fill='#d9302c' stroke='#1a1a1a' stroke-width='0.3'/>
 <rect x='40.0' y='116.523' width='38' height='11' rx='1.2' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
 <text x='59.00' y='120.02' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.4' font-weight='bold' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>LFO</text>
 <text x='59.00' y='124.72' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.7' font-weight='normal' fill='#777' text-anchor='middle' dominant-baseline='central'>out</text>
-<rect x='40.0' y='139.5' width='38' height='11' rx='1.2' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
-<text x='59.00' y='143.00' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.4' font-weight='bold' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Filter</text>
-<text x='59.00' y='147.70' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.7' font-weight='normal' fill='#777' text-anchor='middle' dominant-baseline='central'>cutoff CV in</text>
+<rect x='152.0' y='147.5' width='38' height='11' rx='1.2' fill='#fff' stroke='#1a1a1a' stroke-width='0.35'/>
+<text x='171.00' y='151.00' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3.4' font-weight='bold' fill='#1a1a1a' text-anchor='middle' dominant-baseline='central'>Filter</text>
+<text x='171.00' y='155.70' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.7' font-weight='normal' fill='#777' text-anchor='middle' dominant-baseline='central'>cutoff CV in</text>
 </svg>
