@@ -27,7 +27,7 @@ Kits ship with every surface-mount part below already soldered by the board hous
 | Qty | Reference | Part | Manufacturer / Part No. | Notes |
 |----:|-----------|------|--------------------------|-------|
 | 1 | P1 | Shrouded pin header, 2 x 5, 2.54 mm, vertical | On Shore Technology 302-S101, or equivalent | Eurorack power connector. Pins 1-2 are -12 V, pins 9-10 are +12 V, pins 3-8 are ground. |
-| 6 | J1-J6 | 3.5 mm mono switched jack, vertical PCB mount, with nut | CUI Devices MJ-3507, or QingPu WQP-PJ398SM or WQP518MA | The inputs (J1-J4) need the switched contact: it grounds an empty input. The outputs (J5, J6) don't use it. Any of these fits the PJ398SM footprint. The pads are oval so the board can also take panel-mount style jacks, which may be easier to source. The CUI part needs a short wire from its sleeve lug to the square ground pad (see the [assembly guide](assembly-guide.md#step-6--solder-the-pots-and-jacks)). |
+| 6 | J1-J6 | 3.5 mm mono switched jack, vertical PCB mount, with nut | QingPu WQP-PJ398SM or WQP518MA, or equivalent. Either one works. | [Datasheet / product page](http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html). The inputs (J1-J4) need the switched contact: it grounds an empty input. The outputs (J5, J6) don't use it. The pads are oval so the board can also take panel-mount style jacks such as the CUI MJ-3507 ([datasheet](https://www.cuidevices.com/product/resource/mj-3507.pdf)), which may be easier to source. Its sleeve is a solder lug rather than a pin, so it needs a short wire from the lug to the square pad. |
 | 4 | RV1-RV4 | Potentiometer, 100 kΩ linear, 6 mm D shaft, no bushing | Bourns PTV09A-4020F-B104 | [Datasheet](http://www.farnell.com/datasheets/2259384.pdf). The pot's three pins go to the input, the wiper and ground. It mounts on its board-lock lugs and passes through the 7 mm panel hole. Clockwise turns the channel up to x1, and counterclockwise turns it down to silence. |
 | 4 | | Knob, for 6 mm D shaft | Davies Molding 1221-J, or equivalent | Fits the pot's 6 mm D shaft. |
 | 1 | | Main PCB, 30 x 100 mm, 2-layer, 1.6 mm | Schenktronics | |
@@ -39,7 +39,3 @@ Kits ship with every surface-mount part below already soldered by the board hous
 | Qty | Part | Notes |
 |----:|------|-------|
 | 2 | M3 rack screws | Supplied with most Eurorack cases. |
-
-## Ordering the parts
-
-The surface-mount parts and the through-hole parts are in separate tables above, so you can order each from its own supplier.

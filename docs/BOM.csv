@@ -11,7 +11,7 @@ Qty,Reference,Description,Manufacturer,Part Number,Link
 8,D3-D10,"Diode, 1N4148, SOD-323, 75V, 150mA. Cathode (stripe) matters",Diodes Incorporated,1N4148WS-7-F,https://datasheet.octopart.com/1N4148WS-7-F-Diodes-Inc.-datasheet-7284054.pdf
 2,"F1, F2","Resettable fuse (PTC), 200mA hold, 30V, 1206",Bel Fuse,0ZCJ0020FF2E,
 1,P1,"Shrouded pin header, 2x5, 2.54mm, vertical",On Shore Technology,302-S101,
-6,J1-J6,"3.5mm mono switched jack, vertical, with nut. CUI MJ-3507 also works, with a ground wire from its sleeve lug to the square pad",QingPu / CUI Devices,WQP-PJ398SM or WQP518MA (or CUI MJ-3507),http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html
+6,J1-J6,"3.5mm mono switched jack, vertical, with nut (the oval pads also take panel-mount jacks such as CUI MJ-3507, with a wire from the sleeve lug to the square pad)",QingPu,WQP-PJ398SM or WQP518MA,http://www.qingpu-electronics.com/en/products/WQP-PJ398SM-362.html
 4,RV1-RV4,"Potentiometer, 100k linear, 6mm D shaft, no bushing",Bourns,PTV09A-4020F-B104,http://www.farnell.com/datasheets/2259384.pdf
 4,,"Knob, fits 6mm D shaft (or equivalent)",Davies Molding,1221-J,
 1,,"Main PCB, 30x100mm, 2-layer, 1.6mm",Schenktronics,ST-04 Quad Mixer v1.0,
