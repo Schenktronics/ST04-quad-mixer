@@ -31,7 +31,7 @@ Kits ship with every surface-mount part below already soldered by the board hous
 | 4 | RV1-RV4 | Potentiometer, 100 kΩ linear, 6 mm D shaft, no bushing | Bourns PTV09A-4020F-B104 | [Datasheet](http://www.farnell.com/datasheets/2259384.pdf). The pot's three pins go to the input, the wiper and ground. It mounts on its board-lock lugs and passes through the 7 mm panel hole. Clockwise turns the channel up to x1, and counterclockwise turns it down to silence. |
 | 4 | | Knob, for 6 mm D shaft | Davies Molding 1221-J, or equivalent | Fits the pot's 6 mm D shaft. |
 | 1 | | Main PCB, 30 x 100 mm, 2-layer, 1.6 mm | Schenktronics | |
-| 1 | | Faceplate, 6HP (30.48 x 128.5 mm), 1.6 mm aluminum PCB | Schenktronics | Single-sided, so it can also be made in FR4. |
+| 1 | | Faceplate, 6HP (30 x 128.5 mm), 1.6 mm aluminum PCB | Schenktronics | Single-sided, so it can also be made in FR4. |
 | 1 | | Eurorack power cable, 10-pin to 16-pin | | Red stripe marks -12 V. |
 
 ## Not included

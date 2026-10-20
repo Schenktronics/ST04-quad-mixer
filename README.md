@@ -11,7 +11,7 @@ A 6HP Eurorack four-channel active mixer from **Schenktronics**. Each channel ha
 
 ## Features
 
-- 6HP (30.48 mm wide), 20 mm deep, powered from ±12 V
+- 6HP (30 mm wide), 20 mm deep, powered from ±12 V
 - Four channels, each with a level knob from silent to x1
 - Two outputs: + (the mix) and - (the mix, inverted)
 - Empty inputs are silent, so unused channels add nothing
@@ -50,7 +50,7 @@ The `.github/` folder holds the automation that builds the PDFs. You can ignore 
 | Board | Size | Layers | Thickness | Notes |
 |-------|------|--------|-----------|-------|
 | Main PCB | 30 x 100 mm | 2 | 1.6 mm | Standard green is fine. Surface-mount parts on the back. |
-| Faceplate | 30.48 x 128.5 mm | 1 | 1.6 mm | Aluminum PCB, white solder mask, black silkscreen. Only the front copper layer is used, so FR4 works too. |
+| Faceplate | 30 x 128.5 mm | 1 | 1.6 mm | Aluminum PCB, white solder mask, black silkscreen. Only the front copper layer is used, so FR4 works too. |
 
 ## Sourcing your own parts
 

@@ -15,7 +15,7 @@ It's an active module, so it needs ±12 V from your case's power supply.
 | | |
 |---|---|
 | Format | Eurorack, 6HP |
-| Panel | 30.48 x 128.5 mm |
+| Panel | 30 x 128.5 mm |
 | Depth | 20 mm |
 | Power | Up to 20 mA on +12 V, up to 20 mA on -12 V, no +5 V. 10-pin header. |
 | Protection | Reverse-power diodes and resettable fuses on both rails, and clamp diodes on each op-amp input |
