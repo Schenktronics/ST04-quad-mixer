@@ -11526,7 +11526,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TL072"
+		(property "Value" "TL072H"
 			(at 0 -3.4 90)
 			(layer "B.Fab")
 			(uuid "b52b0a11-6bbe-4a21-b910-e1fe31a3a4dd")
@@ -12069,7 +12069,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "TL074"
+		(property "Value" "TL074H"
 			(at 0 -5.28 90)
 			(layer "B.Fab")
 			(uuid "efa3262d-48d4-4028-baa2-6b03facde8ba")

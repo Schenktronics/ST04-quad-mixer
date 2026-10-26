@@ -1,6 +1,6 @@
 Qty,Reference,Description,Manufacturer,Part Number,Link
-1,U1,"Quad JFET op-amp, SOIC-14. Use TI, Microchip or Analog Devices only",Texas Instruments,TL074CDR,https://www.ti.com/lit/ds/symlink/tl074.pdf
-1,U2,"Dual JFET op-amp, SOIC-8. Use TI, Microchip or Analog Devices only",Texas Instruments,TL072CDR,
+1,U1,"Quad JFET op-amp, SOIC-14. Must be the H version",Texas Instruments,TL074HIDR,https://www.ti.com/lit/ds/symlink/tl074.pdf
+1,U2,"Dual JFET op-amp, SOIC-8. Must be the H version",Texas Instruments,TL072HIDR,
 13,"R1-R4, R9-R17","Resistor, 10k, 1%, 0805",Yageo,RC0805FR-0710KL,
 4,R5-R8,"Resistor, 0 ohm jumper, 0805",Yageo,RC0805FR-070RL,
 6,R18-R23,"Resistor, 1k, 1%, 0805",Yageo,RC0805FR-071KL,

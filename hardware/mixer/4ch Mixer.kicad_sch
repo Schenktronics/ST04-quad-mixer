@@ -4495,7 +4495,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TL074"
+		(property "Value" "TL074H"
 			(at 78.74 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4610,7 +4610,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TL072"
+		(property "Value" "TL072H"
 			(at 140.97 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5232,7 +5232,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TL074"
+		(property "Value" "TL074H"
 			(at 78.74 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5724,7 +5724,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TL074"
+		(property "Value" "TL074H"
 			(at 78.74 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6216,7 +6216,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TL074"
+		(property "Value" "TL074H"
 			(at 78.74 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7414,7 +7414,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TL072"
+		(property "Value" "TL072H"
 			(at 191.77 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)

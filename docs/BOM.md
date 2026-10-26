@@ -10,8 +10,8 @@ Kits ship with every surface-mount part below already soldered by the board hous
 
 | Qty | Reference | Part | Manufacturer / Part No. | Notes |
 |----:|-----------|------|--------------------------|-------|
-| 1 | U1 | Quad JFET op-amp, SOIC-14 | Texas Instruments TL074CDR (TI, Microchip, or Analog Devices only) | [Datasheet](https://www.ti.com/lit/ds/symlink/tl074.pdf). Pin 1 is marked on the board. |
-| 1 | U2 | Dual JFET op-amp, SOIC-8 | Texas Instruments TL072CDR (TI, Microchip, or Analog Devices only) | Pin 1 is marked on the board. |
+| 1 | U1 | Quad JFET op-amp, SOIC-14 | Texas Instruments TL074HIDR (the H suffix matters) | [Datasheet](https://www.ti.com/lit/ds/symlink/tl074.pdf). Pin 1 is marked on the board. The H part has no phase reversal near the -12 V rail; a plain TL074 can come from TI's older die, which does. |
+| 1 | U2 | Dual JFET op-amp, SOIC-8 | Texas Instruments TL072HIDR (the H suffix matters) | Pin 1 is marked on the board. |
 | 13 | R1-R4, R9-R17 | Resistor, 10 kΩ, 1%, 0805 | Yageo RC0805FR-0710KL, or equivalent | Gain-setting and mixing resistors. |
 | 4 | R5-R8 | Resistor, 0 Ω jumper, 0805 | Yageo RC0805FR-070RL, or equivalent | Feedback link for each channel's op-amp, set for unity gain. |
 | 6 | R18-R23 | Resistor, 1 kΩ, 1%, 0805 | Yageo RC0805FR-071KL, or equivalent | R18 and R19 are the output resistors. R20-R23 sit between each channel's knob and its op-amp. |
